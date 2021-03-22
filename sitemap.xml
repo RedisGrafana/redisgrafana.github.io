@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"><url>
+     <loc>http://redisgrafana.github.io/index.html</loc>
+     <lastmod>2021-03-22</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>http://redisgrafana.github.io/quickstart.html</loc>
+     <lastmod>2021-03-22</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>http://redisgrafana.github.io/configuration.html</loc>
+     <lastmod>2021-03-22</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>http://redisgrafana.github.io/redis-data-source/commands.html</loc>
+     <lastmod>2021-03-22</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>http://redisgrafana.github.io/redis-data-source/INFO.html</loc>
+     <lastmod>2021-03-22</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>http://redisgrafana.github.io/redis-data-source/TS-RANGE.html</loc>
+     <lastmod>2021-03-22</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>http://redisgrafana.github.io/dashboards.html</loc>
+     <lastmod>2021-03-22</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>http://redisgrafana.github.io/development.html</loc>
+     <lastmod>2021-03-22</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+</urlset>
