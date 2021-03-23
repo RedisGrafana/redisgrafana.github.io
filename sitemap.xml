@@ -20,11 +20,39 @@
      <lastmod>2021-03-23</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
+     <loc>http://redisgrafana.github.io/redis-datasource/TMSCAN.html</loc>
+     <lastmod>2021-03-23</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
      <loc>http://redisgrafana.github.io/redis-datasource/TS-RANGE.html</loc>
      <lastmod>2021-03-23</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
+     <loc>http://redisgrafana.github.io/redis-app/panels.html</loc>
+     <lastmod>2021-03-23</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>http://redisgrafana.github.io/redis-app/redis-cli-panel.html</loc>
+     <lastmod>2021-03-23</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>http://redisgrafana.github.io/redis-app/redis-latency-panel.html</loc>
+     <lastmod>2021-03-23</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>http://redisgrafana.github.io/redis-app/redis-keys-panel.html</loc>
+     <lastmod>2021-03-23</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>http://redisgrafana.github.io/redis-app/redis-gears-panel.html</loc>
+     <lastmod>2021-03-23</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
      <loc>http://redisgrafana.github.io/dashboards.html</loc>
+     <lastmod>2021-03-23</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>http://redisgrafana.github.io/streaming.html</loc>
      <lastmod>2021-03-23</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
@@ -33,6 +61,10 @@
      <changefreq>daily</changefreq>
     </url><url>
      <loc>http://redisgrafana.github.io/development/redis-app.html</loc>
+     <lastmod>2021-03-23</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>http://redisgrafana.github.io/development/images.html</loc>
      <lastmod>2021-03-23</lastmod>
      <changefreq>daily</changefreq>
     </url>

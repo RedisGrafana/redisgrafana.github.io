@@ -389,11 +389,53 @@
       <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3-4" type="checkbox" id="nav-3-4" >
     
     <label class="md-nav__link" for="nav-3-4">
+      Custom
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Custom" data-md-level="2">
+      <label class="md-nav__title" for="nav-3-4">
+        <span class="md-nav__icon md-icon"></span>
+        Custom
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="redis-datasource/TMSCAN.html" class="md-nav__link">
+      TMSCAN
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  
+  <li class="md-nav__item md-nav__item--nested">
+    
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3-5" type="checkbox" id="nav-3-5" >
+    
+    <label class="md-nav__link" for="nav-3-5">
       RedisTimeSeries
       <span class="md-nav__icon md-icon"></span>
     </label>
     <nav class="md-nav" aria-label="RedisTimeSeries" data-md-level="2">
-      <label class="md-nav__title" for="nav-3-4">
+      <label class="md-nav__title" for="nav-3-5">
         <span class="md-nav__icon md-icon"></span>
         RedisTimeSeries
       </label>
@@ -429,9 +471,116 @@
 
 
 
+  
+  <li class="md-nav__item md-nav__item--nested">
+    
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4" >
+    
+    <label class="md-nav__link" for="nav-4">
+      Redis Application plug-in
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Redis Application plug-in" data-md-level="1">
+      <label class="md-nav__title" for="nav-4">
+        <span class="md-nav__icon md-icon"></span>
+        Redis Application plug-in
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="redis-app/panels.html" class="md-nav__link">
+      Custom panels
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="redis-app/redis-cli-panel.html" class="md-nav__link">
+      Command line interface (CLI)
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="redis-app/redis-latency-panel.html" class="md-nav__link">
+      Command Latency
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="redis-app/redis-keys-panel.html" class="md-nav__link">
+      Keys consuming a lot of memory
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="redis-app/redis-gears-panel.html" class="md-nav__link">
+      RedisGears
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+
   <li class="md-nav__item">
     <a href="dashboards.html" class="md-nav__link">
       Dashboards
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+
+  <li class="md-nav__item">
+    <a href="streaming.html" class="md-nav__link">
+      Streaming
     </a>
   </li>
 
@@ -446,14 +595,14 @@
   <li class="md-nav__item md-nav__item--nested">
     
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5" >
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-7" type="checkbox" id="nav-7" >
     
-    <label class="md-nav__link" for="nav-5">
+    <label class="md-nav__link" for="nav-7">
       Development
       <span class="md-nav__icon md-icon"></span>
     </label>
     <nav class="md-nav" aria-label="Development" data-md-level="1">
-      <label class="md-nav__title" for="nav-5">
+      <label class="md-nav__title" for="nav-7">
         <span class="md-nav__icon md-icon"></span>
         Development
       </label>
@@ -482,6 +631,19 @@
   <li class="md-nav__item">
     <a href="development/redis-app.html" class="md-nav__link">
       Redis Application plug-in
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="development/images.html" class="md-nav__link">
+      Docker images
     </a>
   </li>
 
@@ -576,22 +738,21 @@
 <p>The Redis plug-ins for Grafana allow users to connect to the Redis databases and build dashboards in Grafana to easily monitor Redis and application data.
 Data Source can connect to any Redis database On-Premises or in the Cloud.</p>
 <div class="admonition important">
-<p class="admonition-title">Plug-ins are registered in the Grafana repository and available to <a href="https://grafana.com/">Grafana</a>, <a href="https://grafana.com/products/enterprise/">Grafana Enterprise</a> and <a href="https://grafana.com/products/cloud/">Grafana Cloud</a>.</p>
+<p class="admonition-title">Plug-ins are registered in the <a href="https://grafana.com/grafana/plugins/">Grafana repository</a> and available to <a href="https://grafana.com/">Grafana</a>, <a href="https://grafana.com/products/enterprise/">Grafana Enterprise</a> and <a href="https://grafana.com/products/cloud/">Grafana Cloud</a>.</p>
 </div>
 <p><img src="images/redis-app.gif" alt="Redis plug-ins for Grafana"/></p>
 <h2 id="where-next">Where Next?<a class="headerlink" href="#where-next" title="Permanent link">&para;</a></h2>
 <ul>
 <li>The <a href="quickstart.html">Quickstart</a> is the recommended starting point</li>
-<li>The <a href="development.md">Development</a> page has more information how to build plugins</li>
 <li>The <a href="redis-datasource/configuration.html">Configuration</a> page explains how to configure Redis Data Source</li>
-<li>The <a href="redis-data-source/commands.md">Commands</a> reference all supported commands</li>
+<li>The <a href="redis-datasource/commands.html">Commands</a> reference all supported commands</li>
+<li>The <a href="redis-app/panels.html">Custom Panels</a> page provides information about all custom panels</li>
 <li>There are predefined dashboards and recipes in the <a href="dashboards.html">Dashboards</a> page</li>
 </ul>
 <h2 id="quick-links">Quick Links<a class="headerlink" href="#quick-links" title="Permanent link">&para;</a></h2>
 <ul>
-<li><a href="https://github.com/RedisGrafana/grafana-redis-datasource">Redis Data Source for Grafana</a></li>
-<li><a href="https://github.com/RedisGrafana/grafana-redis-app">Redis Application plug-in</a></li>
-<li><a href="https://github.com/orgs/RedisGrafana/packages">Docker images</a></li>
+<li><a href="https://grafana.com/grafana/plugins/redis-datasource/">Redis Data Source for Grafana</a></li>
+<li><a href="https://grafana.com/grafana/plugins/redis-app/">Redis Application plug-in</a></li>
 </ul>
 <h2 id="learn-more">Learn More<a class="headerlink" href="#learn-more" title="Permanent link">&para;</a></h2>
 <ul>

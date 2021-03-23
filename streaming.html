@@ -9,14 +9,14 @@
       
       
       
-        <link rel="canonical" href="http://redisgrafana.github.io/quickstart.html">
+        <link rel="canonical" href="http://redisgrafana.github.io/streaming.html">
       
       <link rel="shortcut icon" href="images/logo.png">
       <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.2.2">
     
     
       
-        <title>Quickstart - Redis plug-ins for Grafana</title>
+        <title>Streaming - Redis plug-ins for Grafana</title>
       
     
     
@@ -64,7 +64,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#quickstart" class="md-skip">
+        <a href="#redis-data-source-supported-streaming" class="md-skip">
           Skip to content
         </a>
       
@@ -95,7 +95,7 @@
         <div class="md-header-nav__topic">
           <span class="md-ellipsis">
             
-              Quickstart
+              Streaming
             
           </span>
         </div>
@@ -210,110 +210,11 @@
       
 
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-    
-      
-    
-    
-      <label class="md-nav__link md-nav__link--active" for="__toc">
-        Quickstart
-        <span class="md-nav__icon md-icon"></span>
-      </label>
-    
-    <a href="quickstart.html" class="md-nav__link md-nav__link--active">
+  <li class="md-nav__item">
+    <a href="quickstart.html" class="md-nav__link">
       Quickstart
     </a>
-    
-      
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#install-using-grafana-cli" class="md-nav__link">
-    Install using grafana-cli
-  </a>
-  
-    <nav class="md-nav" aria-label="Install using grafana-cli">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#redis-application-plug-in-and-redis-data-source" class="md-nav__link">
-    Redis Application plug-in and Redis Data Source
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#redis-data-source" class="md-nav__link">
-    Redis Data Source
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#run-using-docker" class="md-nav__link">
-    Run using Docker
-  </a>
-  
-    <nav class="md-nav" aria-label="Run using Docker">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#redis-application-plug-in-and-redis-data-source_1" class="md-nav__link">
-    Redis Application plug-in and Redis Data Source
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#redis-data-source_1" class="md-nav__link">
-    Redis Data Source
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#enable-redis-application-plug-in" class="md-nav__link">
-    Enable Redis Application plug-in
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#configure-redis-data-source" class="md-nav__link">
-    Configure Redis Data Source
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-    
   </li>
 
     
@@ -610,11 +511,20 @@
       
 
 
+  
 
-  <li class="md-nav__item">
-    <a href="streaming.html" class="md-nav__link">
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+    <a href="streaming.html" class="md-nav__link md-nav__link--active">
       Streaming
     </a>
+    
   </li>
 
     
@@ -704,82 +614,6 @@
     
   
   
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#install-using-grafana-cli" class="md-nav__link">
-    Install using grafana-cli
-  </a>
-  
-    <nav class="md-nav" aria-label="Install using grafana-cli">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#redis-application-plug-in-and-redis-data-source" class="md-nav__link">
-    Redis Application plug-in and Redis Data Source
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#redis-data-source" class="md-nav__link">
-    Redis Data Source
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#run-using-docker" class="md-nav__link">
-    Run using Docker
-  </a>
-  
-    <nav class="md-nav" aria-label="Run using Docker">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#redis-application-plug-in-and-redis-data-source_1" class="md-nav__link">
-    Redis Application plug-in and Redis Data Source
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#redis-data-source_1" class="md-nav__link">
-    Redis Data Source
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#enable-redis-application-plug-in" class="md-nav__link">
-    Enable Redis Application plug-in
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#configure-redis-data-source" class="md-nav__link">
-    Configure Redis Data Source
-  </a>
-  
-</li>
-      
-    </ul>
-  
 </nav>
                   </div>
                 </div>
@@ -790,41 +624,15 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/RedisGrafana/redisgrafana/edit/main/docs/quickstart.md" title="Edit this page" class="md-content__button md-icon">
+                  <a href="https://github.com/RedisGrafana/redisgrafana/edit/main/docs/streaming.md" title="Edit this page" class="md-content__button md-icon">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
                   </a>
                 
                 
-                <h1 id="quickstart">Quickstart<a class="headerlink" href="#quickstart" title="Permanent link">&para;</a></h1>
-<div class="admonition important">
-<p class="admonition-title">Only Grafana 7.1 and later with a new plug-in platform supported.</p>
-</div>
-<h2 id="install-using-grafana-cli">Install using <code>grafana-cli</code><a class="headerlink" href="#install-using-grafana-cli" title="Permanent link">&para;</a></h2>
-<p>Use the <code>grafana-cli</code> tool to install from the commandline.</p>
-<h3 id="redis-application-plug-in-and-redis-data-source">Redis Application plug-in and Redis Data Source<a class="headerlink" href="#redis-application-plug-in-and-redis-data-source" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code>grafana-cli plugins install redis-app
-</code></pre></div>
-<h3 id="redis-data-source">Redis Data Source<a class="headerlink" href="#redis-data-source" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code>grafana-cli plugins install redis-datasource
-</code></pre></div>
-<h2 id="run-using-docker">Run using <code>Docker</code><a class="headerlink" href="#run-using-docker" title="Permanent link">&para;</a></h2>
-<h3 id="redis-application-plug-in-and-redis-data-source_1">Redis Application plug-in and Redis Data Source<a class="headerlink" href="#redis-application-plug-in-and-redis-data-source_1" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code>docker run -d -p <span class="m">3000</span>:3000 --name<span class="o">=</span>grafana -e <span class="s2">&quot;GF_INSTALL_PLUGINS=redis-app&quot;</span> grafana/grafana
-</code></pre></div>
-<h3 id="redis-data-source_1">Redis Data Source<a class="headerlink" href="#redis-data-source_1" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code>docker run -d -p <span class="m">3000</span>:3000 --name<span class="o">=</span>grafana -e <span class="s2">&quot;GF_INSTALL_PLUGINS=redis-datasource&quot;</span> grafana/grafana
-</code></pre></div>
-<h2 id="enable-redis-application-plug-in">Enable Redis Application plug-in<a class="headerlink" href="#enable-redis-application-plug-in" title="Permanent link">&para;</a></h2>
-<div class="admonition important">
-<p class="admonition-title">Redis Application plug-in is disabled by default.</p>
-</div>
-<p>Go to <code>Configuration</code> -&gt; <code>Plugins</code> and enable Redis Application plug-in.</p>
-<h2 id="configure-redis-data-source">Configure Redis Data Source<a class="headerlink" href="#configure-redis-data-source" title="Permanent link">&para;</a></h2>
+                <h1 id="redis-data-source-supported-streaming">Redis Data Source supported Streaming<a class="headerlink" href="#redis-data-source-supported-streaming" title="Permanent link">&para;</a></h1>
 <div class="admonition note">
-<p class="admonition-title">The <a href="redis-datasource/configuration.html">Configuration</a> page explains how to configure Redis Data Source.</p>
+<p class="admonition-title">Work in Progress</p>
 </div>
-<p>Open Grafana in your browser and configure Redis Data Source. You can add as many data sources as you want to support multiple Redis databases.</p>
-<p><img alt="Datasource" src="https://raw.githubusercontent.com/RedisGrafana/grafana-redis-datasource/master/src/img/datasource.png" /></p>
                 
               
               
@@ -843,7 +651,7 @@
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
         
-          <a href="index.html" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="dashboards.html" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-footer-nav__button md-icon">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
             </div>
@@ -852,19 +660,19 @@
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Home
+                Dashboards
               </div>
             </div>
           </a>
         
         
-          <a href="redis-datasource/configuration.html" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="development/redis-datasource.html" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-footer-nav__title">
               <div class="md-ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                Configuration
+                Redis Data Source
               </div>
             </div>
             <div class="md-footer-nav__button md-icon">
