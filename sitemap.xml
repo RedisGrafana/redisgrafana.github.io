@@ -1,71 +1,79 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"><url>
      <loc>http://redisgrafana.github.io/index.html</loc>
-     <lastmod>2021-03-23</lastmod>
+     <lastmod>2021-03-29</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>http://redisgrafana.github.io/quickstart.html</loc>
-     <lastmod>2021-03-23</lastmod>
+     <lastmod>2021-03-29</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>http://redisgrafana.github.io/redis-datasource/configuration.html</loc>
-     <lastmod>2021-03-23</lastmod>
+     <lastmod>2021-03-29</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>http://redisgrafana.github.io/redis-datasource/commands.html</loc>
-     <lastmod>2021-03-23</lastmod>
+     <lastmod>2021-03-29</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>http://redisgrafana.github.io/redis-datasource/streaming.html</loc>
+     <lastmod>2021-03-29</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>http://redisgrafana.github.io/redis-datasource/INFO.html</loc>
-     <lastmod>2021-03-23</lastmod>
+     <lastmod>2021-03-29</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>http://redisgrafana.github.io/redis-datasource/TMSCAN.html</loc>
-     <lastmod>2021-03-23</lastmod>
+     <lastmod>2021-03-29</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>http://redisgrafana.github.io/redis-datasource/TS-RANGE.html</loc>
-     <lastmod>2021-03-23</lastmod>
+     <lastmod>2021-03-29</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>http://redisgrafana.github.io/redis-app/panels.html</loc>
-     <lastmod>2021-03-23</lastmod>
+     <lastmod>2021-03-29</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>http://redisgrafana.github.io/redis-app/dashboards.html</loc>
+     <lastmod>2021-03-29</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>http://redisgrafana.github.io/redis-app/redis-cli-panel.html</loc>
-     <lastmod>2021-03-23</lastmod>
+     <lastmod>2021-03-29</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>http://redisgrafana.github.io/redis-app/redis-latency-panel.html</loc>
-     <lastmod>2021-03-23</lastmod>
+     <lastmod>2021-03-29</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>http://redisgrafana.github.io/redis-app/redis-keys-panel.html</loc>
-     <lastmod>2021-03-23</lastmod>
+     <lastmod>2021-03-29</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>http://redisgrafana.github.io/redis-app/redis-gears-panel.html</loc>
-     <lastmod>2021-03-23</lastmod>
-     <changefreq>daily</changefreq>
-    </url><url>
-     <loc>http://redisgrafana.github.io/dashboards.html</loc>
-     <lastmod>2021-03-23</lastmod>
-     <changefreq>daily</changefreq>
-    </url><url>
-     <loc>http://redisgrafana.github.io/streaming.html</loc>
-     <lastmod>2021-03-23</lastmod>
-     <changefreq>daily</changefreq>
-    </url><url>
-     <loc>http://redisgrafana.github.io/development/redis-datasource.html</loc>
-     <lastmod>2021-03-23</lastmod>
-     <changefreq>daily</changefreq>
-    </url><url>
-     <loc>http://redisgrafana.github.io/development/redis-app.html</loc>
-     <lastmod>2021-03-23</lastmod>
+     <lastmod>2021-03-29</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>http://redisgrafana.github.io/development/images.html</loc>
-     <lastmod>2021-03-23</lastmod>
+     <lastmod>2021-03-29</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>http://redisgrafana.github.io/development/redis-datasource.html</loc>
+     <lastmod>2021-03-29</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>http://redisgrafana.github.io/development/redis-app.html</loc>
+     <lastmod>2021-03-29</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>http://redisgrafana.github.io/development/redis-explorer.html</loc>
+     <lastmod>2021-03-29</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>http://redisgrafana.github.io/examples.html</loc>
+     <lastmod>2021-03-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
 </urlset>
