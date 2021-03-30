@@ -299,6 +299,13 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#query-editor" class="md-nav__link">
+    Query Editor
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#core-hashes-sets-lists-strings-streams-etc" class="md-nav__link">
     Core (Hashes, Sets, Lists, Strings, Streams, etc.)
   </a>
@@ -366,18 +373,31 @@
 
 
 
+  <li class="md-nav__item">
+    <a href="variables.html" class="md-nav__link">
+      Variables
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
   
   <li class="md-nav__item md-nav__item--nested">
     
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3-4" type="checkbox" id="nav-3-4" >
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3-5" type="checkbox" id="nav-3-5" >
     
-    <label class="md-nav__link" for="nav-3-4">
+    <label class="md-nav__link" for="nav-3-5">
       Commands
       <span class="md-nav__icon md-icon"></span>
     </label>
     <nav class="md-nav" aria-label="Commands" data-md-level="2">
-      <label class="md-nav__title" for="nav-3-4">
+      <label class="md-nav__title" for="nav-3-5">
         <span class="md-nav__icon md-icon"></span>
         Commands
       </label>
@@ -391,7 +411,7 @@
 
 
   <li class="md-nav__item">
-    <a href="INFO.html" class="md-nav__link">
+    <a href="redis/INFO.html" class="md-nav__link">
       INFO
     </a>
   </li>
@@ -404,7 +424,7 @@
 
 
   <li class="md-nav__item">
-    <a href="TMSCAN.html" class="md-nav__link">
+    <a href="custom/TMSCAN.html" class="md-nav__link">
       TMSCAN
     </a>
   </li>
@@ -417,7 +437,7 @@
 
 
   <li class="md-nav__item">
-    <a href="TS-RANGE.html" class="md-nav__link">
+    <a href="redis-timeseries/TS-RANGE.html" class="md-nav__link">
       TS.RANGE
     </a>
   </li>
@@ -464,8 +484,21 @@
 
 
   <li class="md-nav__item">
+    <a href="../redis-app/datasources.html" class="md-nav__link">
+      Data Sources
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
     <a href="../redis-app/panels.html" class="md-nav__link">
-      Custom panels
+      Custom Panels
     </a>
   </li>
 
@@ -493,14 +526,14 @@
   <li class="md-nav__item md-nav__item--nested">
     
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4-3" type="checkbox" id="nav-4-3" >
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4-4" type="checkbox" id="nav-4-4" >
     
-    <label class="md-nav__link" for="nav-4-3">
+    <label class="md-nav__link" for="nav-4-4">
       Panels
       <span class="md-nav__icon md-icon"></span>
     </label>
     <nav class="md-nav" aria-label="Panels" data-md-level="2">
-      <label class="md-nav__title" for="nav-4-3">
+      <label class="md-nav__title" for="nav-4-4">
         <span class="md-nav__icon md-icon"></span>
         Panels
       </label>
@@ -657,8 +690,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../examples.html" class="md-nav__link">
-      Examples
+    <a href="../projects.html" class="md-nav__link">
+      Projects
     </a>
   </li>
 
@@ -699,6 +732,13 @@
       Table of contents
     </label>
     <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#query-editor" class="md-nav__link">
+    Query Editor
+  </a>
+  
+</li>
       
         <li class="md-nav__item">
   <a href="#core-hashes-sets-lists-strings-streams-etc" class="md-nav__link">
@@ -767,6 +807,9 @@
 <li><a href="https://oss.redislabs.com/redisgraph/">RedisGraph</a> - Graph database</li>
 <li><a href="https://oss.redislabs.com/redisearch/">RediSearch</a> - Secondary Index &amp; Query Engine</li>
 </ul>
+<h2 id="query-editor">Query Editor<a class="headerlink" href="#query-editor" title="Permanent link">&para;</a></h2>
+<p>Choose <strong>Type</strong>, <strong>Command</strong>, enable <a href="streaming.html">Streaming</a> if required and provide all required parameters:</p>
+<p><img alt="Query Editor" src="../images/redis-datasource-query.png" /></p>
 <h2 id="core-hashes-sets-lists-strings-streams-etc">Core (Hashes, Sets, Lists, Strings, Streams, etc.)<a class="headerlink" href="#core-hashes-sets-lists-strings-streams-etc" title="Permanent link">&para;</a></h2>
 <ul>
 <li>CLIENT LIST - Returns information and statistics about the client connections server</li>
@@ -778,7 +821,7 @@
 <li>HKEYS - Returns all field names in the hash stored at key</li>
 <li>HLEN - Returns the number of fields contained in the hash stored at key</li>
 <li>HMGET - Returns the values associated with the specified fields in the hash stored at key</li>
-<li><a href="INFO.html">INFO</a> - Returns information and statistics about the server</li>
+<li><a href="redis/INFO.html">INFO</a> - Returns information and statistics about the server</li>
 <li>LLEN - Returns the length of the list stored at key</li>
 <li>SCARD - Returns the set cardinality (number of elements) of the set stored at key</li>
 <li>SLOWLOG GET - Returns the Redis slow queries log</li>
@@ -792,7 +835,7 @@
 </ul>
 <h2 id="custom">Custom<a class="headerlink" href="#custom" title="Permanent link">&para;</a></h2>
 <ul>
-<li><a href="TMSCAN.html">TMSCAN</a> - Returns keys with types and memory usage</li>
+<li><a href="custom/TMSCAN.html">TMSCAN</a> - Returns keys with types and memory usage</li>
 </ul>
 <h2 id="redistimeseries">RedisTimeSeries<a class="headerlink" href="#redistimeseries" title="Permanent link">&para;</a></h2>
 <ul>
@@ -800,7 +843,7 @@
 <li>TS.INFO - Returns information and statistics on the time-series</li>
 <li>TS.MRANGE - Query a timestamp range across multiple time-series by filters</li>
 <li>TS.QUERYINDEX - Query all the keys matching the filter list</li>
-<li><a href="TS-RANGE.html">TS.RANGE</a> - Query a range</li>
+<li><a href="redis-timeseries/TS-RANGE.html">TS.RANGE</a> - Query a range</li>
 </ul>
 <h2 id="redisgears">RedisGears<a class="headerlink" href="#redisgears" title="Permanent link">&para;</a></h2>
 <ul>

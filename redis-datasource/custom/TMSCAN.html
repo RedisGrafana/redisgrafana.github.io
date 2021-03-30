@@ -9,21 +9,21 @@
       
       
       
-        <link rel="canonical" href="http://redisgrafana.github.io/development/redis-app.html">
+        <link rel="canonical" href="http://redisgrafana.github.io/redis-datasource/custom/TMSCAN.html">
       
-      <link rel="shortcut icon" href="../images/logo.png">
+      <link rel="shortcut icon" href="../../images/logo.png">
       <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.2.2">
     
     
       
-        <title>Redis Application plug-in - Redis plug-ins for Grafana</title>
+        <title>TMSCAN - Redis plug-ins for Grafana</title>
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.73f7c429.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.73f7c429.min.css">
       
         
-        <link rel="stylesheet" href="../assets/stylesheets/palette.39b8e14a.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.39b8e14a.min.css">
         
           
           
@@ -68,7 +68,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#developing-redis-application-plug-in-for-grafana" class="md-skip">
+        <a href="#tmscan" class="md-skip">
           Skip to content
         </a>
       
@@ -83,7 +83,7 @@
   <nav class="md-header-nav md-grid" aria-label="Header">
     <a href="http://redisgrafana.github.io" title="Redis plug-ins for Grafana" class="md-header-nav__button md-logo" aria-label="Redis plug-ins for Grafana">
       
-  <img src="../images/logo-white.png" alt="logo">
+  <img src="../../images/logo-white.png" alt="logo">
 
     </a>
     <label class="md-header-nav__button md-icon" for="__drawer">
@@ -99,7 +99,7 @@
         <div class="md-header-nav__topic">
           <span class="md-ellipsis">
             
-              Redis Application plug-in
+              TMSCAN
             
           </span>
         </div>
@@ -175,7 +175,7 @@
   <label class="md-nav__title" for="__drawer">
     <a href="http://redisgrafana.github.io" title="Redis plug-ins for Grafana" class="md-nav__button md-logo" aria-label="Redis plug-ins for Grafana">
       
-  <img src="../images/logo-white.png" alt="logo">
+  <img src="../../images/logo-white.png" alt="logo">
 
     </a>
     Redis plug-ins for Grafana
@@ -203,7 +203,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../index.html" class="md-nav__link">
+    <a href="../../index.html" class="md-nav__link">
       Home
     </a>
   </li>
@@ -216,7 +216,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../quickstart.html" class="md-nav__link">
+    <a href="../../quickstart.html" class="md-nav__link">
       Quickstart
     </a>
   </li>
@@ -227,12 +227,14 @@
       
 
 
+  
+
 
   
-  <li class="md-nav__item md-nav__item--nested">
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3" >
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3" checked>
     
     <label class="md-nav__link" for="nav-3">
       Redis Data Source
@@ -253,7 +255,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../redis-datasource/configuration.html" class="md-nav__link">
+    <a href="../configuration.html" class="md-nav__link">
       Configuration
     </a>
   </li>
@@ -266,7 +268,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../redis-datasource/commands.html" class="md-nav__link">
+    <a href="../commands.html" class="md-nav__link">
       Supported commands
     </a>
   </li>
@@ -279,7 +281,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../redis-datasource/streaming.html" class="md-nav__link">
+    <a href="../streaming.html" class="md-nav__link">
       Streaming
     </a>
   </li>
@@ -292,7 +294,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../redis-datasource/variables.html" class="md-nav__link">
+    <a href="../variables.html" class="md-nav__link">
       Variables
     </a>
   </li>
@@ -303,12 +305,14 @@
           
 
 
+  
+
 
   
-  <li class="md-nav__item md-nav__item--nested">
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3-5" type="checkbox" id="nav-3-5" >
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3-5" type="checkbox" id="nav-3-5" checked>
     
     <label class="md-nav__link" for="nav-3-5">
       Commands
@@ -329,7 +333,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../redis-datasource/redis/INFO.html" class="md-nav__link">
+    <a href="../redis/INFO.html" class="md-nav__link">
       INFO
     </a>
   </li>
@@ -340,11 +344,20 @@
           
 
 
+  
 
-  <li class="md-nav__item">
-    <a href="../redis-datasource/custom/TMSCAN.html" class="md-nav__link">
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+    <a href="TMSCAN.html" class="md-nav__link md-nav__link--active">
       TMSCAN
     </a>
+    
   </li>
 
         
@@ -355,7 +368,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../redis-datasource/redis-timeseries/TS-RANGE.html" class="md-nav__link">
+    <a href="../redis-timeseries/TS-RANGE.html" class="md-nav__link">
       TS.RANGE
     </a>
   </li>
@@ -402,7 +415,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../redis-app/datasources.html" class="md-nav__link">
+    <a href="../../redis-app/datasources.html" class="md-nav__link">
       Data Sources
     </a>
   </li>
@@ -415,7 +428,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../redis-app/panels.html" class="md-nav__link">
+    <a href="../../redis-app/panels.html" class="md-nav__link">
       Custom Panels
     </a>
   </li>
@@ -428,7 +441,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../redis-app/dashboards.html" class="md-nav__link">
+    <a href="../../redis-app/dashboards.html" class="md-nav__link">
       Dashboards
     </a>
   </li>
@@ -465,7 +478,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../redis-app/redis-cli-panel.html" class="md-nav__link">
+    <a href="../../redis-app/redis-cli-panel.html" class="md-nav__link">
       Command line interface (CLI)
     </a>
   </li>
@@ -478,7 +491,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../redis-app/redis-latency-panel.html" class="md-nav__link">
+    <a href="../../redis-app/redis-latency-panel.html" class="md-nav__link">
       Command Latency
     </a>
   </li>
@@ -491,7 +504,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../redis-app/redis-keys-panel.html" class="md-nav__link">
+    <a href="../../redis-app/redis-keys-panel.html" class="md-nav__link">
       Keys consuming a lot of memory
     </a>
   </li>
@@ -504,7 +517,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../redis-app/redis-gears-panel.html" class="md-nav__link">
+    <a href="../../redis-app/redis-gears-panel.html" class="md-nav__link">
       RedisGears
     </a>
   </li>
@@ -525,14 +538,12 @@
       
 
 
-  
-
 
   
-  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+  <li class="md-nav__item md-nav__item--nested">
     
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5" checked>
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5" >
     
     <label class="md-nav__link" for="nav-5">
       Development
@@ -553,7 +564,7 @@
 
 
   <li class="md-nav__item">
-    <a href="images.html" class="md-nav__link">
+    <a href="../../development/images.html" class="md-nav__link">
       Docker Images
     </a>
   </li>
@@ -566,7 +577,7 @@
 
 
   <li class="md-nav__item">
-    <a href="redis-datasource.html" class="md-nav__link">
+    <a href="../../development/redis-datasource.html" class="md-nav__link">
       Redis Data Source
     </a>
   </li>
@@ -577,91 +588,11 @@
           
 
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-    
-      
-    
-    
-      <label class="md-nav__link md-nav__link--active" for="__toc">
-        Redis Application plug-in
-        <span class="md-nav__icon md-icon"></span>
-      </label>
-    
-    <a href="redis-app.html" class="md-nav__link md-nav__link--active">
+  <li class="md-nav__item">
+    <a href="../../development/redis-app.html" class="md-nav__link">
       Redis Application plug-in
     </a>
-    
-      
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#install-grafana" class="md-nav__link">
-    Install Grafana
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#clone-repository" class="md-nav__link">
-    Clone repository
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#build-application" class="md-nav__link">
-    Build Application
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#update-local-grafana-configuration" class="md-nav__link">
-    Update local Grafana Configuration
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#start-using-docker-compose" class="md-nav__link">
-    Start using Docker Compose
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#enable-redis-application-plug-in" class="md-nav__link">
-    Enable Redis Application plug-in
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#contact-us" class="md-nav__link">
-    Contact Us
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-    
   </li>
 
         
@@ -672,7 +603,7 @@
 
 
   <li class="md-nav__item">
-    <a href="redis-explorer.html" class="md-nav__link">
+    <a href="../../development/redis-explorer.html" class="md-nav__link">
       Redis Explorer plug-in
     </a>
   </li>
@@ -690,7 +621,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../projects.html" class="md-nav__link">
+    <a href="../../projects.html" class="md-nav__link">
       Projects
     </a>
   </li>
@@ -703,7 +634,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../faq.html" class="md-nav__link">
+    <a href="../../faq.html" class="md-nav__link">
       FAQ
     </a>
   </li>
@@ -727,63 +658,6 @@
     
   
   
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#install-grafana" class="md-nav__link">
-    Install Grafana
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#clone-repository" class="md-nav__link">
-    Clone repository
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#build-application" class="md-nav__link">
-    Build Application
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#update-local-grafana-configuration" class="md-nav__link">
-    Update local Grafana Configuration
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#start-using-docker-compose" class="md-nav__link">
-    Start using Docker Compose
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#enable-redis-application-plug-in" class="md-nav__link">
-    Enable Redis Application plug-in
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#contact-us" class="md-nav__link">
-    Contact Us
-  </a>
-  
-</li>
-      
-    </ul>
-  
 </nav>
                   </div>
                 </div>
@@ -794,134 +668,20 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/RedisGrafana/redisgrafana/edit/main/docs/development/redis-app.md" title="Edit this page" class="md-content__button md-icon">
+                  <a href="https://github.com/RedisGrafana/redisgrafana/edit/main/docs/redis-datasource/custom/TMSCAN.md" title="Edit this page" class="md-content__button md-icon">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
                   </a>
                 
                 
-                <h1 id="developing-redis-application-plug-in-for-grafana">Developing Redis Application plug-in for Grafana<a class="headerlink" href="#developing-redis-application-plug-in-for-grafana" title="Permanent link">&para;</a></h1>
-<p><img alt="CI" src="https://github.com/RedisGrafana/grafana-redis-app/workflows/CI/badge.svg" />
-<img alt="Docker" src="https://github.com/RedisGrafana/grafana-redis-app/workflows/Docker/badge.svg" />
-<a href="https://codecov.io/gh/RedisGrafana/grafana-redis-app"><img alt="codecov" src="https://codecov.io/gh/RedisGrafana/grafana-redis-app/branch/master/graph/badge.svg?token=15SIRGU8SX" /></a></p>
-<p>Developing Application plug-in involves setting up the development environment (which can be either Linux-based or macOS-based), building and running tests.</p>
-<h2 id="install-grafana">Install Grafana<a class="headerlink" href="#install-grafana" title="Permanent link">&para;</a></h2>
-<div class="admonition important">
-<p class="admonition-title">Grafana can be used in Docker or installed locally.</p>
-</div>
-<ul>
-<li>
-<p>Follow <a href="https://grafana.com/docs/grafana/latest/installation/">Installation instructions</a> to install and start Grafana</p>
-</li>
-<li>
-<p>Open Grafana UI in web-browser <code>http://X.X.X.X:3000</code></p>
-</li>
-</ul>
-<h2 id="clone-repository">Clone repository<a class="headerlink" href="#clone-repository" title="Permanent link">&para;</a></h2>
-<div class="highlight"><pre><span></span><code>git clone https://github.com/RedisGrafana/grafana-redis-app.git
-</code></pre></div>
-<h2 id="build-application">Build Application<a class="headerlink" href="#build-application" title="Permanent link">&para;</a></h2>
-<ul>
-<li>
-<p>Install the latest version of Node.js using <a href="https://github.com/nvm-sh/nvm">Node Version Manager</a> or <a href="https://nodejs.org/en/download/">download binaries</a></p>
-</li>
-<li>
-<p>Install <code>yarn</code> globally</p>
-</li>
-</ul>
-<div class="highlight"><pre><span></span><code>npm install yarn -g
-</code></pre></div>
-<ul>
-<li>Install dependencies</li>
-</ul>
-<div class="highlight"><pre><span></span><code>yarn install
-</code></pre></div>
-<ul>
-<li>Build frontend components</li>
-</ul>
-<div class="highlight"><pre><span></span><code>yarn build
-</code></pre></div>
-<h2 id="update-local-grafana-configuration">Update local Grafana Configuration<a class="headerlink" href="#update-local-grafana-configuration" title="Permanent link">&para;</a></h2>
-<ul>
-<li>Move distribution to Grafana's <code>plugins/</code> folder</li>
-</ul>
-<div class="highlight"><pre><span></span><code>mv dist/ /var/lib/grafana/plugins/redis-app
-</code></pre></div>
-<ul>
-<li>Add <code>redis-app</code> to allowed unsigned plugins</li>
-</ul>
-<div class="highlight"><pre><span></span><code>vi /etc/grafana/grafana.ini
-</code></pre></div>
-<div class="highlight"><pre><span></span><code>[plugins]
-;enable_alpha = false
-;app_tls_skip_verify_insecure = false
-# Enter a comma-separated list of plugin identifiers to identify plugins that are allowed to be loaded even if they lack a valid signature.
-allow_loading_unsigned_plugins = redis-app
-</code></pre></div>
-<ul>
-<li>Verify that plugin is registered</li>
-</ul>
-<div class="highlight"><pre><span></span><code>tail -100 /var/log/grafana/grafana.log
-</code></pre></div>
-<h2 id="start-using-docker-compose">Start using Docker Compose<a class="headerlink" href="#start-using-docker-compose" title="Permanent link">&para;</a></h2>
-<div class="admonition important">
-<p class="admonition-title">Docker Compose should be pre-installed following <a href="https://docs.docker.com/compose/install/">documentation</a>.</p>
-</div>
-<div class="highlight"><pre><span></span><code>yarn start:dev
-</code></pre></div>
-<p>Docker-compose file for Development includes:</p>
-<ul>
-<li>Service <code>redis</code> using <a href="https://hub.docker.com/r/redislabs/redismod">Redismod</a></li>
-<li>Service <code>grafana</code> using <a href="https://hub.docker.com/r/grafana/grafana">Grafana</a> which allow loading unsigned plugins <code>redis-app</code> and <code>redis-datasource</code></li>
-</ul>
-<div class="admonition important">
-<p class="admonition-title">Redis Data Source should be cloned and built following <a href="redis-datasource.html">Instructions</a>.</p>
-</div>
-<div class="highlight"><pre><span></span><code>version: &quot;3.4&quot;
-
-services:
-  redis:
-    container_name: redismod
-    image: redislabs/redismod:latest
-    ports:
-      - 6379:6379/tcp
-    # Uncomment and edit the local path in the following line to have
-    # Redis&#39; data persisted to the host&#39;s filesystem.
-    # volumes:
-    #   - ./dump.rdb:/data/dump.rdb
-
-  grafana:
-    container_name: grafana
-    image: grafana/grafana:latest
-    ports:
-      - 3000:3000/tcp
-    environment:
-      - GF_AUTH_ANONYMOUS_ORG_ROLE=Admin
-      - GF_AUTH_ANONYMOUS_ENABLED=true
-      - GF_AUTH_BASIC_ENABLED=false
-      - GF_ENABLE_GZIP=true
-      - GF_USERS_DEFAULT_THEME=light
-      - GF_PLUGINS_ALLOW_LOADING_UNSIGNED_PLUGINS=redis-app,redis-datasource
-      # Uncomment to run in debug mode
-      # - GF_LOG_LEVEL=debug
-    volumes:
-      # Redis Data Source should be cloned and built
-      - ../../grafana-redis-datasource/dist:/var/lib/grafana/plugins/redis-datasource
-      - ../dist:/var/lib/grafana/plugins/redis-app
-      - ../provisioning/datasources:/etc/grafana/provisioning/datasources
-      - ../provisioning/plugins:/etc/grafana/provisioning/plugins
-      # Uncomment to preserve Grafana configuration
-      # - ./data:/var/lib/grafana
-</code></pre></div>
-<h2 id="enable-redis-application-plug-in">Enable Redis Application plug-in<a class="headerlink" href="#enable-redis-application-plug-in" title="Permanent link">&para;</a></h2>
+                <h1 id="tmscan">TMSCAN<a class="headerlink" href="#tmscan" title="Permanent link">&para;</a></h1>
+<p>Returns keys with types and memory usage.</p>
 <div class="admonition note">
-<p class="admonition-title">Redis Application plug-in is disabled by default.</p>
+<p class="admonition-title">This command was created for <a href="../../redis-app/redis-latency-panel.html">Redis Latency panel</a>.</p>
 </div>
-<p>Go to <code>Configuration</code> -&gt; <code>Plugins</code> and choose Redis Application plug-in.</p>
-<p><img alt="Grafana plug-ins" src="../images/grafana-plugins-app.png" /></p>
-<p>Click <strong>Enable</strong> to add side menu, <a href="../redis-app/panels.html">Custom panels</a> and import <a href="../redis-app/dashboards.html">Dashboards</a>.</p>
-<p><img alt="Enable Redis Application plug-in" src="../images/redis-app-enable.png" /></p>
-<h2 id="contact-us">Contact Us<a class="headerlink" href="#contact-us" title="Permanent link">&para;</a></h2>
-<p>If you have questions, enhancement ideas or running into issues, please open an <a href="https://github.com/RedisGrafana/grafana-redis-app/issues/new/choose">issue</a>.</p>
+<div class="admonition warning">
+<p class="admonition-title">Please use this command in OFF-PEAK as it cause latency increase.</p>
+</div>
+<p>This custom command is based on <a href="https://redis.io/commands/scan">SCAN</a> and <a href="https://redis.io/commands/memory-usage">MEMORY USAGE</a> commands.</p>
                 
               
               
@@ -940,7 +700,7 @@ services:
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
         
-          <a href="redis-datasource.html" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../redis/INFO.html" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-footer-nav__button md-icon">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
             </div>
@@ -949,19 +709,19 @@ services:
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Redis Data Source
+                INFO
               </div>
             </div>
           </a>
         
         
-          <a href="redis-explorer.html" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../redis-timeseries/TS-RANGE.html" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-footer-nav__title">
               <div class="md-ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                Redis Explorer plug-in
+                TS.RANGE
               </div>
             </div>
             <div class="md-footer-nav__button md-icon">
@@ -988,15 +748,15 @@ services:
       
     </div>
     
-      <script src="../assets/javascripts/vendor.08c56446.min.js"></script>
-      <script src="../assets/javascripts/bundle.6ced434e.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
+      <script src="../../assets/javascripts/vendor.08c56446.min.js"></script>
+      <script src="../../assets/javascripts/bundle.6ced434e.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
       
       <script>
         app = initialize({
-          base: "..",
+          base: "../..",
           features: [],
           search: Object.assign({
-            worker: "../assets/javascripts/worker/search.8c7e0a7e.min.js"
+            worker: "../../assets/javascripts/worker/search.8c7e0a7e.min.js"
           }, typeof search !== "undefined" && search)
         })
       </script>
