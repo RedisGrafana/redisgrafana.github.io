@@ -687,7 +687,7 @@
                 
                 
                 <h1 id="docker-images">Docker Images<a class="headerlink" href="#docker-images" title="Permanent link">&para;</a></h1>
-<p>To try the latest features you can start nightly build Docker image. Supported platforms are:</p>
+<p>Interested to try the latest features and verify bug fixes? Start nightly build Docker image. Supported platforms are:</p>
 <ul>
 <li>linux/amd64</li>
 <li>linux/arm64</li>
@@ -696,14 +696,19 @@
 <div class="admonition important">
 <p class="admonition-title">Images built from main branch and can be UNSTABLE.</p>
 </div>
-<p><img src="../images/docker-images.png" alt="Nightly build Docker images"/></p>
+<p><img alt="Nightly built Docker images" src="../images/docker-images.png" /></p>
+<div class="admonition note">
+<p class="admonition-title">Username and password to login to Grafana is <code>admin</code>/<code>admin</code>.</p>
+</div>
 <h2 id="redis-application-plug-in">Redis Application plug-in<a class="headerlink" href="#redis-application-plug-in" title="Permanent link">&para;</a></h2>
-<p>The Redis Application, is a plug-in for Grafana that provides application pages and custom panels for Redis Data Source.</p>
-<div class="highlight"><pre><span></span><code>docker run -d -p <span class="m">3000</span>:3000 --name<span class="o">=</span>redis-app ghcr.io/redisgrafana/redis-app:latest
+<p><img alt="Redis Application plug-in" src="https://github.com/RedisGrafana/grafana-redis-app/workflows/Docker/badge.svg" /></p>
+<p>The Redis Application, is a plug-in for Grafana that provides application pages and <a href="../redis-app/panels.html">Custom panels</a> for Redis Data Source.</p>
+<div class="highlight"><pre><span></span><code>docker run -p <span class="m">3000</span>:3000 --name<span class="o">=</span>redis-app ghcr.io/redisgrafana/redis-app:latest
 </code></pre></div>
 <h2 id="redis-explorer-plug-in">Redis Explorer plug-in<a class="headerlink" href="#redis-explorer-plug-in" title="Permanent link">&para;</a></h2>
+<p><img alt="Redis Explorer plug-in" src="https://github.com/RedisGrafana/grafana-redis-explorer/workflows/Docker/badge.svg" /></p>
 <p>The Redis Explorer, is a plug-in for Grafana that allows users to connect to Redis Enterprise software clusters using REST API and build dashboards to observe their status.</p>
-<div class="highlight"><pre><span></span><code>docker run -d -p <span class="m">3000</span>:3000 --name<span class="o">=</span>explorer ghcr.io/redisgrafana/redis-explorer:latest
+<div class="highlight"><pre><span></span><code>docker run -p <span class="m">3000</span>:3000 --name<span class="o">=</span>explorer ghcr.io/redisgrafana/redis-explorer:latest
 </code></pre></div>
                 
               

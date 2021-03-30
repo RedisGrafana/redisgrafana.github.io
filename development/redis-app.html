@@ -757,6 +757,9 @@
                 
                 
                 <h1 id="developing-redis-application-plug-in-for-grafana">Developing Redis Application plug-in for Grafana<a class="headerlink" href="#developing-redis-application-plug-in-for-grafana" title="Permanent link">&para;</a></h1>
+<p><img alt="CI" src="https://github.com/RedisGrafana/grafana-redis-app/workflows/CI/badge.svg" />
+<img alt="Docker" src="https://github.com/RedisGrafana/grafana-redis-app/workflows/Docker/badge.svg" />
+<a href="https://codecov.io/gh/RedisGrafana/grafana-redis-app"><img alt="codecov" src="https://codecov.io/gh/RedisGrafana/grafana-redis-app/branch/master/graph/badge.svg?token=15SIRGU8SX" /></a></p>
 <p>Developing Application plug-in involves setting up the development environment (which can be either Linux-based or macOS-based), building and running tests.</p>
 <h2 id="install-grafana">Install Grafana<a class="headerlink" href="#install-grafana" title="Permanent link">&para;</a></h2>
 <div class="admonition important">
@@ -822,11 +825,58 @@ allow_loading_unsigned_plugins = redis-app
 </div>
 <div class="highlight"><pre><span></span><code>yarn start:dev
 </code></pre></div>
+<p>Docker-compose file for Development includes:</p>
+<ul>
+<li>Service <code>redis</code> using <a href="https://hub.docker.com/r/redislabs/redismod">Redismod</a></li>
+<li>Service <code>grafana</code> using <a href="https://hub.docker.com/r/grafana/grafana">Grafana</a> which allow loading unsigned plugins <code>redis-app</code> and <code>redis-datasource</code></li>
+</ul>
+<div class="admonition important">
+<p class="admonition-title">Redis Data Source should be cloned and built following <a href="redis-datasource.html">Instructions</a>.</p>
+</div>
+<div class="highlight"><pre><span></span><code>version: &quot;3.4&quot;
+
+services:
+  redis:
+    container_name: redismod
+    image: redislabs/redismod:latest
+    ports:
+      - 6379:6379/tcp
+    # Uncomment and edit the local path in the following line to have
+    # Redis&#39; data persisted to the host&#39;s filesystem.
+    # volumes:
+    #   - ./dump.rdb:/data/dump.rdb
+
+  grafana:
+    container_name: grafana
+    image: grafana/grafana:latest
+    ports:
+      - 3000:3000/tcp
+    environment:
+      - GF_AUTH_ANONYMOUS_ORG_ROLE=Admin
+      - GF_AUTH_ANONYMOUS_ENABLED=true
+      - GF_AUTH_BASIC_ENABLED=false
+      - GF_ENABLE_GZIP=true
+      - GF_USERS_DEFAULT_THEME=light
+      - GF_PLUGINS_ALLOW_LOADING_UNSIGNED_PLUGINS=redis-app,redis-datasource
+      # Uncomment to run in debug mode
+      # - GF_LOG_LEVEL=debug
+    volumes:
+      # Redis Data Source should be cloned and built
+      - ../../grafana-redis-datasource/dist:/var/lib/grafana/plugins/redis-datasource
+      - ../dist:/var/lib/grafana/plugins/redis-app
+      - ../provisioning/datasources:/etc/grafana/provisioning/datasources
+      - ../provisioning/plugins:/etc/grafana/provisioning/plugins
+      # Uncomment to preserve Grafana configuration
+      # - ./data:/var/lib/grafana
+</code></pre></div>
 <h2 id="enable-redis-application-plug-in">Enable Redis Application plug-in<a class="headerlink" href="#enable-redis-application-plug-in" title="Permanent link">&para;</a></h2>
 <div class="admonition important">
 <p class="admonition-title">Redis Application plug-in is disabled by default.</p>
 </div>
-<p>Go to <code>Configuration</code> -&gt; <code>Plugins</code> and enable Redis Application plug-in.</p>
+<p>Go to <code>Configuration</code> -&gt; <code>Plugins</code> and choose Redis Application plug-in.</p>
+<p><img alt="Grafana plug-ins" src="../images/grafana-plugins-app.png" /></p>
+<p>Click <strong>Enable</strong> to add side menu, <a href="../redis-app/panels.html">Custom panels</a> and import <a href="../redis-app/dashboards.html">Dashboards</a>.</p>
+<p><img alt="Enable Redis Application plug-in" src="../images/redis-app-enable.png" /></p>
 <h2 id="contact-us">Contact Us<a class="headerlink" href="#contact-us" title="Permanent link">&para;</a></h2>
 <p>If you have questions, enhancement ideas or running into issues, please open an <a href="https://github.com/RedisGrafana/grafana-redis-app/issues/new/choose">issue</a>.</p>
                 

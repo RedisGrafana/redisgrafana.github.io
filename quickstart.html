@@ -304,9 +304,22 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#configure-redis-data-source" class="md-nav__link">
-    Configure Redis Data Source
+  <a href="#configuration" class="md-nav__link">
+    Configuration
   </a>
+  
+    <nav class="md-nav" aria-label="Configuration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#redis-data-source_2" class="md-nav__link">
+    Redis Data Source
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -769,9 +782,22 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#configure-redis-data-source" class="md-nav__link">
-    Configure Redis Data Source
+  <a href="#configuration" class="md-nav__link">
+    Configuration
   </a>
+  
+    <nav class="md-nav" aria-label="Configuration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#redis-data-source_2" class="md-nav__link">
+    Redis Data Source
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -805,6 +831,9 @@
 <div class="highlight"><pre><span></span><code>grafana-cli plugins install redis-datasource
 </code></pre></div>
 <h2 id="run-using-docker">Run using <code>Docker</code><a class="headerlink" href="#run-using-docker" title="Permanent link">&para;</a></h2>
+<div class="admonition note">
+<p class="admonition-title">Username and password to login to Grafana is <code>admin</code>/<code>admin</code>.</p>
+</div>
 <h3 id="redis-application-plug-in-and-redis-data-source_1">Redis Application plug-in and Redis Data Source<a class="headerlink" href="#redis-application-plug-in-and-redis-data-source_1" title="Permanent link">&para;</a></h3>
 <div class="highlight"><pre><span></span><code>docker run -d -p <span class="m">3000</span>:3000 --name<span class="o">=</span>grafana -e <span class="s2">&quot;GF_INSTALL_PLUGINS=redis-app&quot;</span> grafana/grafana
 </code></pre></div>
@@ -815,13 +844,15 @@
 <div class="admonition important">
 <p class="admonition-title">Redis Application plug-in is disabled by default.</p>
 </div>
-<p>Go to <code>Configuration</code> -&gt; <code>Plugins</code> and enable Redis Application plug-in.</p>
-<h2 id="configure-redis-data-source">Configure Redis Data Source<a class="headerlink" href="#configure-redis-data-source" title="Permanent link">&para;</a></h2>
+<p>Go to <code>Configuration</code> -&gt; <code>Plugins</code> and choose Redis Application plug-in.</p>
+<p><img alt="Grafana plug-ins" src="images/grafana-plugins-app.png" /></p>
+<p>Click <strong>Enable</strong> to add side menu, <a href="redis-app/panels.html">Custom panels</a> and import <a href="redis-app/dashboards.html">Dashboards</a>.</p>
+<p><img alt="Enable Redis Application plug-in" src="images/redis-app-enable.png" /></p>
+<h2 id="configuration">Configuration<a class="headerlink" href="#configuration" title="Permanent link">&para;</a></h2>
+<h3 id="redis-data-source_2">Redis Data Source<a class="headerlink" href="#redis-data-source_2" title="Permanent link">&para;</a></h3>
 <div class="admonition note">
-<p class="admonition-title">The <a href="redis-datasource/configuration.html">Configuration</a> page explains how to configure Redis Data Source.</p>
+<p class="admonition-title">The <a href="redis-datasource/configuration.html">Redis Data Source Configuration</a> page explains how to connect data source to Redis database.</p>
 </div>
-<p>Open Grafana in your browser and configure Redis Data Source. You can add as many data sources as you want to support multiple Redis databases.</p>
-<p><img alt="Datasource" src="https://raw.githubusercontent.com/RedisGrafana/grafana-redis-datasource/master/src/img/datasource.png" /></p>
                 
               
               

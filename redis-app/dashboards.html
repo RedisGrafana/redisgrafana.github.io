@@ -435,6 +435,66 @@
     CLI (Command line interface)
   </a>
   
+    <nav class="md-nav" aria-label="CLI (Command line interface)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#included-panels" class="md-nav__link">
+    Included panels
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#redis-overview" class="md-nav__link">
+    Redis Overview
+  </a>
+  
+    <nav class="md-nav" aria-label="Redis Overview">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#included-panels_1" class="md-nav__link">
+    Included panels
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#redisgears" class="md-nav__link">
+    RedisGears
+  </a>
+  
+    <nav class="md-nav" aria-label="RedisGears">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#included-panels_2" class="md-nav__link">
+    Included panels
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#contact-us" class="md-nav__link">
+    Contact Us
+  </a>
+  
 </li>
       
     </ul>
@@ -653,6 +713,66 @@
     CLI (Command line interface)
   </a>
   
+    <nav class="md-nav" aria-label="CLI (Command line interface)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#included-panels" class="md-nav__link">
+    Included panels
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#redis-overview" class="md-nav__link">
+    Redis Overview
+  </a>
+  
+    <nav class="md-nav" aria-label="Redis Overview">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#included-panels_1" class="md-nav__link">
+    Included panels
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#redisgears" class="md-nav__link">
+    RedisGears
+  </a>
+  
+    <nav class="md-nav" aria-label="RedisGears">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#included-panels_2" class="md-nav__link">
+    Included panels
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#contact-us" class="md-nav__link">
+    Contact Us
+  </a>
+  
 </li>
       
     </ul>
@@ -673,18 +793,64 @@
                 
                 
                 <h1 id="dashboards">Dashboards<a class="headerlink" href="#dashboards" title="Permanent link">&para;</a></h1>
-<p>Redis application plug-in includes three dashboards:</p>
+<p>Redis Application plug-in includes three dashboards:</p>
 <ul>
+<li>CLI (Command line interface)</li>
 <li>Redis Overview</li>
-<li>CLI</li>
 <li>RedisGears</li>
 </ul>
-<div class="admonition note">
-<p class="admonition-title">All dashboard are available from Application's icon in the left side menu.</p>
+<div class="admonition important">
+<p class="admonition-title">All dashboards are available from the Application's icon in the left side menu.</p>
 </div>
-<h3 id="cli-command-line-interface">CLI (Command line interface)<a class="headerlink" href="#cli-command-line-interface" title="Permanent link">&para;</a></h3>
-<p>Redis CLI dashboard combines <a href="redis-cli-panel.html">Redis CLI panel</a> with <a href="../redis-datasource/streaming.html">Streaming</a> panels to observe Redis database in real-time.</p>
-<p><img alt="Redis-CLI-Dashboards" src="https://raw.githubusercontent.com/RedisGrafana/grafana-redis-app/master/src/img/redis-cli-dashboard.png" /></p>
+<p><img alt="Redis Application plug-ins" src="../images/redis-app-menu.png" /></p>
+<h2 id="cli-command-line-interface">CLI (Command line interface)<a class="headerlink" href="#cli-command-line-interface" title="Permanent link">&para;</a></h2>
+<div class="admonition note">
+<p class="admonition-title">All panels are running in <a href="../redis-datasource/streaming.html">Streaming</a> mode.</p>
+</div>
+<p><img alt="Redis CLI Dashboard" src="../images/redis-app-cli-dashboard.png" /></p>
+<h3 id="included-panels">Included panels<a class="headerlink" href="#included-panels" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Operations per second (Streaming)</li>
+<li>Connected clients</li>
+<li><a href="redis-cli-panel.html">CLI panel</a></li>
+<li>Number of Keys, Expired and Evicted Keys</li>
+<li>Network (Inbound, Outbound)</li>
+<li>Memory (Used Memory, Used Memory Peak, LUA, Memory Limit, and Total System memory)</li>
+<li>Uptime and Version</li>
+<li>Eviction Policy</li>
+</ul>
+<h2 id="redis-overview">Redis Overview<a class="headerlink" href="#redis-overview" title="Permanent link">&para;</a></h2>
+<div class="admonition note">
+<p class="admonition-title">Overview dashboard refreshes every 10 seconds.</p>
+</div>
+<p><img alt="Redis Overview Dashboard" src="../images/redis-app-overview-dashboard.png" /></p>
+<h3 id="included-panels_1">Included panels<a class="headerlink" href="#included-panels_1" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Operations per second</li>
+<li>Connected clients</li>
+<li>Number of Keys, Expired and Evicted Keys</li>
+<li>Network (Inbound, Outbound)</li>
+<li>Memory (Used Memory, Used Memory Peak and LUA, Memory Limit and Total System memory)</li>
+<li>Uptime and Version</li>
+<li>Eviction Policy</li>
+<li>Client connections</li>
+<li>Command statistics</li>
+<li>Slow queries log</li>
+<li>Redis cluster health and nodes</li>
+</ul>
+<h2 id="redisgears">RedisGears<a class="headerlink" href="#redisgears" title="Permanent link">&para;</a></h2>
+<blockquote>
+<p>RedisGears is a serverless engine for transaction, batch and event-driven data processing in Redis. Learn more at <a href="https://oss.redislabs.com/redisgears/">Project page</a>.</p>
+</blockquote>
+<p><img alt="RedisGears Dashboard" src="../images/redis-app-gears-dashboard.png" /></p>
+<h3 id="included-panels_2">Included panels<a class="headerlink" href="#included-panels_2" title="Permanent link">&para;</a></h3>
+<ul>
+<li>RedisGears Memory Usage</li>
+<li><a href="https://oss.redislabs.com/redisgears/functions.html#execution">Registrations</a></li>
+<li><a href="redis-gears-panel.html">RedisGears script editor</a></li>
+</ul>
+<h2 id="contact-us">Contact Us<a class="headerlink" href="#contact-us" title="Permanent link">&para;</a></h2>
+<p>If you have questions, enhancement ideas or running into issues, please open an <a href="https://github.com/RedisGrafana/grafana-redis-app/issues/new/choose">issue</a>.</p>
                 
               
               
