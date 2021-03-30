@@ -717,12 +717,12 @@
                 
                 <h1 id="variables">Variables<a class="headerlink" href="#variables" title="Permanent link">&para;</a></h1>
 <p>Template variables can query command and use other variables as parameters:</p>
-<p><img alt="Variables" src="../images/redis-datasource-variables.png" /></p>
+<p><img alt="Variables" src="../images/redis-datasource/variables.png" /></p>
 <h2 id="how-to-use-sunion-for-multi-select-variable">How to use SUNION for multi-select variable?<a class="headerlink" href="#how-to-use-sunion-for-multi-select-variable" title="Permanent link">&para;</a></h2>
 <p>The LUA script should work fine on a single shard deployment:</p>
 <div class="highlight"><pre><span></span><code>eval &quot;return redis.call(&#39;sunion&#39;,${region:singlequote})&quot; 0
 </code></pre></div>
-<p><img alt="SUNION Example" src="../images/redis-datasource-variables-example.png" /></p>
+<p><img alt="SUNION Example" src="../images/redis-datasource/variables-example.png" /></p>
 <p>Another option is to utilize <a href="https://redisgears.io">RedisGears</a> module:</p>
 <div class="highlight"><pre><span></span><code>gb = GB(&#39;CommandReader&#39;)
 gb.flatmap(lambda x:  execute(&#39;SUNION&#39;,*x[1].split(&quot;,&quot;)))

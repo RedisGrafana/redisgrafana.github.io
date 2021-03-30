@@ -977,7 +977,7 @@
                 
                 <h1 id="redis-data-source-configuration">Redis Data Source configuration<a class="headerlink" href="#redis-data-source-configuration" title="Permanent link">&para;</a></h1>
 <p>Data Source can connect to any Redis database On-Premises or in the Cloud. You can add as many data sources as you want to support multiple Redis databases.</p>
-<p><img alt="Datasource" src="https://raw.githubusercontent.com/RedisGrafana/grafana-redis-datasource/master/src/img/datasource.png" /></p>
+<p><img alt="Datasource" src="../images/redis-datasource/config-editor.png" /></p>
 <p>Redis accepts clients connections on the configured <a href="#standalone">listening TCP port</a> and the <a href="#unix-socket">Unix socket</a> if enabled. <a href="#cluster">Cluster</a> is a distributed implementation of OSS Redis and <a href="#sentinel">Sentinel</a> provides high availability.</p>
 <h2 id="main-configuration">Main configuration<a class="headerlink" href="#main-configuration" title="Permanent link">&para;</a></h2>
 <h3 id="address">Address<a class="headerlink" href="#address" title="Permanent link">&para;</a></h3>
@@ -986,7 +986,7 @@
 </code></pre></div>
 <h3 id="acl">ACL<a class="headerlink" href="#acl" title="Permanent link">&para;</a></h3>
 <p><a href="https://redis.io/topics/acl">Available since Redis 6.0</a> and allows to specify <strong>Username</strong> to authenticate.</p>
-<p><img alt="ACL enabled" src="../images/redis-datasource-acl.png" /></p>
+<p><img alt="ACL enabled" src="../images/redis-datasource/acl.png" /></p>
 <h3 id="password">Password<a class="headerlink" href="#password" title="Permanent link">&para;</a></h3>
 <div class="admonition important">
 <p class="admonition-title">Passwords and TLS certificates/keys are kept in the Grafana security database and not shown to users.</p>
@@ -998,7 +998,7 @@
 <p>In Cluster mode <strong>Address</strong> can contain multiple values (<code>host:port</code> address or a URI) with comma.</p>
 <h3 id="sentinel">Sentinel<a class="headerlink" href="#sentinel" title="Permanent link">&para;</a></h3>
 <p>In Sentinel mode <strong>Address</strong> can contain multiple values (<code>host:port</code> address or a URI) with comma. Also, provide <strong>Master Name</strong> to connect to.</p>
-<p><img alt="Sentinel configuration" src="../images/redis-datasource-sentinel.png" /></p>
+<p><img alt="Sentinel configuration" src="../images/redis-datasource/sentinel.png" /></p>
 <h3 id="unix-socket">Unix socket<a class="headerlink" href="#unix-socket" title="Permanent link">&para;</a></h3>
 <p>In Unix socket mode <strong>Address</strong> should contain path to the socket file.</p>
 <h2 id="advanced-configuration">Advanced configuration<a class="headerlink" href="#advanced-configuration" title="Permanent link">&para;</a></h2>
@@ -1010,7 +1010,7 @@
 <p>Sets the duration in microseconds after which internal pipelines will be flushed. If window is zero then implicit pipelining will be disabled. Default value is 0.</p>
 <h2 id="ssltls">SSL/TLS<a class="headerlink" href="#ssltls" title="Permanent link">&para;</a></h2>
 <p>To enabled SSL/TLS authenticate enable it and provide all required parameters.</p>
-<p><img alt="TLS enabled" src="../images/redis-datasource-tls.png" /></p>
+<p><img alt="TLS enabled" src="../images/redis-datasource/tls.png" /></p>
 <h3 id="skip-verify">Skip Verify<a class="headerlink" href="#skip-verify" title="Permanent link">&para;</a></h3>
 <p>If checked, the server's certificate will not be checked for validity. Should be enabled for Self-Signed certificates.</p>
 <h3 id="client-certificate-and-key">Client Certificate and Key<a class="headerlink" href="#client-certificate-and-key" title="Permanent link">&para;</a></h3>
