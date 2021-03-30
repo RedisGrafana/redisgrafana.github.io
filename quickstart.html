@@ -44,6 +44,10 @@
     
     
       
+        
+<script>window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)},ga.l=+new Date,ga("create","G-8E4J019JNF","auto"),ga("set","anonymizeIp",!0),ga("send","pageview"),document.addEventListener("DOMContentLoaded",function(){document.forms.search&&document.forms.search.query.addEventListener("blur",function(){if(this.value){var e=document.location.pathname;ga("send","pageview",e+"?q="+this.value)}})}),document.addEventListener("DOMContentSwitch",function(){ga("send","pageview",document.location.pathname)})</script>
+<script async src="https://www.google-analytics.com/analytics.js"></script>
+      
     
     
   </head>
@@ -297,6 +301,33 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#install-without-internet-access" class="md-nav__link">
+    Install without Internet access
+  </a>
+  
+    <nav class="md-nav" aria-label="Install without Internet access">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#redis-data-source_2" class="md-nav__link">
+    Redis Data Source
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#redis-application-plug-in" class="md-nav__link">
+    Redis Application plug-in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#enable-redis-application-plug-in" class="md-nav__link">
     Enable Redis Application plug-in
   </a>
@@ -312,7 +343,7 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#redis-data-source_2" class="md-nav__link">
+  <a href="#redis-data-source_3" class="md-nav__link">
     Redis Data Source
   </a>
   
@@ -634,7 +665,7 @@
 
   <li class="md-nav__item">
     <a href="development/images.html" class="md-nav__link">
-      Docker images
+      Docker Images
     </a>
   </li>
 
@@ -692,6 +723,19 @@
   <li class="md-nav__item">
     <a href="examples.html" class="md-nav__link">
       Examples
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+
+  <li class="md-nav__item">
+    <a href="faq.html" class="md-nav__link">
+      FAQ
     </a>
   </li>
 
@@ -775,6 +819,33 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#install-without-internet-access" class="md-nav__link">
+    Install without Internet access
+  </a>
+  
+    <nav class="md-nav" aria-label="Install without Internet access">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#redis-data-source_2" class="md-nav__link">
+    Redis Data Source
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#redis-application-plug-in" class="md-nav__link">
+    Redis Application plug-in
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#enable-redis-application-plug-in" class="md-nav__link">
     Enable Redis Application plug-in
   </a>
@@ -790,7 +861,7 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#redis-data-source_2" class="md-nav__link">
+  <a href="#redis-data-source_3" class="md-nav__link">
     Redis Data Source
   </a>
   
@@ -840,8 +911,38 @@
 <h3 id="redis-data-source_1">Redis Data Source<a class="headerlink" href="#redis-data-source_1" title="Permanent link">&para;</a></h3>
 <div class="highlight"><pre><span></span><code>docker run -d -p <span class="m">3000</span>:3000 --name<span class="o">=</span>grafana -e <span class="s2">&quot;GF_INSTALL_PLUGINS=redis-datasource&quot;</span> grafana/grafana
 </code></pre></div>
-<h2 id="enable-redis-application-plug-in">Enable Redis Application plug-in<a class="headerlink" href="#enable-redis-application-plug-in" title="Permanent link">&para;</a></h2>
+<h2 id="install-without-internet-access">Install without Internet access<a class="headerlink" href="#install-without-internet-access" title="Permanent link">&para;</a></h2>
+<h3 id="redis-data-source_2">Redis Data Source<a class="headerlink" href="#redis-data-source_2" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Download the latest version from <a href="https://github.com/RedisGrafana/grafana-redis-datasource/releases">Releases</a>.</li>
+<li>Unzip archive to <code>plugins/</code> folder for local Grafana installation or Docker plug-ins volume.</li>
+<li>Check permissions for <code>redis-datasource</code> binaries:</li>
+</ul>
 <div class="admonition important">
+<p class="admonition-title">Redis Data Source binaries should have executable permissions for Grafana to be able to execute it!</p>
+</div>
+<div class="highlight"><pre><span></span><code>% ls -lrt redis-datasource*
+-rwxr-xr-x  1 mikhail  staff  13077504 Mar 20 11:20 redis-datasource_windows_amd64.exe
+-rwxr-xr-x  1 mikhail  staff  11796480 Mar 20 11:20 redis-datasource_linux_arm64
+-rwxr-xr-x  1 mikhail  staff  10682368 Mar 20 11:20 redis-datasource_linux_arm
+-rwxr-xr-x  1 mikhail  staff  12644352 Mar 20 11:20 redis-datasource_linux_amd64
+-rwxr-xr-x  1 mikhail  staff  13806272 Mar 20 11:20 redis-datasource_darwin_amd64
+</code></pre></div>
+<ul>
+<li>Check that plug-in was registered:</li>
+</ul>
+<div class="highlight"><pre><span></span><code>t=2020-07-01T06:03:38+0000 lvl=info msg=&quot;Starting plugin search&quot; logger=plugins
+t=2020-07-01T06:03:38+0000 lvl=warn msg=&quot;Running an unsigned backend plugin&quot; logger=plugins pluginID=redis-datasource pluginDir=/var/lib/grafana/plugins/redis-datasource
+t=2020-07-01T06:03:38+0000 lvl=info msg=&quot;Registering plugin&quot; logger=plugins name=redis-datasource
+t=2020-07-01T06:03:38+0000 lvl=info msg=&quot;HTTP Server Listen&quot; logger=http.server address=[::]:3000 protocol=http subUrl= socket=
+</code></pre></div>
+<h3 id="redis-application-plug-in">Redis Application plug-in<a class="headerlink" href="#redis-application-plug-in" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Download the latest version from <a href="https://github.com/RedisGrafana/grafana-redis-app/releases">Releases</a>.</li>
+<li>Unzip archive to <code>plugins/</code> folder for local Grafana installation or Docker plug-ins volume.</li>
+</ul>
+<h2 id="enable-redis-application-plug-in">Enable Redis Application plug-in<a class="headerlink" href="#enable-redis-application-plug-in" title="Permanent link">&para;</a></h2>
+<div class="admonition note">
 <p class="admonition-title">Redis Application plug-in is disabled by default.</p>
 </div>
 <p>Go to <code>Configuration</code> -&gt; <code>Plugins</code> and choose Redis Application plug-in.</p>
@@ -849,10 +950,8 @@
 <p>Click <strong>Enable</strong> to add side menu, <a href="redis-app/panels.html">Custom panels</a> and import <a href="redis-app/dashboards.html">Dashboards</a>.</p>
 <p><img alt="Enable Redis Application plug-in" src="images/redis-app-enable.png" /></p>
 <h2 id="configuration">Configuration<a class="headerlink" href="#configuration" title="Permanent link">&para;</a></h2>
-<h3 id="redis-data-source_2">Redis Data Source<a class="headerlink" href="#redis-data-source_2" title="Permanent link">&para;</a></h3>
-<div class="admonition note">
-<p class="admonition-title">The <a href="redis-datasource/configuration.html">Redis Data Source Configuration</a> page explains how to connect data source to Redis database.</p>
-</div>
+<h3 id="redis-data-source_3">Redis Data Source<a class="headerlink" href="#redis-data-source_3" title="Permanent link">&para;</a></h3>
+<p>The <a href="redis-datasource/configuration.html">Redis Data Source Configuration</a> page explains how to connect data source to Redis database.</p>
                 
               
               

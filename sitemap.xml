@@ -75,5 +75,9 @@
      <loc>http://redisgrafana.github.io/examples.html</loc>
      <lastmod>2021-03-30</lastmod>
      <changefreq>daily</changefreq>
+    </url><url>
+     <loc>http://redisgrafana.github.io/faq.html</loc>
+     <lastmod>2021-03-30</lastmod>
+     <changefreq>daily</changefreq>
     </url>
 </urlset>
