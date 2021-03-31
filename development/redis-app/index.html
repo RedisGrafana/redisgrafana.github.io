@@ -634,15 +634,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#update-local-grafana-configuration" class="md-nav__link">
-    Update local Grafana Configuration
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#start-using-docker-compose" class="md-nav__link">
-    Start using Docker Compose
+  <a href="#start-grafana" class="md-nav__link">
+    Start Grafana
   </a>
   
 </li>
@@ -763,15 +756,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#update-local-grafana-configuration" class="md-nav__link">
-    Update local Grafana Configuration
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#start-using-docker-compose" class="md-nav__link">
-    Start using Docker Compose
+  <a href="#start-grafana" class="md-nav__link">
+    Start Grafana
   </a>
   
 </li>
@@ -846,29 +832,8 @@
 </ul>
 <div class="highlight"><pre><span></span><code>yarn build
 </code></pre></div>
-<h2 id="update-local-grafana-configuration">Update local Grafana Configuration<a class="headerlink" href="#update-local-grafana-configuration" title="Permanent link">&para;</a></h2>
-<ul>
-<li>Move distribution to Grafana's <code>plugins/</code> folder</li>
-</ul>
-<div class="highlight"><pre><span></span><code>mv dist/ /var/lib/grafana/plugins/redis-app
-</code></pre></div>
-<ul>
-<li>Add <code>redis-app</code> to allowed unsigned plugins</li>
-</ul>
-<div class="highlight"><pre><span></span><code>vi /etc/grafana/grafana.ini
-</code></pre></div>
-<div class="highlight"><pre><span></span><code><span class="o">[</span>plugins<span class="o">]</span>
-<span class="p">;</span><span class="nv">enable_alpha</span> <span class="o">=</span> <span class="nb">false</span>
-<span class="p">;</span><span class="nv">app_tls_skip_verify_insecure</span> <span class="o">=</span> <span class="nb">false</span>
-<span class="c1"># Enter a comma-separated list of plugin identifiers to identify plugins that are allowed to be loaded even if they lack a valid signature.</span>
-<span class="nv">allow_loading_unsigned_plugins</span> <span class="o">=</span> redis-app
-</code></pre></div>
-<ul>
-<li>Verify that plugin is registered</li>
-</ul>
-<div class="highlight"><pre><span></span><code>tail -100 /var/log/grafana/grafana.log
-</code></pre></div>
-<h2 id="start-using-docker-compose">Start using Docker Compose<a class="headerlink" href="#start-using-docker-compose" title="Permanent link">&para;</a></h2>
+<h2 id="start-grafana">Start Grafana<a class="headerlink" href="#start-grafana" title="Permanent link">&para;</a></h2>
+<div class="tabbed-set" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><label for="__tabbed_1_1">Docker Compose</label><div class="tabbed-content">
 <div class="admonition important">
 <p class="admonition-title">Prerequisite</p>
 <p>Docker Compose should be pre-installed following <a href="https://docs.docker.com/compose/install/">documentation</a>.</p>
@@ -880,7 +845,7 @@
 <li>Service <code>redis</code> using <a href="https://hub.docker.com/r/redislabs/redismod">Redismod</a></li>
 <li>Service <code>grafana</code> using <a href="https://hub.docker.com/r/grafana/grafana">Grafana</a> which allow loading unsigned plugins <code>redis-app</code> and <code>redis-datasource</code></li>
 </ul>
-<div class="admonition important">
+<div class="admonition summary">
 <p class="admonition-title">Redis Data Source</p>
 <p>Redis Data Source should be cloned and built following <a href="../redis-datasource/">Instructions</a>.</p>
 </div>
@@ -920,6 +885,25 @@ services:
       <span class="c1"># Uncomment to preserve Grafana configuration</span>
       <span class="c1"># - ./data:/var/lib/grafana</span>
 </code></pre></div>
+</div>
+<input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><label for="__tabbed_1_2">Update local Grafana Configuration</label><div class="tabbed-content">
+<p>Move distribution to Grafana's <code>plugins/</code> folder</p>
+<div class="highlight"><pre><span></span><code>mv dist/ /var/lib/grafana/plugins/redis-app
+</code></pre></div>
+<p>Add <code>redis-app</code> to allowed unsigned plugins</p>
+<div class="highlight"><pre><span></span><code>vi /etc/grafana/grafana.ini
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="o">[</span>plugins<span class="o">]</span>
+<span class="p">;</span><span class="nv">enable_alpha</span> <span class="o">=</span> <span class="nb">false</span>
+<span class="p">;</span><span class="nv">app_tls_skip_verify_insecure</span> <span class="o">=</span> <span class="nb">false</span>
+<span class="c1"># Enter a comma-separated list of plugin identifiers to identify plugins that are allowed to be loaded even if they lack a valid signature.</span>
+<span class="nv">allow_loading_unsigned_plugins</span> <span class="o">=</span> redis-datasource,redis-app
+</code></pre></div>
+<p>Restart and verify that plugin is registered</p>
+<div class="highlight"><pre><span></span><code>tail -100 /var/log/grafana/grafana.log
+</code></pre></div>
+</div>
+</div>
 <h2 id="enable-redis-application-plug-in">Enable Redis Application plug-in<a class="headerlink" href="#enable-redis-application-plug-in" title="Permanent link">&para;</a></h2>
 <p>Redis Application plug-in is disabled by default. To enable:</p>
 <ul>

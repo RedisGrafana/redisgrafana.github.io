@@ -315,6 +315,33 @@
     Address
   </a>
   
+    <nav class="md-nav" aria-label="Address">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#cluster" class="md-nav__link">
+    Cluster
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sentinel" class="md-nav__link">
+    Sentinel
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#unix-socket" class="md-nav__link">
+    Unix socket
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
         
           <li class="md-nav__item">
@@ -334,27 +361,6 @@
           <li class="md-nav__item">
   <a href="#pool-size" class="md-nav__link">
     Pool Size
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#cluster" class="md-nav__link">
-    Cluster
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#sentinel" class="md-nav__link">
-    Sentinel
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#unix-socket" class="md-nav__link">
-    Unix socket
   </a>
   
 </li>
@@ -862,6 +868,33 @@
     Address
   </a>
   
+    <nav class="md-nav" aria-label="Address">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#cluster" class="md-nav__link">
+    Cluster
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sentinel" class="md-nav__link">
+    Sentinel
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#unix-socket" class="md-nav__link">
+    Unix socket
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
         
           <li class="md-nav__item">
@@ -881,27 +914,6 @@
           <li class="md-nav__item">
   <a href="#pool-size" class="md-nav__link">
     Pool Size
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#cluster" class="md-nav__link">
-    Cluster
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#sentinel" class="md-nav__link">
-    Sentinel
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#unix-socket" class="md-nav__link">
-    Unix socket
   </a>
   
 </li>
@@ -1032,8 +1044,15 @@
 <p>Specify <code>host:port</code> address or a URI. Please use <code>/db-number</code> or <code>?db=db-number</code> to specify the database number as defined in the <a href="https://www.iana.org/assignments/uri-schemes/prov/redis">Schema</a>:</p>
 <div class="highlight"><pre><span></span><code>redis://redis-server:6379/0
 </code></pre></div>
+<h4 id="cluster">Cluster<a class="headerlink" href="#cluster" title="Permanent link">&para;</a></h4>
+<p>In Cluster mode <strong>Address</strong> can contain multiple values (<code>host:port</code> address or a URI) with comma.</p>
+<h4 id="sentinel">Sentinel<a class="headerlink" href="#sentinel" title="Permanent link">&para;</a></h4>
+<p>In Sentinel mode <strong>Address</strong> can contain multiple values (<code>host:port</code> address or a URI) with comma. Also, provide <strong>Master Name</strong> to connect to.</p>
+<p><img alt="Sentinel configuration" src="../../images/redis-datasource/sentinel.png" /></p>
+<h4 id="unix-socket">Unix socket<a class="headerlink" href="#unix-socket" title="Permanent link">&para;</a></h4>
+<p>In Unix socket mode <strong>Address</strong> should contain path to the socket file.</p>
 <h3 id="acl">ACL<a class="headerlink" href="#acl" title="Permanent link">&para;</a></h3>
-<p><a href="https://redis.io/topics/acl">Available since Redis 6.0</a> and allows to specify <strong>Username</strong> to authenticate.</p>
+<p>Available since <a href="https://redis.io/topics/acl">Redis 6.0</a> and allows to specify <strong>Username</strong> to authenticate.</p>
 <p><img alt="ACL enabled" src="../../images/redis-datasource/acl.png" /></p>
 <h3 id="password">Password<a class="headerlink" href="#password" title="Permanent link">&para;</a></h3>
 <div class="admonition important">
@@ -1043,13 +1062,6 @@
 <p>When specified AUTH command will be used to authenticate with the provided password.</p>
 <h3 id="pool-size">Pool Size<a class="headerlink" href="#pool-size" title="Permanent link">&para;</a></h3>
 <p>Data source will keep open at least the given number of connections to the redis instance at the given address. The recommended size of the pool is 5 and can be increased if dashboards have a lot of panels and multiple users.</p>
-<h3 id="cluster">Cluster<a class="headerlink" href="#cluster" title="Permanent link">&para;</a></h3>
-<p>In Cluster mode <strong>Address</strong> can contain multiple values (<code>host:port</code> address or a URI) with comma.</p>
-<h3 id="sentinel">Sentinel<a class="headerlink" href="#sentinel" title="Permanent link">&para;</a></h3>
-<p>In Sentinel mode <strong>Address</strong> can contain multiple values (<code>host:port</code> address or a URI) with comma. Also, provide <strong>Master Name</strong> to connect to.</p>
-<p><img alt="Sentinel configuration" src="../../images/redis-datasource/sentinel.png" /></p>
-<h3 id="unix-socket">Unix socket<a class="headerlink" href="#unix-socket" title="Permanent link">&para;</a></h3>
-<p>In Unix socket mode <strong>Address</strong> should contain path to the socket file.</p>
 <h2 id="advanced-configuration">Advanced configuration<a class="headerlink" href="#advanced-configuration" title="Permanent link">&para;</a></h2>
 <h3 id="timeout">Timeout<a class="headerlink" href="#timeout" title="Permanent link">&para;</a></h3>
 <p>Sets the duration in seconds for connect, read and write timeouts. Default value is 10 seconds.</p>

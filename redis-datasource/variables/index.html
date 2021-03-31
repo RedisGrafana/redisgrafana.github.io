@@ -727,18 +727,23 @@
 <p>Template variables can query command and use other variables as parameters:</p>
 <p><img alt="Variables" src="../../images/redis-datasource/variables.png" /></p>
 <h2 id="how-to-use-sunion-for-multi-select-variable">How to use SUNION for multi-select variable?<a class="headerlink" href="#how-to-use-sunion-for-multi-select-variable" title="Permanent link">&para;</a></h2>
+<div class="tabbed-set" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><label for="__tabbed_1_1">LUA</label><div class="tabbed-content">
 <p>The LUA script should work fine on a single shard deployment:</p>
 <div class="highlight"><pre><span></span><code><span class="nb">eval</span> <span class="s2">&quot;return redis.call(&#39;sunion&#39;,</span><span class="si">${</span><span class="nv">region</span><span class="p">:</span><span class="nv">singlequote</span><span class="si">}</span><span class="s2">)&quot;</span> <span class="m">0</span>
 </code></pre></div>
-<p><img alt="SUNION Example" src="../../images/redis-datasource/variables-example.png" /></p>
+</div>
+<input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><label for="__tabbed_1_2">Redis Gears</label><div class="tabbed-content">
 <p>Another option is to utilize <a href="https://redisgears.io">RedisGears</a> module:</p>
 <div class="highlight"><pre><span></span><code><span class="n">gb</span> <span class="o">=</span> <span class="n">GB</span><span class="p">(</span><span class="s1">&#39;CommandReader&#39;</span><span class="p">)</span>
-<span class="n">gb</span><span class="o">.</span><span class="n">flatmap</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span>  <span class="n">execute</span><span class="p">(</span><span class="s1">&#39;SUNION&#39;</span><span class="p">,</span><span class="o">*</span><span class="n">x</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">&quot;,&quot;</span><span class="p">)))</span>
+<span class="n">gb</span><span class="o">.</span><span class="n">flatmap</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span>  <span class="n">execute</span><span class="p">(</span><span class="s1">&#39;SUNION&#39;</span><span class="p">,</span> <span class="o">*</span><span class="n">x</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">&quot;,&quot;</span><span class="p">)))</span>
 <span class="n">gb</span><span class="o">.</span><span class="n">register</span><span class="p">(</span><span class="n">trigger</span><span class="o">=</span><span class="s1">&#39;SUNION&#39;</span><span class="p">)</span>
 </code></pre></div>
 <p>To execute the trigger in Grafana:</p>
 <div class="highlight"><pre><span></span><code>RG.TRIGGER SUNION <span class="si">${</span><span class="nv">region</span><span class="p">:</span><span class="nv">csv</span><span class="si">}</span>
 </code></pre></div>
+</div>
+</div>
+<p><img alt="SUNION Example" src="../../images/redis-datasource/variables-example.png" /></p>
                 
               
               

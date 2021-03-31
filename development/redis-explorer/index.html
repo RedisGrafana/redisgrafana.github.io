@@ -646,15 +646,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#update-local-grafana-configuration" class="md-nav__link">
-    Update local Grafana Configuration
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#start-using-docker-compose" class="md-nav__link">
-    Start using Docker Compose
+  <a href="#start-grafana" class="md-nav__link">
+    Start Grafana
   </a>
   
 </li>
@@ -763,15 +756,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#update-local-grafana-configuration" class="md-nav__link">
-    Update local Grafana Configuration
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#start-using-docker-compose" class="md-nav__link">
-    Start using Docker Compose
+  <a href="#start-grafana" class="md-nav__link">
+    Start Grafana
   </a>
   
 </li>
@@ -846,15 +832,20 @@
 </ul>
 <div class="highlight"><pre><span></span><code>yarn build
 </code></pre></div>
-<h2 id="update-local-grafana-configuration">Update local Grafana Configuration<a class="headerlink" href="#update-local-grafana-configuration" title="Permanent link">&para;</a></h2>
-<ul>
-<li>Move distribution to Grafana's <code>plugins/</code> folder</li>
-</ul>
+<h2 id="start-grafana">Start Grafana<a class="headerlink" href="#start-grafana" title="Permanent link">&para;</a></h2>
+<div class="tabbed-set" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><label for="__tabbed_1_1">Docker Compose</label><div class="tabbed-content">
+<div class="admonition important">
+<p class="admonition-title">Prerequisite</p>
+<p>Docker Compose should be pre-installed following <a href="https://docs.docker.com/compose/install/">documentation</a>.</p>
+</div>
+<div class="highlight"><pre><span></span><code>yarn start:dev
+</code></pre></div>
+</div>
+<input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><label for="__tabbed_1_2">Update local Grafana Configuration</label><div class="tabbed-content">
+<p>Move distribution to Grafana's <code>plugins/</code> folder</p>
 <div class="highlight"><pre><span></span><code>mv dist/ /var/lib/grafana/plugins/redis-explorer
 </code></pre></div>
-<ul>
-<li>Add <code>redis-explorer</code> to allowed unsigned plugins</li>
-</ul>
+<p>Add <code>redis-explorer</code> to allowed unsigned plugins</p>
 <div class="highlight"><pre><span></span><code>vi /etc/grafana/grafana.ini
 </code></pre></div>
 <div class="highlight"><pre><span></span><code><span class="o">[</span>plugins<span class="o">]</span>
@@ -863,18 +854,11 @@
 <span class="c1"># Enter a comma-separated list of plugin identifiers to identify plugins that are allowed to be loaded even if they lack a valid signature.</span>
 <span class="nv">allow_loading_unsigned_plugins</span> <span class="o">=</span> redis-explorer
 </code></pre></div>
-<ul>
-<li>Verify that plugin is registered</li>
-</ul>
+<p>Restart Grafana and verify that plugin is registered</p>
 <div class="highlight"><pre><span></span><code>tail -100 /var/log/grafana/grafana.log
 </code></pre></div>
-<h2 id="start-using-docker-compose">Start using Docker Compose<a class="headerlink" href="#start-using-docker-compose" title="Permanent link">&para;</a></h2>
-<div class="admonition important">
-<p class="admonition-title">Prerequisite</p>
-<p>Docker Compose should be pre-installed following <a href="https://docs.docker.com/compose/install/">documentation</a>.</p>
 </div>
-<div class="highlight"><pre><span></span><code>yarn start:dev
-</code></pre></div>
+</div>
 <h2 id="enable-redis-explorer-plug-in">Enable Redis Explorer plug-in<a class="headerlink" href="#enable-redis-explorer-plug-in" title="Permanent link">&para;</a></h2>
 <p>Redis Explorer plug-in is disabled by default. To enable:</p>
 <ul>
