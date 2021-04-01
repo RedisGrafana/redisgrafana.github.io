@@ -11,14 +11,14 @@
       
       
       
-        <link rel="canonical" href="http://redisgrafana.github.io/redis-datasource/redis/INFO/">
+        <link rel="canonical" href="http://redisgrafana.github.io/redis-datasource/redis-gears/RG-DUMPREGISTRATIONS/">
       
       <link rel="icon" href="../../../images/logo.png">
       <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-7.1.0">
     
     
       
-        <title>INFO - Redis plug-ins for Grafana</title>
+        <title>RG.DUMPREGISTRATIONS - Redis plug-ins for Grafana</title>
       
     
     
@@ -69,7 +69,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#info" class="md-skip">
+        <a href="#rgdumpregistrations" class="md-skip">
           Skip to content
         </a>
       
@@ -98,7 +98,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              INFO
+              RG.DUMPREGISTRATIONS
             
           </span>
         </div>
@@ -345,6 +345,30 @@
             
   
   
+  
+    <li class="md-nav__item">
+      <a href="../../redis/INFO/" class="md-nav__link">
+        INFO
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../custom/TMSCAN/" class="md-nav__link">
+        TMSCAN
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
     
   
   
@@ -356,12 +380,12 @@
       
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
-          INFO
+          RG.DUMPREGISTRATIONS
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
-        INFO
+        RG.DUMPREGISTRATIONS
       </a>
       
         
@@ -381,19 +405,6 @@
   <a href="#parameters" class="md-nav__link">
     Parameters
   </a>
-  
-    <nav class="md-nav" aria-label="Parameters">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#sections" class="md-nav__link">
-    Sections
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -431,30 +442,6 @@
   
   
     <li class="md-nav__item">
-      <a href="../../custom/TMSCAN/" class="md-nav__link">
-        TMSCAN
-      </a>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../redis-gears/RG-DUMPREGISTRATIONS/" class="md-nav__link">
-        RG.DUMPREGISTRATIONS
-      </a>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
       <a href="../../redis-timeseries/TS-RANGE/" class="md-nav__link">
         TS.RANGE
       </a>
@@ -467,7 +454,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../XLEN/" class="md-nav__link">
+      <a href="../../redis/XLEN/" class="md-nav__link">
         XLEN
       </a>
     </li>
@@ -768,19 +755,6 @@
     Parameters
   </a>
   
-    <nav class="md-nav" aria-label="Parameters">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#sections" class="md-nav__link">
-    Sections
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
 </li>
       
         <li class="md-nav__item">
@@ -816,128 +790,28 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/RedisGrafana/redisgrafana/edit/main/docs/redis-datasource/redis/INFO.md" title="Edit this page" class="md-content__button md-icon">
+                  <a href="https://github.com/RedisGrafana/redisgrafana/edit/main/docs/redis-datasource/redis-gears/RG-DUMPREGISTRATIONS.md" title="Edit this page" class="md-content__button md-icon">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
                   </a>
                 
                 
-                <h1 id="info">INFO<a class="headerlink" href="#info" title="Permanent link">&para;</a></h1>
-<p>Returns information and statistics about the server.</p>
+                <h1 id="rgdumpregistrations">RG.DUMPREGISTRATIONS<a class="headerlink" href="#rgdumpregistrations" title="Permanent link">&para;</a></h1>
+<p>Outputs the list of <a href="https://oss.redislabs.com/redisgears/functions.html#registration">function registrations</a>.</p>
 <div class="admonition info">
-<p class="admonition-title">Redis Core</p>
-<p><a href="https://redis.io/commands/INFO">https://redis.io/commands/INFO</a></p>
+<p class="admonition-title">RedisGears</p>
+<p><a href="https://oss.redislabs.com/redisgears/commands.html#rgdumpregistrations">https://oss.redislabs.com/redisgears/commands.html#rgdumpregistrations</a></p>
 </div>
-<p><img alt="INFO" src="../../../images/redis-datasource/commands/info-ops-sec.png" /></p>
+<p><img alt="RG.DUMPREGISTRATIONS" src="../../../images/redis-datasource/commands/rg-dumpregistrations.png" /></p>
 <h2 id="parameters">Parameters<a class="headerlink" href="#parameters" title="Permanent link">&para;</a></h2>
-<table>
-<thead>
-<tr>
-<th>Parameter</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Section</td>
-<td>Section of information</td>
-</tr>
-</tbody>
-</table>
-<h3 id="sections">Sections<a class="headerlink" href="#sections" title="Permanent link">&para;</a></h3>
-<table>
-<thead>
-<tr>
-<th>Section</th>
-<th>Description</th>
-<th>Streaming</th>
-<th>Visualization</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Server</td>
-<td>General information about the Redis server</td>
-<td>Yes</td>
-<td>Any</td>
-</tr>
-<tr>
-<td>Clients</td>
-<td>Client connections</td>
-<td>Yes</td>
-<td>Any</td>
-</tr>
-<tr>
-<td>Memory</td>
-<td>Memory consumption related information</td>
-<td>Yes</td>
-<td>Any</td>
-</tr>
-<tr>
-<td>Persistence</td>
-<td>RDB and AOF related information</td>
-<td>Yes</td>
-<td>Any</td>
-</tr>
-<tr>
-<td>Stats</td>
-<td>General statistics</td>
-<td>Yes</td>
-<td>Any</td>
-</tr>
-<tr>
-<td>Replication</td>
-<td>Master/replica replication information</td>
-<td>Yes</td>
-<td>Any</td>
-</tr>
-<tr>
-<td>CPU</td>
-<td>CPU consumption statistics</td>
-<td>Yes</td>
-<td>Any</td>
-</tr>
-<tr>
-<td>Command Stats</td>
-<td>Redis command statistics</td>
-<td>Number of calls per command</td>
-<td>Any</td>
-</tr>
-<tr>
-<td>Cluster</td>
-<td>Redis Cluster</td>
-<td>Yes</td>
-<td>Any</td>
-</tr>
-<tr>
-<td>Modules (not supported)</td>
-<td>Modules</td>
-<td>N/A</td>
-<td>N/A</td>
-</tr>
-<tr>
-<td>Keyspace (not supported)</td>
-<td>Database related statistics</td>
-<td>N/A</td>
-<td>N/A</td>
-</tr>
-<tr>
-<td>Error Stats</td>
-<td>Redis error statistics (Redis 6.2)</td>
-<td>Yes</td>
-<td>Any</td>
-</tr>
-</tbody>
-</table>
-<div class="admonition note">
-<p class="admonition-title">Command Latency</p>
-<p>To see Latency per command, take a look at <a href="../../../redis-app/redis-latency-panel/">Command Latency</a> panel.</p>
-</div>
+<p>No parameters is required.</p>
 <h2 id="streaming">Streaming<a class="headerlink" href="#streaming" title="Permanent link">&para;</a></h2>
-<p>Streaming is supported as <strong>Time Series</strong> and <strong>Data frame</strong> for the most sections. Check <strong>Streaming</strong> column for specific section.</p>
+<p>Streaming is supported as <strong>Data frame</strong>.</p>
 <h2 id="visualization">Visualization<a class="headerlink" href="#visualization" title="Permanent link">&para;</a></h2>
-<p>Any standard visualization should work. Check <strong>Visualization</strong> column for specific section.</p>
+<ul>
+<li>Table</li>
+</ul>
 <h2 id="example">Example<a class="headerlink" href="#example" title="Permanent link">&para;</a></h2>
-<details class="example"><summary>Clients</summary><p>Dashboard contains formatted table with Streaming enabled.</p>
+<details class="example"><summary>Table</summary><p>Dashboard contains formatted table with Streaming enabled.</p>
 <div class="highlight"><pre><span></span><code><span class="p">{</span>
   <span class="nt">&quot;__inputs&quot;</span><span class="p">:</span> <span class="p">[</span>
     <span class="p">{</span>
@@ -954,209 +828,19 @@
       <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;grafana&quot;</span><span class="p">,</span>
       <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="s2">&quot;grafana&quot;</span><span class="p">,</span>
       <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;Grafana&quot;</span><span class="p">,</span>
-      <span class="nt">&quot;version&quot;</span><span class="p">:</span> <span class="s2">&quot;7.5.1&quot;</span>
-    <span class="p">},</span>
-    <span class="p">{</span>
-      <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;panel&quot;</span><span class="p">,</span>
-      <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="s2">&quot;graph&quot;</span><span class="p">,</span>
-      <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;Graph&quot;</span><span class="p">,</span>
-      <span class="nt">&quot;version&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span>
+      <span class="nt">&quot;version&quot;</span><span class="p">:</span> <span class="s2">&quot;7.5.2&quot;</span>
     <span class="p">},</span>
     <span class="p">{</span>
       <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;datasource&quot;</span><span class="p">,</span>
       <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="s2">&quot;redis-datasource&quot;</span><span class="p">,</span>
       <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;Redis&quot;</span><span class="p">,</span>
-      <span class="nt">&quot;version&quot;</span><span class="p">:</span> <span class="s2">&quot;1.3.1&quot;</span>
-    <span class="p">}</span>
-  <span class="p">],</span>
-  <span class="nt">&quot;annotations&quot;</span><span class="p">:</span> <span class="p">{</span>
-    <span class="nt">&quot;list&quot;</span><span class="p">:</span> <span class="p">[</span>
-      <span class="p">{</span>
-        <span class="nt">&quot;builtIn&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
-        <span class="nt">&quot;datasource&quot;</span><span class="p">:</span> <span class="s2">&quot;-- Grafana --&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;enable&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
-        <span class="nt">&quot;hide&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
-        <span class="nt">&quot;iconColor&quot;</span><span class="p">:</span> <span class="s2">&quot;rgba(0, 211, 255, 1)&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;Annotations &amp; Alerts&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;dashboard&quot;</span>
-      <span class="p">}</span>
-    <span class="p">]</span>
-  <span class="p">},</span>
-  <span class="nt">&quot;editable&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
-  <span class="nt">&quot;gnetId&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-  <span class="nt">&quot;graphTooltip&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
-  <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-  <span class="nt">&quot;links&quot;</span><span class="p">:</span> <span class="p">[],</span>
-  <span class="nt">&quot;panels&quot;</span><span class="p">:</span> <span class="p">[</span>
-    <span class="p">{</span>
-      <span class="nt">&quot;aliasColors&quot;</span><span class="p">:</span> <span class="p">{},</span>
-      <span class="nt">&quot;bars&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
-      <span class="nt">&quot;dashLength&quot;</span><span class="p">:</span> <span class="mi">10</span><span class="p">,</span>
-      <span class="nt">&quot;dashes&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
-      <span class="nt">&quot;datasource&quot;</span><span class="p">:</span> <span class="s2">&quot;${DS_REDIS}&quot;</span><span class="p">,</span>
-      <span class="nt">&quot;fieldConfig&quot;</span><span class="p">:</span> <span class="p">{</span>
-        <span class="nt">&quot;defaults&quot;</span><span class="p">:</span> <span class="p">{},</span>
-        <span class="nt">&quot;overrides&quot;</span><span class="p">:</span> <span class="p">[]</span>
-      <span class="p">},</span>
-      <span class="nt">&quot;fill&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
-      <span class="nt">&quot;fillGradient&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
-      <span class="nt">&quot;gridPos&quot;</span><span class="p">:</span> <span class="p">{</span>
-        <span class="nt">&quot;h&quot;</span><span class="p">:</span> <span class="mi">9</span><span class="p">,</span>
-        <span class="nt">&quot;w&quot;</span><span class="p">:</span> <span class="mi">9</span><span class="p">,</span>
-        <span class="nt">&quot;x&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
-        <span class="nt">&quot;y&quot;</span><span class="p">:</span> <span class="mi">0</span>
-      <span class="p">},</span>
-      <span class="nt">&quot;hiddenSeries&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
-      <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span>
-      <span class="nt">&quot;legend&quot;</span><span class="p">:</span> <span class="p">{</span>
-        <span class="nt">&quot;alignAsTable&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
-        <span class="nt">&quot;avg&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
-        <span class="nt">&quot;current&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
-        <span class="nt">&quot;max&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
-        <span class="nt">&quot;min&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
-        <span class="nt">&quot;rightSide&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
-        <span class="nt">&quot;show&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
-        <span class="nt">&quot;sort&quot;</span><span class="p">:</span> <span class="s2">&quot;current&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;sortDesc&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
-        <span class="nt">&quot;total&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
-        <span class="nt">&quot;values&quot;</span><span class="p">:</span> <span class="kc">true</span>
-      <span class="p">},</span>
-      <span class="nt">&quot;lines&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
-      <span class="nt">&quot;linewidth&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
-      <span class="nt">&quot;nullPointMode&quot;</span><span class="p">:</span> <span class="s2">&quot;null&quot;</span><span class="p">,</span>
-      <span class="nt">&quot;options&quot;</span><span class="p">:</span> <span class="p">{</span>
-        <span class="nt">&quot;alertThreshold&quot;</span><span class="p">:</span> <span class="kc">true</span>
-      <span class="p">},</span>
-      <span class="nt">&quot;percentage&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
-      <span class="nt">&quot;pluginVersion&quot;</span><span class="p">:</span> <span class="s2">&quot;7.5.1&quot;</span><span class="p">,</span>
-      <span class="nt">&quot;pointradius&quot;</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span>
-      <span class="nt">&quot;points&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
-      <span class="nt">&quot;renderer&quot;</span><span class="p">:</span> <span class="s2">&quot;flot&quot;</span><span class="p">,</span>
-      <span class="nt">&quot;seriesOverrides&quot;</span><span class="p">:</span> <span class="p">[],</span>
-      <span class="nt">&quot;spaceLength&quot;</span><span class="p">:</span> <span class="mi">10</span><span class="p">,</span>
-      <span class="nt">&quot;stack&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
-      <span class="nt">&quot;steppedLine&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
-      <span class="nt">&quot;targets&quot;</span><span class="p">:</span> <span class="p">[</span>
-        <span class="p">{</span>
-          <span class="nt">&quot;command&quot;</span><span class="p">:</span> <span class="s2">&quot;info&quot;</span><span class="p">,</span>
-          <span class="nt">&quot;query&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
-          <span class="nt">&quot;refId&quot;</span><span class="p">:</span> <span class="s2">&quot;A&quot;</span><span class="p">,</span>
-          <span class="nt">&quot;section&quot;</span><span class="p">:</span> <span class="s2">&quot;clients&quot;</span><span class="p">,</span>
-          <span class="nt">&quot;streaming&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
-          <span class="nt">&quot;streamingCapacity&quot;</span><span class="p">:</span> <span class="mi">1000</span><span class="p">,</span>
-          <span class="nt">&quot;streamingInterval&quot;</span><span class="p">:</span> <span class="mi">1000</span><span class="p">,</span>
-          <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;command&quot;</span>
-        <span class="p">}</span>
-      <span class="p">],</span>
-      <span class="nt">&quot;thresholds&quot;</span><span class="p">:</span> <span class="p">[],</span>
-      <span class="nt">&quot;timeFrom&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-      <span class="nt">&quot;timeRegions&quot;</span><span class="p">:</span> <span class="p">[],</span>
-      <span class="nt">&quot;timeShift&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-      <span class="nt">&quot;title&quot;</span><span class="p">:</span> <span class="s2">&quot;Clients&quot;</span><span class="p">,</span>
-      <span class="nt">&quot;tooltip&quot;</span><span class="p">:</span> <span class="p">{</span>
-        <span class="nt">&quot;shared&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
-        <span class="nt">&quot;sort&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
-        <span class="nt">&quot;value_type&quot;</span><span class="p">:</span> <span class="s2">&quot;individual&quot;</span>
-      <span class="p">},</span>
-      <span class="nt">&quot;transformations&quot;</span><span class="p">:</span> <span class="p">[</span>
-        <span class="p">{</span>
-          <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="s2">&quot;organize&quot;</span><span class="p">,</span>
-          <span class="nt">&quot;options&quot;</span><span class="p">:</span> <span class="p">{</span>
-            <span class="nt">&quot;excludeByName&quot;</span><span class="p">:</span> <span class="p">{</span>
-              <span class="nt">&quot;client_recent_max_input_buffer&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
-              <span class="nt">&quot;client_recent_max_output_buffer&quot;</span><span class="p">:</span> <span class="kc">true</span>
-            <span class="p">},</span>
-            <span class="nt">&quot;indexByName&quot;</span><span class="p">:</span> <span class="p">{},</span>
-            <span class="nt">&quot;renameByName&quot;</span><span class="p">:</span> <span class="p">{</span>
-              <span class="nt">&quot;blocked_clients&quot;</span><span class="p">:</span> <span class="s2">&quot;Pending on a blocking call &quot;</span><span class="p">,</span>
-              <span class="nt">&quot;clients_in_timeout_table&quot;</span><span class="p">:</span> <span class="s2">&quot;Clients in the timeout table&quot;</span><span class="p">,</span>
-              <span class="nt">&quot;connected_clients&quot;</span><span class="p">:</span> <span class="s2">&quot;Client connections&quot;</span><span class="p">,</span>
-              <span class="nt">&quot;tracking_clients&quot;</span><span class="p">:</span> <span class="s2">&quot;Clients being tracked&quot;</span>
-            <span class="p">}</span>
-          <span class="p">}</span>
-        <span class="p">}</span>
-      <span class="p">],</span>
-      <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;graph&quot;</span><span class="p">,</span>
-      <span class="nt">&quot;xaxis&quot;</span><span class="p">:</span> <span class="p">{</span>
-        <span class="nt">&quot;buckets&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-        <span class="nt">&quot;mode&quot;</span><span class="p">:</span> <span class="s2">&quot;time&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-        <span class="nt">&quot;show&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
-        <span class="nt">&quot;values&quot;</span><span class="p">:</span> <span class="p">[]</span>
-      <span class="p">},</span>
-      <span class="nt">&quot;yaxes&quot;</span><span class="p">:</span> <span class="p">[</span>
-        <span class="p">{</span>
-          <span class="nt">&quot;format&quot;</span><span class="p">:</span> <span class="s2">&quot;short&quot;</span><span class="p">,</span>
-          <span class="nt">&quot;label&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-          <span class="nt">&quot;logBase&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
-          <span class="nt">&quot;max&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-          <span class="nt">&quot;min&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-          <span class="nt">&quot;show&quot;</span><span class="p">:</span> <span class="kc">true</span>
-        <span class="p">},</span>
-        <span class="p">{</span>
-          <span class="nt">&quot;format&quot;</span><span class="p">:</span> <span class="s2">&quot;short&quot;</span><span class="p">,</span>
-          <span class="nt">&quot;label&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-          <span class="nt">&quot;logBase&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
-          <span class="nt">&quot;max&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-          <span class="nt">&quot;min&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-          <span class="nt">&quot;show&quot;</span><span class="p">:</span> <span class="kc">true</span>
-        <span class="p">}</span>
-      <span class="p">],</span>
-      <span class="nt">&quot;yaxis&quot;</span><span class="p">:</span> <span class="p">{</span>
-        <span class="nt">&quot;align&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
-        <span class="nt">&quot;alignLevel&quot;</span><span class="p">:</span> <span class="kc">null</span>
-      <span class="p">}</span>
-    <span class="p">}</span>
-  <span class="p">],</span>
-  <span class="nt">&quot;schemaVersion&quot;</span><span class="p">:</span> <span class="mi">27</span><span class="p">,</span>
-  <span class="nt">&quot;style&quot;</span><span class="p">:</span> <span class="s2">&quot;dark&quot;</span><span class="p">,</span>
-  <span class="nt">&quot;tags&quot;</span><span class="p">:</span> <span class="p">[],</span>
-  <span class="nt">&quot;templating&quot;</span><span class="p">:</span> <span class="p">{</span>
-    <span class="nt">&quot;list&quot;</span><span class="p">:</span> <span class="p">[]</span>
-  <span class="p">},</span>
-  <span class="nt">&quot;time&quot;</span><span class="p">:</span> <span class="p">{</span>
-    <span class="nt">&quot;from&quot;</span><span class="p">:</span> <span class="s2">&quot;now-5m&quot;</span><span class="p">,</span>
-    <span class="nt">&quot;to&quot;</span><span class="p">:</span> <span class="s2">&quot;now&quot;</span>
-  <span class="p">},</span>
-  <span class="nt">&quot;timepicker&quot;</span><span class="p">:</span> <span class="p">{},</span>
-  <span class="nt">&quot;timezone&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
-  <span class="nt">&quot;title&quot;</span><span class="p">:</span> <span class="s2">&quot;Info Clients&quot;</span><span class="p">,</span>
-  <span class="nt">&quot;uid&quot;</span><span class="p">:</span> <span class="s2">&quot;51mjhO_Gk&quot;</span><span class="p">,</span>
-  <span class="nt">&quot;version&quot;</span><span class="p">:</span> <span class="mi">1</span>
-<span class="p">}</span>
-</code></pre></div>
-</details>
-<details class="example"><summary>Memory</summary><p><img alt="INFO" src="../../../images/redis-datasource/commands/info-memory.png" /></p>
-<p>Dashboard contains bar gauge with Streaming enabled.</p>
-<div class="highlight"><pre><span></span><code><span class="p">{</span>
-  <span class="nt">&quot;__inputs&quot;</span><span class="p">:</span> <span class="p">[</span>
-    <span class="p">{</span>
-      <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;DS_REDIS&quot;</span><span class="p">,</span>
-      <span class="nt">&quot;label&quot;</span><span class="p">:</span> <span class="s2">&quot;Redis&quot;</span><span class="p">,</span>
-      <span class="nt">&quot;description&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
-      <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;datasource&quot;</span><span class="p">,</span>
-      <span class="nt">&quot;pluginId&quot;</span><span class="p">:</span> <span class="s2">&quot;redis-datasource&quot;</span><span class="p">,</span>
-      <span class="nt">&quot;pluginName&quot;</span><span class="p">:</span> <span class="s2">&quot;Redis&quot;</span>
-    <span class="p">}</span>
-  <span class="p">],</span>
-  <span class="nt">&quot;__requires&quot;</span><span class="p">:</span> <span class="p">[</span>
+      <span class="nt">&quot;version&quot;</span><span class="p">:</span> <span class="s2">&quot;1.4.0&quot;</span>
+    <span class="p">},</span>
     <span class="p">{</span>
       <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;panel&quot;</span><span class="p">,</span>
-      <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="s2">&quot;bargauge&quot;</span><span class="p">,</span>
-      <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;Bar gauge&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="s2">&quot;table&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;Table&quot;</span><span class="p">,</span>
       <span class="nt">&quot;version&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span>
-    <span class="p">},</span>
-    <span class="p">{</span>
-      <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;grafana&quot;</span><span class="p">,</span>
-      <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="s2">&quot;grafana&quot;</span><span class="p">,</span>
-      <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;Grafana&quot;</span><span class="p">,</span>
-      <span class="nt">&quot;version&quot;</span><span class="p">:</span> <span class="s2">&quot;7.5.1&quot;</span>
-    <span class="p">},</span>
-    <span class="p">{</span>
-      <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;datasource&quot;</span><span class="p">,</span>
-      <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="s2">&quot;redis-datasource&quot;</span><span class="p">,</span>
-      <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;Redis&quot;</span><span class="p">,</span>
-      <span class="nt">&quot;version&quot;</span><span class="p">:</span> <span class="s2">&quot;1.3.1&quot;</span>
     <span class="p">}</span>
   <span class="p">],</span>
   <span class="nt">&quot;annotations&quot;</span><span class="p">:</span> <span class="p">{</span>
@@ -1182,159 +866,207 @@
       <span class="nt">&quot;datasource&quot;</span><span class="p">:</span> <span class="s2">&quot;${DS_REDIS}&quot;</span><span class="p">,</span>
       <span class="nt">&quot;fieldConfig&quot;</span><span class="p">:</span> <span class="p">{</span>
         <span class="nt">&quot;defaults&quot;</span><span class="p">:</span> <span class="p">{</span>
+          <span class="nt">&quot;custom&quot;</span><span class="p">:</span> <span class="p">{</span>
+            <span class="nt">&quot;align&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+            <span class="nt">&quot;filterable&quot;</span><span class="p">:</span> <span class="kc">false</span>
+          <span class="p">},</span>
           <span class="nt">&quot;mappings&quot;</span><span class="p">:</span> <span class="p">[],</span>
-          <span class="nt">&quot;min&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
           <span class="nt">&quot;thresholds&quot;</span><span class="p">:</span> <span class="p">{</span>
             <span class="nt">&quot;mode&quot;</span><span class="p">:</span> <span class="s2">&quot;absolute&quot;</span><span class="p">,</span>
             <span class="nt">&quot;steps&quot;</span><span class="p">:</span> <span class="p">[</span>
               <span class="p">{</span>
-                <span class="nt">&quot;color&quot;</span><span class="p">:</span> <span class="s2">&quot;dark-green&quot;</span><span class="p">,</span>
+                <span class="nt">&quot;color&quot;</span><span class="p">:</span> <span class="s2">&quot;green&quot;</span><span class="p">,</span>
                 <span class="nt">&quot;value&quot;</span><span class="p">:</span> <span class="kc">null</span>
               <span class="p">}</span>
             <span class="p">]</span>
-          <span class="p">},</span>
-          <span class="nt">&quot;unit&quot;</span><span class="p">:</span> <span class="s2">&quot;decbytes&quot;</span>
+          <span class="p">}</span>
         <span class="p">},</span>
         <span class="nt">&quot;overrides&quot;</span><span class="p">:</span> <span class="p">[</span>
           <span class="p">{</span>
             <span class="nt">&quot;matcher&quot;</span><span class="p">:</span> <span class="p">{</span>
               <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="s2">&quot;byName&quot;</span><span class="p">,</span>
-              <span class="nt">&quot;options&quot;</span><span class="p">:</span> <span class="s2">&quot;Used Memory&quot;</span>
+              <span class="nt">&quot;options&quot;</span><span class="p">:</span> <span class="s2">&quot;id&quot;</span>
             <span class="p">},</span>
             <span class="nt">&quot;properties&quot;</span><span class="p">:</span> <span class="p">[</span>
               <span class="p">{</span>
-                <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="s2">&quot;decimals&quot;</span><span class="p">,</span>
-                <span class="nt">&quot;value&quot;</span><span class="p">:</span> <span class="mi">2</span>
+                <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="s2">&quot;custom.width&quot;</span><span class="p">,</span>
+                <span class="nt">&quot;value&quot;</span><span class="p">:</span> <span class="mi">176</span>
               <span class="p">}</span>
             <span class="p">]</span>
           <span class="p">},</span>
           <span class="p">{</span>
             <span class="nt">&quot;matcher&quot;</span><span class="p">:</span> <span class="p">{</span>
               <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="s2">&quot;byName&quot;</span><span class="p">,</span>
-              <span class="nt">&quot;options&quot;</span><span class="p">:</span> <span class="s2">&quot;Used Memory, Peak&quot;</span>
+              <span class="nt">&quot;options&quot;</span><span class="p">:</span> <span class="s2">&quot;PD&quot;</span>
             <span class="p">},</span>
             <span class="nt">&quot;properties&quot;</span><span class="p">:</span> <span class="p">[</span>
               <span class="p">{</span>
-                <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="s2">&quot;decimals&quot;</span><span class="p">,</span>
-                <span class="nt">&quot;value&quot;</span><span class="p">:</span> <span class="mi">2</span>
+                <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="s2">&quot;custom.width&quot;</span><span class="p">,</span>
+                <span class="nt">&quot;value&quot;</span><span class="p">:</span> <span class="mi">242</span>
               <span class="p">}</span>
             <span class="p">]</span>
           <span class="p">},</span>
           <span class="p">{</span>
             <span class="nt">&quot;matcher&quot;</span><span class="p">:</span> <span class="p">{</span>
               <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="s2">&quot;byName&quot;</span><span class="p">,</span>
-              <span class="nt">&quot;options&quot;</span><span class="p">:</span> <span class="s2">&quot;Used Memory, LUA&quot;</span>
+              <span class="nt">&quot;options&quot;</span><span class="p">:</span> <span class="s2">&quot;Triggered&quot;</span>
             <span class="p">},</span>
             <span class="nt">&quot;properties&quot;</span><span class="p">:</span> <span class="p">[</span>
               <span class="p">{</span>
-                <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="s2">&quot;decimals&quot;</span><span class="p">,</span>
-                <span class="nt">&quot;value&quot;</span><span class="p">:</span> <span class="mi">2</span>
+                <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="s2">&quot;custom.width&quot;</span><span class="p">,</span>
+                <span class="nt">&quot;value&quot;</span><span class="p">:</span> <span class="mi">90</span>
               <span class="p">}</span>
             <span class="p">]</span>
           <span class="p">},</span>
           <span class="p">{</span>
             <span class="nt">&quot;matcher&quot;</span><span class="p">:</span> <span class="p">{</span>
               <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="s2">&quot;byName&quot;</span><span class="p">,</span>
-              <span class="nt">&quot;options&quot;</span><span class="p">:</span> <span class="s2">&quot;Memory Limit&quot;</span>
+              <span class="nt">&quot;options&quot;</span><span class="p">:</span> <span class="s2">&quot;Mode&quot;</span>
             <span class="p">},</span>
             <span class="nt">&quot;properties&quot;</span><span class="p">:</span> <span class="p">[</span>
               <span class="p">{</span>
-                <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="s2">&quot;decimals&quot;</span><span class="p">,</span>
-                <span class="nt">&quot;value&quot;</span><span class="p">:</span> <span class="mi">2</span>
+                <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="s2">&quot;custom.width&quot;</span><span class="p">,</span>
+                <span class="nt">&quot;value&quot;</span><span class="p">:</span> <span class="mi">92</span>
               <span class="p">}</span>
             <span class="p">]</span>
           <span class="p">},</span>
           <span class="p">{</span>
             <span class="nt">&quot;matcher&quot;</span><span class="p">:</span> <span class="p">{</span>
               <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="s2">&quot;byName&quot;</span><span class="p">,</span>
-              <span class="nt">&quot;options&quot;</span><span class="p">:</span> <span class="s2">&quot;Total System Memory&quot;</span>
+              <span class="nt">&quot;options&quot;</span><span class="p">:</span> <span class="s2">&quot;Success&quot;</span>
             <span class="p">},</span>
             <span class="nt">&quot;properties&quot;</span><span class="p">:</span> <span class="p">[</span>
               <span class="p">{</span>
-                <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="s2">&quot;decimals&quot;</span><span class="p">,</span>
-                <span class="nt">&quot;value&quot;</span><span class="p">:</span> <span class="mi">2</span>
+                <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="s2">&quot;custom.width&quot;</span><span class="p">,</span>
+                <span class="nt">&quot;value&quot;</span><span class="p">:</span> <span class="mi">88</span>
+              <span class="p">}</span>
+            <span class="p">]</span>
+          <span class="p">},</span>
+          <span class="p">{</span>
+            <span class="nt">&quot;matcher&quot;</span><span class="p">:</span> <span class="p">{</span>
+              <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="s2">&quot;byName&quot;</span><span class="p">,</span>
+              <span class="nt">&quot;options&quot;</span><span class="p">:</span> <span class="s2">&quot;Failures&quot;</span>
+            <span class="p">},</span>
+            <span class="nt">&quot;properties&quot;</span><span class="p">:</span> <span class="p">[</span>
+              <span class="p">{</span>
+                <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="s2">&quot;custom.width&quot;</span><span class="p">,</span>
+                <span class="nt">&quot;value&quot;</span><span class="p">:</span> <span class="mi">84</span>
+              <span class="p">}</span>
+            <span class="p">]</span>
+          <span class="p">},</span>
+          <span class="p">{</span>
+            <span class="nt">&quot;matcher&quot;</span><span class="p">:</span> <span class="p">{</span>
+              <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="s2">&quot;byName&quot;</span><span class="p">,</span>
+              <span class="nt">&quot;options&quot;</span><span class="p">:</span> <span class="s2">&quot;Aborted&quot;</span>
+            <span class="p">},</span>
+            <span class="nt">&quot;properties&quot;</span><span class="p">:</span> <span class="p">[</span>
+              <span class="p">{</span>
+                <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="s2">&quot;custom.width&quot;</span><span class="p">,</span>
+                <span class="nt">&quot;value&quot;</span><span class="p">:</span> <span class="mi">89</span>
+              <span class="p">}</span>
+            <span class="p">]</span>
+          <span class="p">},</span>
+          <span class="p">{</span>
+            <span class="nt">&quot;matcher&quot;</span><span class="p">:</span> <span class="p">{</span>
+              <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="s2">&quot;byName&quot;</span><span class="p">,</span>
+              <span class="nt">&quot;options&quot;</span><span class="p">:</span> <span class="s2">&quot;Status&quot;</span>
+            <span class="p">},</span>
+            <span class="nt">&quot;properties&quot;</span><span class="p">:</span> <span class="p">[</span>
+              <span class="p">{</span>
+                <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="s2">&quot;custom.width&quot;</span><span class="p">,</span>
+                <span class="nt">&quot;value&quot;</span><span class="p">:</span> <span class="mi">94</span>
+              <span class="p">}</span>
+            <span class="p">]</span>
+          <span class="p">},</span>
+          <span class="p">{</span>
+            <span class="nt">&quot;matcher&quot;</span><span class="p">:</span> <span class="p">{</span>
+              <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="s2">&quot;byName&quot;</span><span class="p">,</span>
+              <span class="nt">&quot;options&quot;</span><span class="p">:</span> <span class="s2">&quot;Reader&quot;</span>
+            <span class="p">},</span>
+            <span class="nt">&quot;properties&quot;</span><span class="p">:</span> <span class="p">[</span>
+              <span class="p">{</span>
+                <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="s2">&quot;custom.width&quot;</span><span class="p">,</span>
+                <span class="nt">&quot;value&quot;</span><span class="p">:</span> <span class="mi">154</span>
+              <span class="p">}</span>
+            <span class="p">]</span>
+          <span class="p">},</span>
+          <span class="p">{</span>
+            <span class="nt">&quot;matcher&quot;</span><span class="p">:</span> <span class="p">{</span>
+              <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="s2">&quot;byName&quot;</span><span class="p">,</span>
+              <span class="nt">&quot;options&quot;</span><span class="p">:</span> <span class="s2">&quot;Args&quot;</span>
+            <span class="p">},</span>
+            <span class="nt">&quot;properties&quot;</span><span class="p">:</span> <span class="p">[</span>
+              <span class="p">{</span>
+                <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="s2">&quot;custom.width&quot;</span><span class="p">,</span>
+                <span class="nt">&quot;value&quot;</span><span class="p">:</span> <span class="mi">147</span>
               <span class="p">}</span>
             <span class="p">]</span>
           <span class="p">}</span>
         <span class="p">]</span>
       <span class="p">},</span>
       <span class="nt">&quot;gridPos&quot;</span><span class="p">:</span> <span class="p">{</span>
-        <span class="nt">&quot;h&quot;</span><span class="p">:</span> <span class="mi">13</span><span class="p">,</span>
+        <span class="nt">&quot;h&quot;</span><span class="p">:</span> <span class="mi">9</span><span class="p">,</span>
         <span class="nt">&quot;w&quot;</span><span class="p">:</span> <span class="mi">14</span><span class="p">,</span>
         <span class="nt">&quot;x&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
         <span class="nt">&quot;y&quot;</span><span class="p">:</span> <span class="mi">0</span>
       <span class="p">},</span>
       <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span>
       <span class="nt">&quot;options&quot;</span><span class="p">:</span> <span class="p">{</span>
-        <span class="nt">&quot;displayMode&quot;</span><span class="p">:</span> <span class="s2">&quot;lcd&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;orientation&quot;</span><span class="p">:</span> <span class="s2">&quot;horizontal&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;reduceOptions&quot;</span><span class="p">:</span> <span class="p">{</span>
-          <span class="nt">&quot;calcs&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;mean&quot;</span><span class="p">],</span>
-          <span class="nt">&quot;fields&quot;</span><span class="p">:</span> <span class="s2">&quot;/.*/&quot;</span><span class="p">,</span>
-          <span class="nt">&quot;values&quot;</span><span class="p">:</span> <span class="kc">true</span>
-        <span class="p">},</span>
-        <span class="nt">&quot;showUnfilled&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
-        <span class="nt">&quot;text&quot;</span><span class="p">:</span> <span class="p">{}</span>
+        <span class="nt">&quot;showHeader&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+        <span class="nt">&quot;sortBy&quot;</span><span class="p">:</span> <span class="p">[]</span>
       <span class="p">},</span>
-      <span class="nt">&quot;pluginVersion&quot;</span><span class="p">:</span> <span class="s2">&quot;7.5.1&quot;</span><span class="p">,</span>
-      <span class="nt">&quot;scopedVars&quot;</span><span class="p">:</span> <span class="p">{</span>
-        <span class="nt">&quot;redis&quot;</span><span class="p">:</span> <span class="p">{</span>
-          <span class="nt">&quot;selected&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
-          <span class="nt">&quot;text&quot;</span><span class="p">:</span> <span class="s2">&quot;Redis&quot;</span><span class="p">,</span>
-          <span class="nt">&quot;value&quot;</span><span class="p">:</span> <span class="s2">&quot;Redis&quot;</span>
-        <span class="p">}</span>
-      <span class="p">},</span>
+      <span class="nt">&quot;pluginVersion&quot;</span><span class="p">:</span> <span class="s2">&quot;7.5.2&quot;</span><span class="p">,</span>
       <span class="nt">&quot;targets&quot;</span><span class="p">:</span> <span class="p">[</span>
         <span class="p">{</span>
-          <span class="nt">&quot;command&quot;</span><span class="p">:</span> <span class="s2">&quot;info&quot;</span><span class="p">,</span>
+          <span class="nt">&quot;command&quot;</span><span class="p">:</span> <span class="s2">&quot;rg.dumpregistrations&quot;</span><span class="p">,</span>
           <span class="nt">&quot;query&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
           <span class="nt">&quot;refId&quot;</span><span class="p">:</span> <span class="s2">&quot;A&quot;</span><span class="p">,</span>
-          <span class="nt">&quot;section&quot;</span><span class="p">:</span> <span class="s2">&quot;memory&quot;</span><span class="p">,</span>
           <span class="nt">&quot;streaming&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
           <span class="nt">&quot;streamingDataType&quot;</span><span class="p">:</span> <span class="s2">&quot;DataFrame&quot;</span><span class="p">,</span>
-          <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;command&quot;</span>
+          <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;gears&quot;</span>
         <span class="p">}</span>
       <span class="p">],</span>
       <span class="nt">&quot;timeFrom&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
       <span class="nt">&quot;timeShift&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-      <span class="nt">&quot;title&quot;</span><span class="p">:</span> <span class="s2">&quot;Memory&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;title&quot;</span><span class="p">:</span> <span class="s2">&quot;Registrations&quot;</span><span class="p">,</span>
       <span class="nt">&quot;transformations&quot;</span><span class="p">:</span> <span class="p">[</span>
-        <span class="p">{</span>
-          <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="s2">&quot;filterFieldsByName&quot;</span><span class="p">,</span>
-          <span class="nt">&quot;options&quot;</span><span class="p">:</span> <span class="p">{</span>
-            <span class="nt">&quot;include&quot;</span><span class="p">:</span> <span class="p">{</span>
-              <span class="nt">&quot;names&quot;</span><span class="p">:</span> <span class="p">[</span>
-                <span class="s2">&quot;used_memory&quot;</span><span class="p">,</span>
-                <span class="s2">&quot;used_memory_peak&quot;</span><span class="p">,</span>
-                <span class="s2">&quot;total_system_memory&quot;</span><span class="p">,</span>
-                <span class="s2">&quot;maxmemory&quot;</span><span class="p">,</span>
-                <span class="s2">&quot;used_memory_lua&quot;</span>
-              <span class="p">]</span>
-            <span class="p">}</span>
-          <span class="p">}</span>
-        <span class="p">},</span>
         <span class="p">{</span>
           <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="s2">&quot;organize&quot;</span><span class="p">,</span>
           <span class="nt">&quot;options&quot;</span><span class="p">:</span> <span class="p">{</span>
-            <span class="nt">&quot;excludeByName&quot;</span><span class="p">:</span> <span class="p">{},</span>
+            <span class="nt">&quot;excludeByName&quot;</span><span class="p">:</span> <span class="p">{</span>
+              <span class="nt">&quot;PD&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+              <span class="nt">&quot;desc&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+              <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="kc">true</span>
+            <span class="p">},</span>
             <span class="nt">&quot;indexByName&quot;</span><span class="p">:</span> <span class="p">{</span>
-              <span class="nt">&quot;maxmemory&quot;</span><span class="p">:</span> <span class="mi">3</span><span class="p">,</span>
-              <span class="nt">&quot;total_system_memory&quot;</span><span class="p">:</span> <span class="mi">4</span><span class="p">,</span>
-              <span class="nt">&quot;used_memory&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
-              <span class="nt">&quot;used_memory_lua&quot;</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span>
-              <span class="nt">&quot;used_memory_peak&quot;</span><span class="p">:</span> <span class="mi">1</span>
+              <span class="nt">&quot;PD&quot;</span><span class="p">:</span> <span class="mi">4</span><span class="p">,</span>
+              <span class="nt">&quot;args&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+              <span class="nt">&quot;desc&quot;</span><span class="p">:</span> <span class="mi">3</span><span class="p">,</span>
+              <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span>
+              <span class="nt">&quot;lastError&quot;</span><span class="p">:</span> <span class="mi">10</span><span class="p">,</span>
+              <span class="nt">&quot;mode&quot;</span><span class="p">:</span> <span class="mi">5</span><span class="p">,</span>
+              <span class="nt">&quot;numAborted&quot;</span><span class="p">:</span> <span class="mi">9</span><span class="p">,</span>
+              <span class="nt">&quot;numFailures&quot;</span><span class="p">:</span> <span class="mi">8</span><span class="p">,</span>
+              <span class="nt">&quot;numSuccess&quot;</span><span class="p">:</span> <span class="mi">7</span><span class="p">,</span>
+              <span class="nt">&quot;numTriggered&quot;</span><span class="p">:</span> <span class="mi">6</span><span class="p">,</span>
+              <span class="nt">&quot;reader&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+              <span class="nt">&quot;status&quot;</span><span class="p">:</span> <span class="mi">11</span>
             <span class="p">},</span>
             <span class="nt">&quot;renameByName&quot;</span><span class="p">:</span> <span class="p">{</span>
-              <span class="nt">&quot;maxmemory&quot;</span><span class="p">:</span> <span class="s2">&quot;Memory Limit&quot;</span><span class="p">,</span>
-              <span class="nt">&quot;total_system_memory&quot;</span><span class="p">:</span> <span class="s2">&quot;Total System Memory&quot;</span><span class="p">,</span>
-              <span class="nt">&quot;used_memory&quot;</span><span class="p">:</span> <span class="s2">&quot;Used Memory&quot;</span><span class="p">,</span>
-              <span class="nt">&quot;used_memory_lua&quot;</span><span class="p">:</span> <span class="s2">&quot;Used Memory, LUA&quot;</span><span class="p">,</span>
-              <span class="nt">&quot;used_memory_peak&quot;</span><span class="p">:</span> <span class="s2">&quot;Used Memory, Peak&quot;</span>
+              <span class="nt">&quot;args&quot;</span><span class="p">:</span> <span class="s2">&quot;Args&quot;</span><span class="p">,</span>
+              <span class="nt">&quot;lastError&quot;</span><span class="p">:</span> <span class="s2">&quot;Last Error&quot;</span><span class="p">,</span>
+              <span class="nt">&quot;mode&quot;</span><span class="p">:</span> <span class="s2">&quot;Mode&quot;</span><span class="p">,</span>
+              <span class="nt">&quot;numAborted&quot;</span><span class="p">:</span> <span class="s2">&quot;Aborted&quot;</span><span class="p">,</span>
+              <span class="nt">&quot;numFailures&quot;</span><span class="p">:</span> <span class="s2">&quot;Failures&quot;</span><span class="p">,</span>
+              <span class="nt">&quot;numSuccess&quot;</span><span class="p">:</span> <span class="s2">&quot;Success&quot;</span><span class="p">,</span>
+              <span class="nt">&quot;numTriggered&quot;</span><span class="p">:</span> <span class="s2">&quot;Triggered&quot;</span><span class="p">,</span>
+              <span class="nt">&quot;reader&quot;</span><span class="p">:</span> <span class="s2">&quot;Reader&quot;</span><span class="p">,</span>
+              <span class="nt">&quot;status&quot;</span><span class="p">:</span> <span class="s2">&quot;Status&quot;</span>
             <span class="p">}</span>
           <span class="p">}</span>
         <span class="p">}</span>
       <span class="p">],</span>
-      <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;bargauge&quot;</span>
+      <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;table&quot;</span>
     <span class="p">}</span>
   <span class="p">],</span>
   <span class="nt">&quot;schemaVersion&quot;</span><span class="p">:</span> <span class="mi">27</span><span class="p">,</span>
@@ -1349,8 +1081,8 @@
   <span class="p">},</span>
   <span class="nt">&quot;timepicker&quot;</span><span class="p">:</span> <span class="p">{},</span>
   <span class="nt">&quot;timezone&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
-  <span class="nt">&quot;title&quot;</span><span class="p">:</span> <span class="s2">&quot;Info Memory&quot;</span><span class="p">,</span>
-  <span class="nt">&quot;uid&quot;</span><span class="p">:</span> <span class="s2">&quot;cPXyod_Gk&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;title&quot;</span><span class="p">:</span> <span class="s2">&quot;RedisGears Registations&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;uid&quot;</span><span class="p">:</span> <span class="s2">&quot;VFOV_vlMz&quot;</span><span class="p">,</span>
   <span class="nt">&quot;version&quot;</span><span class="p">:</span> <span class="mi">1</span>
 <span class="p">}</span>
 </code></pre></div>
@@ -1377,7 +1109,7 @@
   
     <nav class="md-footer__inner md-grid" aria-label="Footer">
       
-        <a href="../../variables/" class="md-footer__link md-footer__link--prev" rel="prev">
+        <a href="../../custom/TMSCAN/" class="md-footer__link md-footer__link--prev" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
           </div>
@@ -1386,19 +1118,19 @@
               <span class="md-footer__direction">
                 Previous
               </span>
-              Variables
+              TMSCAN
             </div>
           </div>
         </a>
       
       
-        <a href="../../custom/TMSCAN/" class="md-footer__link md-footer__link--next" rel="next">
+        <a href="../../redis-timeseries/TS-RANGE/" class="md-footer__link md-footer__link--next" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              TMSCAN
+              TS.RANGE
             </div>
           </div>
           <div class="md-footer__button md-icon">

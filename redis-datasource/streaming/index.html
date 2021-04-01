@@ -6,6 +6,8 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
+        <meta name="description" content="The Redis plug-ins for Grafana allow users to connect to the Redis databases and build dashboards in Grafana to observe and interact with Redis and Application data.">
+      
       
       
       
@@ -38,6 +40,8 @@
     
     
     
+      <link rel="stylesheet" href="../../css/extra.css">
+    
     
       
     
@@ -65,7 +69,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#redis-data-source-supports-streaming" class="md-skip">
+        <a href="#streaming-support" class="md-skip">
           Skip to content
         </a>
       
@@ -304,9 +308,85 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Streaming
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         Streaming
       </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#parameters" class="md-nav__link">
+    Parameters
+  </a>
+  
+    <nav class="md-nav" aria-label="Parameters">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#interval" class="md-nav__link">
+    Interval
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#capacity" class="md-nav__link">
+    Capacity
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#data-type" class="md-nav__link">
+    Data type
+  </a>
+  
+    <nav class="md-nav" aria-label="Data type">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#time-series" class="md-nav__link">
+    Time series
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#data-frame" class="md-nav__link">
+    Data frame
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -374,8 +454,32 @@
   
   
     <li class="md-nav__item">
+      <a href="../redis-gears/RG-DUMPREGISTRATIONS/" class="md-nav__link">
+        RG.DUMPREGISTRATIONS
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../redis-timeseries/TS-RANGE/" class="md-nav__link">
         TS.RANGE
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../redis/XLEN/" class="md-nav__link">
+        XLEN
       </a>
     </li>
   
@@ -518,7 +622,7 @@
   
     <li class="md-nav__item">
       <a href="../../redis-app/redis-gears-panel/" class="md-nav__link">
-        RedisGears
+        RedisGears Script Editor
       </a>
     </li>
   
@@ -664,6 +768,68 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#parameters" class="md-nav__link">
+    Parameters
+  </a>
+  
+    <nav class="md-nav" aria-label="Parameters">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#interval" class="md-nav__link">
+    Interval
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#capacity" class="md-nav__link">
+    Capacity
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#data-type" class="md-nav__link">
+    Data type
+  </a>
+  
+    <nav class="md-nav" aria-label="Data type">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#time-series" class="md-nav__link">
+    Time series
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#data-frame" class="md-nav__link">
+    Data frame
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -679,9 +845,28 @@
                   </a>
                 
                 
-                <h1 id="redis-data-source-supports-streaming">Redis Data Source supports Streaming<a class="headerlink" href="#redis-data-source-supports-streaming" title="Permanent link">&para;</a></h1>
+                <h1 id="streaming-support">Streaming support<a class="headerlink" href="#streaming-support" title="Permanent link">&para;</a></h1>
+<p>Redis Data Source supports streaming data for the most commands. Please take a look at specific command for details.</p>
 <div class="admonition note">
-<p class="admonition-title">Work in Progress</p>
+<p class="admonition-title">A dot in the top right corner</p>
+<p>Since Grafana 7.4 a dot in the top right corner means that Streaming is enabled.</p>
+</div>
+<p><img alt="Streaming" src="../../images/redis-datasource/streaming.png" /></p>
+<h2 id="parameters">Parameters<a class="headerlink" href="#parameters" title="Permanent link">&para;</a></h2>
+<h3 id="interval">Interval<a class="headerlink" href="#interval" title="Permanent link">&para;</a></h3>
+<p>Streaming interval in milliseconds. Default is 1000ms.</p>
+<h3 id="capacity">Capacity<a class="headerlink" href="#capacity" title="Permanent link">&para;</a></h3>
+<p>Values will be constantly added and will never exceed the given capacity. Default is 1000ms.</p>
+<h2 id="data-type">Data type<a class="headerlink" href="#data-type" title="Permanent link">&para;</a></h2>
+<p>Streaming data supported as Time series and Data frames.</p>
+<h3 id="time-series">Time series<a class="headerlink" href="#time-series" title="Permanent link">&para;</a></h3>
+<p>When selected, <code>time</code> field will be added or replaced to allow display values on Chart.</p>
+<p>If command return more than one line, the last line of data will be returned.</p>
+<h3 id="data-frame">Data frame<a class="headerlink" href="#data-frame" title="Permanent link">&para;</a></h3>
+<p>When selected, data will be refreshed as is.</p>
+<div class="admonition example">
+<p class="admonition-title"><a href="../redis-gears/RG-DUMPREGISTRATIONS/">RG.DUMPREGISTRATIONS</a></p>
+<p><img alt="RG.DUMPREGISTRATIONS" src="../../images/redis-datasource/commands/rg-dumpregistrations.png" /></p>
 </div>
                 
               

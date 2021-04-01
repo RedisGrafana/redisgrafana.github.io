@@ -6,6 +6,8 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
+        <meta name="description" content="The Redis plug-ins for Grafana allow users to connect to the Redis databases and build dashboards in Grafana to observe and interact with Redis and Application data.">
+      
       
       
       
@@ -37,6 +39,8 @@
       
     
     
+    
+      <link rel="stylesheet" href="../../css/extra.css">
     
     
       
@@ -363,8 +367,32 @@
   
   
     <li class="md-nav__item">
+      <a href="../../redis-datasource/redis-gears/RG-DUMPREGISTRATIONS/" class="md-nav__link">
+        RG.DUMPREGISTRATIONS
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../redis-datasource/redis-timeseries/TS-RANGE/" class="md-nav__link">
         TS.RANGE
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../redis-datasource/redis/XLEN/" class="md-nav__link">
+        XLEN
       </a>
     </li>
   
@@ -505,8 +533,15 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#help" class="md-nav__link">
-    Help
+  <a href="#query-editor" class="md-nav__link">
+    Query Editor
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#options" class="md-nav__link">
+    Options
   </a>
   
 </li>
@@ -556,7 +591,7 @@
   
     <li class="md-nav__item">
       <a href="../redis-gears-panel/" class="md-nav__link">
-        RedisGears
+        RedisGears Script Editor
       </a>
     </li>
   
@@ -709,8 +744,15 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#help" class="md-nav__link">
-    Help
+  <a href="#query-editor" class="md-nav__link">
+    Query Editor
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#options" class="md-nav__link">
+    Options
   </a>
   
 </li>
@@ -741,11 +783,37 @@
                 
                 <h1 id="command-line-interface-cli">Command line interface (CLI)<a class="headerlink" href="#command-line-interface-cli" title="Permanent link">&para;</a></h1>
 <p>This panel provides <a href="https://redis.io/topics/rediscli">Redis command line interface</a> that allows to send commands to Redis, and read the replies sent by the server, directly from the Grafana.</p>
-<p><img alt="CLI" src="../../images/redis-app/cli-panel.png" /></p>
-<h2 id="help">Help<a class="headerlink" href="#help" title="Permanent link">&para;</a></h2>
+<div class="admonition tip">
+<p class="admonition-title">Help</p>
 <p>When typing any Redis command or module name, brief description will appear on the panel. To learn more and see detailed description, click on the link in the bottom right corner of the help.</p>
+</div>
+<p><img alt="CLI" src="../../images/redis-app/cli-panel.png" /></p>
+<h2 id="query-editor">Query Editor<a class="headerlink" href="#query-editor" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Data Source should be selected as variable or exact name.</li>
+<li>Query is not required.</li>
+</ul>
+<h2 id="options">Options<a class="headerlink" href="#options" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Option</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Raw</td>
+<td>If enabled, use Raw formatting for replies</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="admonition-title">Output</p>
+<p>Output is saved as panel's option and can be cleared using <strong>Clear</strong> button.</p>
+</div>
 <h2 id="dashboard">Dashboard<a class="headerlink" href="#dashboard" title="Permanent link">&para;</a></h2>
-<p>This panel is included in <a href="../dashboards/">Redis CLI dashboard</a>.</p>
+<p>This panel is included in the <a href="../dashboards/">Redis CLI dashboard</a>.</p>
                 
               
               

@@ -6,6 +6,8 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
+        <meta name="description" content="The Redis plug-ins for Grafana allow users to connect to the Redis databases and build dashboards in Grafana to observe and interact with Redis and Application data.">
+      
       
       
       
@@ -37,6 +39,8 @@
       
     
     
+    
+      <link rel="stylesheet" href="../../../css/extra.css">
     
     
       
@@ -365,6 +369,18 @@
             
   
   
+  
+    <li class="md-nav__item">
+      <a href="../../redis-gears/RG-DUMPREGISTRATIONS/" class="md-nav__link">
+        RG.DUMPREGISTRATIONS
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
     
   
   
@@ -398,8 +414,35 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#reverse-direction" class="md-nav__link">
-    Reverse direction
+  <a href="#parameters" class="md-nav__link">
+    Parameters
+  </a>
+  
+    <nav class="md-nav" aria-label="Parameters">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#aggregation" class="md-nav__link">
+    Aggregation
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#streaming" class="md-nav__link">
+    Streaming
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#visualization" class="md-nav__link">
+    Visualization
   </a>
   
 </li>
@@ -408,6 +451,18 @@
   
 </nav>
       
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../redis/XLEN/" class="md-nav__link">
+        XLEN
+      </a>
     </li>
   
 
@@ -549,7 +604,7 @@
   
     <li class="md-nav__item">
       <a href="../../../redis-app/redis-gears-panel/" class="md-nav__link">
-        RedisGears
+        RedisGears Script Editor
       </a>
     </li>
   
@@ -702,8 +757,35 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#reverse-direction" class="md-nav__link">
-    Reverse direction
+  <a href="#parameters" class="md-nav__link">
+    Parameters
+  </a>
+  
+    <nav class="md-nav" aria-label="Parameters">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#aggregation" class="md-nav__link">
+    Aggregation
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#streaming" class="md-nav__link">
+    Streaming
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#visualization" class="md-nav__link">
+    Visualization
   </a>
   
 </li>
@@ -727,12 +809,93 @@
                 
                 <h1 id="tsrange">TS.RANGE<a class="headerlink" href="#tsrange" title="Permanent link">&para;</a></h1>
 <p>Query a range in forward direction.</p>
-<div class="admonition note">
+<div class="admonition info">
 <p class="admonition-title">RedisTimeSeries</p>
 <p><a href="https://oss.redislabs.com/redistimeseries/commands/#tsrangetsrevrange">https://oss.redislabs.com/redistimeseries/commands/#tsrangetsrevrange</a></p>
 </div>
-<h2 id="reverse-direction">Reverse direction<a class="headerlink" href="#reverse-direction" title="Permanent link">&para;</a></h2>
-<p>Reverse direction is not required as can be adjusted on Grafana panel.</p>
+<p><img alt="TS.RANGE" src="../../../images/redis-datasource/commands/ts-range.png" /></p>
+<h2 id="parameters">Parameters<a class="headerlink" href="#parameters" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Key</td>
+<td>Key name</td>
+</tr>
+<tr>
+<td>Legend</td>
+<td>Frame's name, will be display for 2 or more Queries</td>
+</tr>
+<tr>
+<td>Value</td>
+<td>Serie's name, will be display in legend</td>
+</tr>
+<tr>
+<td>Aggregation</td>
+<td>Aggregation type</td>
+</tr>
+<tr>
+<td>Time Bucket (Aggregation enabled)</td>
+<td>Time bucket for Aggregation in milliseconds</td>
+</tr>
+<tr>
+<td>Fill Missing (Aggregation enabled)</td>
+<td>If checked, the data source will fill missing intervals</td>
+</tr>
+</tbody>
+</table>
+<h3 id="aggregation">Aggregation<a class="headerlink" href="#aggregation" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>None (default)</td>
+<td>No aggregation</td>
+</tr>
+<tr>
+<td>Avg</td>
+<td>Average</td>
+</tr>
+<tr>
+<td>Count</td>
+<td>Count number of samples</td>
+</tr>
+<tr>
+<td>Max</td>
+<td>Maximum</td>
+</tr>
+<tr>
+<td>Min</td>
+<td>Minimum</td>
+</tr>
+<tr>
+<td>Range</td>
+<td>Diff between maximum and minimum in the bucket</td>
+</tr>
+<tr>
+<td>Sum</td>
+<td>Summation</td>
+</tr>
+</tbody>
+</table>
+<h2 id="streaming">Streaming<a class="headerlink" href="#streaming" title="Permanent link">&para;</a></h2>
+<p>Streaming is supported as <strong>Time Series</strong> and <strong>Data frame</strong>.</p>
+<div class="admonition important">
+<p class="admonition-title">Value</p>
+<p>Value should be set to merge streaming results.</p>
+</div>
+<h2 id="visualization">Visualization<a class="headerlink" href="#visualization" title="Permanent link">&para;</a></h2>
+<p>Any standard visualization should work.</p>
                 
               
               
@@ -755,7 +918,7 @@
   
     <nav class="md-footer__inner md-grid" aria-label="Footer">
       
-        <a href="../../custom/TMSCAN/" class="md-footer__link md-footer__link--prev" rel="prev">
+        <a href="../../redis-gears/RG-DUMPREGISTRATIONS/" class="md-footer__link md-footer__link--prev" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
           </div>
@@ -764,19 +927,19 @@
               <span class="md-footer__direction">
                 Previous
               </span>
-              TMSCAN
+              RG.DUMPREGISTRATIONS
             </div>
           </div>
         </a>
       
       
-        <a href="../../../redis-app/datasources/" class="md-footer__link md-footer__link--next" rel="next">
+        <a href="../../redis/XLEN/" class="md-footer__link md-footer__link--next" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              Data Sources
+              XLEN
             </div>
           </div>
           <div class="md-footer__button md-icon">

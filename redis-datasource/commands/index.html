@@ -6,6 +6,8 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
+        <meta name="description" content="The Redis plug-ins for Grafana allow users to connect to the Redis databases and build dashboards in Grafana to observe and interact with Redis and Application data.">
+      
       
       
       
@@ -38,6 +40,8 @@
     
     
     
+      <link rel="stylesheet" href="../../css/extra.css">
+    
     
       
     
@@ -65,7 +69,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#redis-data-source-supports" class="md-skip">
+        <a href="#supported-commands" class="md-skip">
           Skip to content
         </a>
       
@@ -322,44 +326,64 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#explore" class="md-nav__link">
+    Explore
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#commands" class="md-nav__link">
+    Commands
+  </a>
+  
+    <nav class="md-nav" aria-label="Commands">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
   <a href="#core-hashes-sets-lists-strings-streams-etc" class="md-nav__link">
     Core (Hashes, Sets, Lists, Strings, Streams, etc.)
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#custom" class="md-nav__link">
     Custom
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#redistimeseries" class="md-nav__link">
     RedisTimeSeries
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#redisgears" class="md-nav__link">
     RedisGears
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#redisgraph" class="md-nav__link">
     RedisGraph
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#redisearch" class="md-nav__link">
     RediSearch
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -445,8 +469,32 @@
   
   
     <li class="md-nav__item">
+      <a href="../redis-gears/RG-DUMPREGISTRATIONS/" class="md-nav__link">
+        RG.DUMPREGISTRATIONS
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../redis-timeseries/TS-RANGE/" class="md-nav__link">
         TS.RANGE
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../redis/XLEN/" class="md-nav__link">
+        XLEN
       </a>
     </li>
   
@@ -589,7 +637,7 @@
   
     <li class="md-nav__item">
       <a href="../../redis-app/redis-gears-panel/" class="md-nav__link">
-        RedisGears
+        RedisGears Script Editor
       </a>
     </li>
   
@@ -749,44 +797,64 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#explore" class="md-nav__link">
+    Explore
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#commands" class="md-nav__link">
+    Commands
+  </a>
+  
+    <nav class="md-nav" aria-label="Commands">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
   <a href="#core-hashes-sets-lists-strings-streams-etc" class="md-nav__link">
     Core (Hashes, Sets, Lists, Strings, Streams, etc.)
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#custom" class="md-nav__link">
     Custom
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#redistimeseries" class="md-nav__link">
     RedisTimeSeries
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#redisgears" class="md-nav__link">
     RedisGears
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#redisgraph" class="md-nav__link">
     RedisGraph
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#redisearch" class="md-nav__link">
     RediSearch
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -807,66 +875,211 @@
                   </a>
                 
                 
-                <h1 id="redis-data-source-supports">Redis Data Source supports<a class="headerlink" href="#redis-data-source-supports" title="Permanent link">&para;</a></h1>
-<p>Redis Data Source supports core Redis, custom and Redis Modules commands:</p>
-<ul>
-<li><a href="https://oss.redislabs.com/redistimeseries/">RedisTimeSeries</a> - Time Series data structure</li>
-<li><a href="https://oss.redislabs.com/redisgears/">RedisGears</a> - Dynamic framework for data processing</li>
-<li><a href="https://oss.redislabs.com/redisgraph/">RedisGraph</a> - Graph database</li>
-<li><a href="https://oss.redislabs.com/redisearch/">RediSearch</a> - Secondary Index &amp; Query Engine</li>
-</ul>
+                <h1 id="supported-commands">Supported Commands<a class="headerlink" href="#supported-commands" title="Permanent link">&para;</a></h1>
+<p>Redis Data Source supports core Redis, Custom and Redis Modules commands to use in the Query Editor and Explore.</p>
 <h2 id="query-editor">Query Editor<a class="headerlink" href="#query-editor" title="Permanent link">&para;</a></h2>
 <p>Choose <strong>Type</strong>, <strong>Command</strong>, enable <a href="../streaming/">Streaming</a> if required and provide all required parameters:</p>
 <p><img alt="Query Editor" src="../../images/redis-datasource/query.png" /></p>
-<h2 id="core-hashes-sets-lists-strings-streams-etc">Core (Hashes, Sets, Lists, Strings, Streams, etc.)<a class="headerlink" href="#core-hashes-sets-lists-strings-streams-etc" title="Permanent link">&para;</a></h2>
-<ul>
-<li>CLIENT LIST - Returns information and statistics about the client connections server</li>
-<li>CLUSTER INFO - Provides INFO style information about Redis Cluster vital parameters</li>
-<li>CLUSTER NODES - Provides current cluster configuration, given by the set of known nodes</li>
-<li>GET - Returns the value of key</li>
-<li>HGET - Returns the value associated with field in the hash stored at key</li>
-<li>HGETALL - Returns all fields and values of the hash stored at key</li>
-<li>HKEYS - Returns all field names in the hash stored at key</li>
-<li>HLEN - Returns the number of fields contained in the hash stored at key</li>
-<li>HMGET - Returns the values associated with the specified fields in the hash stored at key</li>
-<li><a href="../redis/INFO/">INFO</a> - Returns information and statistics about the server</li>
-<li>LLEN - Returns the length of the list stored at key</li>
-<li>SCARD - Returns the set cardinality (number of elements) of the set stored at key</li>
-<li>SLOWLOG GET - Returns the Redis slow queries log</li>
-<li>SMEMBERS - Returns all the members of the set value stored at key</li>
-<li>TTL - Returns the string representation of the type of the value stored at key</li>
-<li>TYPE - Returns the string representation of the type of the value stored at key</li>
-<li>XINFO STREAM - Returns general information about the stream stored at the specified key</li>
-<li>XLEN - Returns the number of entries inside a stream</li>
-<li>XRANGE - Returns the stream entries matching a given range of IDs</li>
-<li>XREVRANGE - Returns the stream entries matching a given range of IDs in reverse order</li>
-</ul>
-<h2 id="custom">Custom<a class="headerlink" href="#custom" title="Permanent link">&para;</a></h2>
-<ul>
-<li><a href="../custom/TMSCAN/">TMSCAN</a> - Returns keys with types and memory usage</li>
-</ul>
-<h2 id="redistimeseries">RedisTimeSeries<a class="headerlink" href="#redistimeseries" title="Permanent link">&para;</a></h2>
-<ul>
-<li>TS.GET - Returns the last sample</li>
-<li>TS.INFO - Returns information and statistics on the time-series</li>
-<li>TS.MRANGE - Query a timestamp range across multiple time-series by filters</li>
-<li>TS.QUERYINDEX - Query all the keys matching the filter list</li>
-<li><a href="../redis-timeseries/TS-RANGE/">TS.RANGE</a> - Query a range</li>
-</ul>
-<h2 id="redisgears">RedisGears<a class="headerlink" href="#redisgears" title="Permanent link">&para;</a></h2>
-<ul>
-<li>RG.DUMPREGISTRATIONS - Outputs the list of function registrations</li>
-<li>RG.PYSTATS - Returns memory usage statistics from the Python interpreter</li>
-</ul>
-<h2 id="redisgraph">RedisGraph<a class="headerlink" href="#redisgraph" title="Permanent link">&para;</a></h2>
-<ul>
-<li>GRAPH.QUERY - Executes the given query against a specified graph</li>
-<li>GRAPH.SLOWLOG - Returns a list containing up to 10 of the slowest queries issued against the given graph ID</li>
-</ul>
-<h2 id="redisearch">RediSearch<a class="headerlink" href="#redisearch" title="Permanent link">&para;</a></h2>
-<ul>
-<li>FT.INFO - Returns information and statistics on the index</li>
-</ul>
+<h2 id="explore">Explore<a class="headerlink" href="#explore" title="Permanent link">&para;</a></h2>
+<blockquote>
+<p>Grafana’s dashboard UI is all about building dashboards for visualization. Explore strips away the dashboard and panel options so that you can focus on the query. It helps you iterate until you have a working query and then think about building a dashboard.</p>
+</blockquote>
+<p><img alt="Explore" src="../../images/redis-datasource/explore.png" /></p>
+<h2 id="commands">Commands<a class="headerlink" href="#commands" title="Permanent link">&para;</a></h2>
+<h3 id="core-hashes-sets-lists-strings-streams-etc">Core (Hashes, Sets, Lists, Strings, Streams, etc.)<a class="headerlink" href="#core-hashes-sets-lists-strings-streams-etc" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Command</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>CLIENT LIST</td>
+<td>Returns information and statistics about the client connections server</td>
+</tr>
+<tr>
+<td>CLUSTER INFO</td>
+<td>Provides INFO style information about Redis Cluster vital parameters</td>
+</tr>
+<tr>
+<td>CLUSTER NODES</td>
+<td>Provides current cluster configuration, given by the set of known nodes</td>
+</tr>
+<tr>
+<td>GET</td>
+<td>Returns the value of key</td>
+</tr>
+<tr>
+<td>HGET</td>
+<td>Returns the value associated with field in the hash stored at key</td>
+</tr>
+<tr>
+<td>HGETALL</td>
+<td>Returns all fields and values of the hash stored at key</td>
+</tr>
+<tr>
+<td>HKEYS</td>
+<td>Returns all field names in the hash stored at key</td>
+</tr>
+<tr>
+<td>HLEN</td>
+<td>Returns the number of fields contained in the hash stored at key</td>
+</tr>
+<tr>
+<td>HMGET</td>
+<td>Returns the values associated with the specified fields in the hash stored at key</td>
+</tr>
+<tr>
+<td><a href="../redis/INFO/">INFO</a></td>
+<td>Returns information and statistics about the server</td>
+</tr>
+<tr>
+<td>LLEN</td>
+<td>Returns the length of the list stored at key</td>
+</tr>
+<tr>
+<td>SCARD</td>
+<td>Returns the set cardinality (number of elements) of the set stored at key</td>
+</tr>
+<tr>
+<td>SLOWLOG GET</td>
+<td>Returns the Redis slow queries log</td>
+</tr>
+<tr>
+<td>SMEMBERS</td>
+<td>Returns all the members of the set value stored at key</td>
+</tr>
+<tr>
+<td>TTL</td>
+<td>Returns the string representation of the type of the value stored at key</td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>Returns the string representation of the type of the value stored at key</td>
+</tr>
+<tr>
+<td>XINFO STREAM</td>
+<td>Returns general information about the stream stored at the specified key</td>
+</tr>
+<tr>
+<td><a href="../redis/XLEN/">XLEN</a></td>
+<td>Returns the number of entries inside a stream</td>
+</tr>
+<tr>
+<td>XRANGE</td>
+<td>Returns the stream entries matching a given range of IDs</td>
+</tr>
+<tr>
+<td>XREVRANGE</td>
+<td>Returns the stream entries matching a given range of IDs in reverse order</td>
+</tr>
+</tbody>
+</table>
+<h3 id="custom">Custom<a class="headerlink" href="#custom" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Command</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../custom/TMSCAN/">TMSCAN</a></td>
+<td>Returns keys with types and memory usage</td>
+</tr>
+</tbody>
+</table>
+<h3 id="redistimeseries">RedisTimeSeries<a class="headerlink" href="#redistimeseries" title="Permanent link">&para;</a></h3>
+<p><a href="https://oss.redislabs.com/redistimeseries/">RedisTimeSeries</a> is a Redis Module adding a Time Series data structure to Redis.</p>
+<table>
+<thead>
+<tr>
+<th>Command</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>TS.GET</td>
+<td>Returns the last sample</td>
+</tr>
+<tr>
+<td>TS.INFO</td>
+<td>Returns information and statistics on the time-series</td>
+</tr>
+<tr>
+<td>TS.MRANGE</td>
+<td>Query a timestamp range across multiple time-series by filters</td>
+</tr>
+<tr>
+<td>TS.QUERYINDEX</td>
+<td>Query all the keys matching the filter list</td>
+</tr>
+<tr>
+<td><a href="../redis-timeseries/TS-RANGE/">TS.RANGE</a></td>
+<td>Query a range</td>
+</tr>
+</tbody>
+</table>
+<h3 id="redisgears">RedisGears<a class="headerlink" href="#redisgears" title="Permanent link">&para;</a></h3>
+<p><a href="https://oss.redislabs.com/redisgears/">RedisGears</a> is a serverless engine for transaction, batch and event-driven data processing in Redis.</p>
+<table>
+<thead>
+<tr>
+<th>Command</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../redis-gears/RG-DUMPREGISTRATIONS/">RG.DUMPREGISTRATIONS</a></td>
+<td>Outputs the list of function registrations</td>
+</tr>
+<tr>
+<td>RG.PYSTATS</td>
+<td>Returns memory usage statistics from the Python interpreter</td>
+</tr>
+</tbody>
+</table>
+<h3 id="redisgraph">RedisGraph<a class="headerlink" href="#redisgraph" title="Permanent link">&para;</a></h3>
+<p><a href="https://oss.redislabs.com/redisgraph/">RedisGraph</a> is the first queryable Property Graph database to use sparse matrices to represent the adjacency matrix in graphs and linear algebra to query the graph.</p>
+<table>
+<thead>
+<tr>
+<th>Command</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>GRAPH.QUERY</td>
+<td>Executes the given query against a specified graph</td>
+</tr>
+<tr>
+<td>GRAPH.SLOWLOG</td>
+<td>Returns a list containing up to 10 of the slowest queries issued against the given graph ID</td>
+</tr>
+</tbody>
+</table>
+<h3 id="redisearch">RediSearch<a class="headerlink" href="#redisearch" title="Permanent link">&para;</a></h3>
+<p><a href="https://oss.redislabs.com/redisearch/">RediSearch</a> is a source available Secondary Index, Query Engine and Full-Text Search over Redis.</p>
+<table>
+<thead>
+<tr>
+<th>Command</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>FT.INFO</td>
+<td>Returns information and statistics on the index</td>
+</tr>
+</tbody>
+</table>
                 
               
               

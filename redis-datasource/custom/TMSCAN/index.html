@@ -6,6 +6,8 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
+        <meta name="description" content="The Redis plug-ins for Grafana allow users to connect to the Redis databases and build dashboards in Grafana to observe and interact with Redis and Application data.">
+      
       
       
       
@@ -37,6 +39,8 @@
       
     
     
+    
+      <link rel="stylesheet" href="../../../css/extra.css">
     
     
       
@@ -363,10 +367,65 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          TMSCAN
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         TMSCAN
       </a>
       
+        
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#parameters" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#streaming" class="md-nav__link">
+    Streaming
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#visualization" class="md-nav__link">
+    Visualization
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../redis-gears/RG-DUMPREGISTRATIONS/" class="md-nav__link">
+        RG.DUMPREGISTRATIONS
+      </a>
     </li>
   
 
@@ -378,6 +437,18 @@
     <li class="md-nav__item">
       <a href="../../redis-timeseries/TS-RANGE/" class="md-nav__link">
         TS.RANGE
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../redis/XLEN/" class="md-nav__link">
+        XLEN
       </a>
     </li>
   
@@ -520,7 +591,7 @@
   
     <li class="md-nav__item">
       <a href="../../../redis-app/redis-gears-panel/" class="md-nav__link">
-        RedisGears
+        RedisGears Script Editor
       </a>
     </li>
   
@@ -666,6 +737,35 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#parameters" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#streaming" class="md-nav__link">
+    Streaming
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#visualization" class="md-nav__link">
+    Visualization
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -683,15 +783,56 @@
                 
                 <h1 id="tmscan">TMSCAN<a class="headerlink" href="#tmscan" title="Permanent link">&para;</a></h1>
 <p>Returns keys with types and memory usage.</p>
+<div class="admonition info">
+<p class="admonition-title">Custom Command</p>
+<p>This command was introduced for <a href="../../../redis-app/redis-latency-panel/">Redis Latency panel</a> and is not a part of Redis server.</p>
+</div>
 <div class="admonition warning">
 <p class="admonition-title">Latency</p>
 <p>Please use this command in OFF-PEAK as it cause latency increase.</p>
 </div>
-<div class="admonition note">
-<p class="admonition-title">Custom Command</p>
-<p>This command was introduced for <a href="../../../redis-app/redis-latency-panel/">Redis Latency panel</a> and is not a part of Redis server.</p>
-</div>
 <p>This custom command is based on <a href="https://redis.io/commands/scan">SCAN</a> and <a href="https://redis.io/commands/memory-usage">MEMORY USAGE</a> commands.</p>
+<blockquote>
+<p>SCAN is a cursor based iterator. This means that at every call of the command, the server returns an updated cursor that the user needs to use as the cursor argument in the next call.</p>
+</blockquote>
+<p>Found results and Cursor returns in separate frames.</p>
+<h2 id="parameters">Parameters<a class="headerlink" href="#parameters" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Size</td>
+<td>Calculate top keys in the results</td>
+</tr>
+<tr>
+<td>Cursor</td>
+<td>Iterator for SCAN command</td>
+</tr>
+<tr>
+<td>Match pattern</td>
+<td>Patter for SCAN command</td>
+</tr>
+<tr>
+<td>Count</td>
+<td>The amount of work that should be done at every call in order to retrieve elements from the collection for SCAN command</td>
+</tr>
+<tr>
+<td>Samples</td>
+<td>Number of sampled nested values</td>
+</tr>
+</tbody>
+</table>
+<h2 id="streaming">Streaming<a class="headerlink" href="#streaming" title="Permanent link">&para;</a></h2>
+<p>Streaming is not supported.</p>
+<h2 id="visualization">Visualization<a class="headerlink" href="#visualization" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Table</li>
+</ul>
                 
               
               
@@ -729,13 +870,13 @@
         </a>
       
       
-        <a href="../../redis-timeseries/TS-RANGE/" class="md-footer__link md-footer__link--next" rel="next">
+        <a href="../../redis-gears/RG-DUMPREGISTRATIONS/" class="md-footer__link md-footer__link--next" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              TS.RANGE
+              RG.DUMPREGISTRATIONS
             </div>
           </div>
           <div class="md-footer__button md-icon">

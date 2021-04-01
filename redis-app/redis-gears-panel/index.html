@@ -6,6 +6,8 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
+        <meta name="description" content="The Redis plug-ins for Grafana allow users to connect to the Redis databases and build dashboards in Grafana to observe and interact with Redis and Application data.">
+      
       
       
       
@@ -16,7 +18,7 @@
     
     
       
-        <title>RedisGears - Redis plug-ins for Grafana</title>
+        <title>RedisGears Script Editor - Redis plug-ins for Grafana</title>
       
     
     
@@ -37,6 +39,8 @@
       
     
     
+    
+      <link rel="stylesheet" href="../../css/extra.css">
     
     
       
@@ -94,7 +98,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              RedisGears
+              RedisGears Script Editor
             
           </span>
         </div>
@@ -363,8 +367,32 @@
   
   
     <li class="md-nav__item">
+      <a href="../../redis-datasource/redis-gears/RG-DUMPREGISTRATIONS/" class="md-nav__link">
+        RG.DUMPREGISTRATIONS
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../redis-datasource/redis-timeseries/TS-RANGE/" class="md-nav__link">
         TS.RANGE
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../redis-datasource/redis/XLEN/" class="md-nav__link">
+        XLEN
       </a>
     </li>
   
@@ -519,12 +547,12 @@
       
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
-          RedisGears
+          RedisGears Script Editor
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
-        RedisGears
+        RedisGears Script Editor
       </a>
       
         
@@ -541,8 +569,15 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#execute" class="md-nav__link">
-    Execute
+  <a href="#query-editor" class="md-nav__link">
+    Query Editor
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#options" class="md-nav__link">
+    Options
   </a>
   
 </li>
@@ -709,8 +744,15 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#execute" class="md-nav__link">
-    Execute
+  <a href="#query-editor" class="md-nav__link">
+    Query Editor
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#options" class="md-nav__link">
+    Options
   </a>
   
 </li>
@@ -740,12 +782,37 @@
                 
                 
                 <h1 id="redisgears-script-editor">RedisGears Script Editor<a class="headerlink" href="#redisgears-script-editor" title="Permanent link">&para;</a></h1>
+<p>This panel support Python syntax and allows to execute functions in blocking and unblocking modes using RG.PYEXECUTE command.</p>
+<blockquote>
 <p><a href="https://oss.redislabs.com/redisgears/">RedisGears</a> is a dynamic framework that enables developers to write and execute functions that implement data flows in Redis, while abstracting away the data’s distribution and deployment.</p>
-<p><img alt="RedisGears-Dashboard" src="../../images/redis-app/gears-dashboard.png" /></p>
-<h2 id="execute">Execute<a class="headerlink" href="#execute" title="Permanent link">&para;</a></h2>
-<p>This panel support Python syntax and allows to execute functions in blocking and unblocking modes.</p>
+</blockquote>
+<p><img alt="RedisGears-Panel" src="../../images/redis-app/gears-panel.png" /></p>
+<h2 id="query-editor">Query Editor<a class="headerlink" href="#query-editor" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Data Source should be selected as variable or exact name.</li>
+<li>Query is not required.</li>
+</ul>
+<h2 id="options">Options<a class="headerlink" href="#options" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Option</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Requirements</td>
+<td>Ensures that list of dependencies it is given as an argument is installed on each shard before execution</td>
+</tr>
+<tr>
+<td>Unblocking</td>
+<td>Doesn't block the client during execution</td>
+</tr>
+</tbody>
+</table>
 <h2 id="dashboard">Dashboard<a class="headerlink" href="#dashboard" title="Permanent link">&para;</a></h2>
-<p>This panel is included in <a href="../dashboards/">Redis Gears dashboard</a>.</p>
+<p>This panel is included in the <a href="../dashboards/">Redis Gears dashboard</a>.</p>
                 
               
               
