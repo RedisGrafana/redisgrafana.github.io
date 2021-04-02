@@ -16,15 +16,19 @@
      <lastmod>2021-04-02</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>http://redisgrafana.github.io/redis-datasource/commands/</loc>
-     <lastmod>2021-04-02</lastmod>
-     <changefreq>daily</changefreq>
-    </url><url>
      <loc>http://redisgrafana.github.io/redis-datasource/streaming/</loc>
      <lastmod>2021-04-02</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>http://redisgrafana.github.io/redis-datasource/variables/</loc>
+     <lastmod>2021-04-02</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>http://redisgrafana.github.io/redis-datasource/commands/</loc>
+     <lastmod>2021-04-02</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>http://redisgrafana.github.io/redis-datasource/redis/GET/</loc>
      <lastmod>2021-04-02</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
@@ -36,7 +40,19 @@
      <lastmod>2021-04-02</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
+     <loc>http://redisgrafana.github.io/redis-datasource/redis/XLEN/</loc>
+     <lastmod>2021-04-02</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
      <loc>http://redisgrafana.github.io/redis-datasource/redis-gears/RG-DUMPREGISTRATIONS/</loc>
+     <lastmod>2021-04-02</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>http://redisgrafana.github.io/redis-datasource/redis-gears/RG-PYSTATS/</loc>
+     <lastmod>2021-04-02</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>http://redisgrafana.github.io/redis-datasource/redis-timeseries/TS-GET/</loc>
      <lastmod>2021-04-02</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
@@ -44,7 +60,7 @@
      <lastmod>2021-04-02</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>http://redisgrafana.github.io/redis-datasource/redis/XLEN/</loc>
+     <loc>http://redisgrafana.github.io/redis-app/dashboards/</loc>
      <lastmod>2021-04-02</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
@@ -53,10 +69,6 @@
      <changefreq>daily</changefreq>
     </url><url>
      <loc>http://redisgrafana.github.io/redis-app/panels/</loc>
-     <lastmod>2021-04-02</lastmod>
-     <changefreq>daily</changefreq>
-    </url><url>
-     <loc>http://redisgrafana.github.io/redis-app/dashboards/</loc>
      <lastmod>2021-04-02</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
@@ -92,7 +104,11 @@
      <lastmod>2021-04-02</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>http://redisgrafana.github.io/projects/</loc>
+     <loc>http://redisgrafana.github.io/projects/pop-up-store/</loc>
+     <lastmod>2021-04-02</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>http://redisgrafana.github.io/projects/grafana-stats/</loc>
      <lastmod>2021-04-02</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
