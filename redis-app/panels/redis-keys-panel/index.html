@@ -11,21 +11,21 @@
       
       
       
-        <link rel="canonical" href="http://redisgrafana.github.io/redis-app/redis-gears-panel/">
+        <link rel="canonical" href="http://redisgrafana.github.io/redis-app/panels/redis-keys-panel/">
       
-      <link rel="icon" href="../../images/logo.png">
+      <link rel="icon" href="../../../images/logo.png">
       <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-7.1.0">
     
     
       
-        <title>RedisGears Script Editor - Redis plug-ins for Grafana</title>
+        <title>Keys consuming a lot of memory - Redis plug-ins for Grafana</title>
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.33e2939f.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.33e2939f.min.css">
       
         
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.ef6f36e2.min.css">
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.ef6f36e2.min.css">
         
       
     
@@ -40,7 +40,7 @@
     
     
     
-      <link rel="stylesheet" href="../../css/extra.css">
+      <link rel="stylesheet" href="../../../css/extra.css">
     
     
       
@@ -59,7 +59,7 @@
     <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
   
     
-    <script>function __prefix(e){return new URL("../..",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
+    <script>function __prefix(e){return new URL("../../..",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
     
       <script>var palette=__get("__palette");if(null!==palette&&"object"==typeof palette.color)for(var key in palette.color)document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
     
@@ -69,7 +69,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#redisgears-script-editor" class="md-skip">
+        <a href="#keys-consuming-a-lot-of-memory" class="md-skip">
           Skip to content
         </a>
       
@@ -80,9 +80,9 @@
     
       <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../.." title="Redis plug-ins for Grafana" class="md-header__button md-logo" aria-label="Redis plug-ins for Grafana" data-md-component="logo">
+    <a href="../../.." title="Redis plug-ins for Grafana" class="md-header__button md-logo" aria-label="Redis plug-ins for Grafana" data-md-component="logo">
       
-  <img src="../../images/logo-white.png" alt="logo">
+  <img src="../../../images/logo-white.png" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -98,7 +98,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              RedisGears Script Editor
+              Keys consuming a lot of memory
             
           </span>
         </div>
@@ -190,9 +190,9 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../.." title="Redis plug-ins for Grafana" class="md-nav__button md-logo" aria-label="Redis plug-ins for Grafana" data-md-component="logo">
+    <a href="../../.." title="Redis plug-ins for Grafana" class="md-nav__button md-logo" aria-label="Redis plug-ins for Grafana" data-md-component="logo">
       
-  <img src="../../images/logo-white.png" alt="logo">
+  <img src="../../../images/logo-white.png" alt="logo">
 
     </a>
     Redis plug-ins for Grafana
@@ -221,7 +221,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../.." class="md-nav__link">
+      <a href="../../.." class="md-nav__link">
         Home
       </a>
     </li>
@@ -236,7 +236,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../intro/" class="md-nav__link">
+      <a href="../../../intro/" class="md-nav__link">
         Introduction
       </a>
     </li>
@@ -251,7 +251,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../quickstart/" class="md-nav__link">
+      <a href="../../../quickstart/" class="md-nav__link">
         Quickstart
       </a>
     </li>
@@ -289,7 +289,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../redis-datasource/configuration/" class="md-nav__link">
+      <a href="../../../redis-datasource/configuration/" class="md-nav__link">
         Configuration
       </a>
     </li>
@@ -301,7 +301,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../redis-datasource/streaming/" class="md-nav__link">
+      <a href="../../../redis-datasource/streaming/" class="md-nav__link">
         Streaming
       </a>
     </li>
@@ -313,7 +313,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../redis-datasource/variables/" class="md-nav__link">
+      <a href="../../../redis-datasource/variables/" class="md-nav__link">
         Variables
       </a>
     </li>
@@ -325,7 +325,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../redis-datasource/commands/" class="md-nav__link">
+      <a href="../../../redis-datasource/commands/" class="md-nav__link">
         Commands
       </a>
     </li>
@@ -358,7 +358,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../redis-datasource/redis/GET/" class="md-nav__link">
+      <a href="../../../redis-datasource/redis/GET/" class="md-nav__link">
         GET
       </a>
     </li>
@@ -370,7 +370,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../redis-datasource/redis/INFO/" class="md-nav__link">
+      <a href="../../../redis-datasource/redis/INFO/" class="md-nav__link">
         INFO
       </a>
     </li>
@@ -382,7 +382,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../redis-datasource/custom/TMSCAN/" class="md-nav__link">
+      <a href="../../../redis-datasource/custom/TMSCAN/" class="md-nav__link">
         TMSCAN
       </a>
     </li>
@@ -394,7 +394,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../redis-datasource/redis/XLEN/" class="md-nav__link">
+      <a href="../../../redis-datasource/redis/XLEN/" class="md-nav__link">
         XLEN
       </a>
     </li>
@@ -433,7 +433,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../redis-datasource/redis-gears/RG-DUMPREGISTRATIONS/" class="md-nav__link">
+      <a href="../../../redis-datasource/redis-gears/RG-DUMPREGISTRATIONS/" class="md-nav__link">
         RG.DUMPREGISTRATIONS
       </a>
     </li>
@@ -445,7 +445,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../redis-datasource/redis-gears/RG-PYEXECUTE/" class="md-nav__link">
+      <a href="../../../redis-datasource/redis-gears/RG-PYEXECUTE/" class="md-nav__link">
         RG.PYEXECUTE
       </a>
     </li>
@@ -457,7 +457,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../redis-datasource/redis-gears/RG-PYSTATS/" class="md-nav__link">
+      <a href="../../../redis-datasource/redis-gears/RG-PYSTATS/" class="md-nav__link">
         RG.PYSTATS
       </a>
     </li>
@@ -496,7 +496,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../redis-datasource/redis-timeseries/TS-GET/" class="md-nav__link">
+      <a href="../../../redis-datasource/redis-timeseries/TS-GET/" class="md-nav__link">
         TS.GET
       </a>
     </li>
@@ -508,7 +508,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../redis-datasource/redis-timeseries/TS-INFO/" class="md-nav__link">
+      <a href="../../../redis-datasource/redis-timeseries/TS-INFO/" class="md-nav__link">
         TS.INFO
       </a>
     </li>
@@ -520,7 +520,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../redis-datasource/redis-timeseries/TS-RANGE/" class="md-nav__link">
+      <a href="../../../redis-datasource/redis-timeseries/TS-RANGE/" class="md-nav__link">
         TS.RANGE
       </a>
     </li>
@@ -572,8 +572,41 @@
   
   
     <li class="md-nav__item">
-      <a href="../dashboards/" class="md-nav__link">
+      <a href="../../overview/" class="md-nav__link">
+        Overview
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_2" type="checkbox" id="__nav_5_2" >
+      
+      <label class="md-nav__link" for="__nav_5_2">
         Dashboards
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Dashboards" data-md-level="2">
+        <label class="md-nav__title" for="__nav_5_2">
+          <span class="md-nav__icon md-icon"></span>
+          Dashboards
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../dashboards/cli/" class="md-nav__link">
+        Redis CLI
       </a>
     </li>
   
@@ -584,8 +617,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../datasources/" class="md-nav__link">
-        Data Sources
+      <a href="../../dashboards/overview/" class="md-nav__link">
+        Redis Overview
       </a>
     </li>
   
@@ -596,9 +629,15 @@
   
   
     <li class="md-nav__item">
-      <a href="../panels/" class="md-nav__link">
-        Custom Panels
+      <a href="../../dashboards/redis-gears/" class="md-nav__link">
+        RedisGears
       </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
     </li>
   
 
@@ -613,14 +652,14 @@
     <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_4" type="checkbox" id="__nav_5_4" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_3" type="checkbox" id="__nav_5_3" checked>
       
-      <label class="md-nav__link" for="__nav_5_4">
+      <label class="md-nav__link" for="__nav_5_3">
         Panels
         <span class="md-nav__icon md-icon"></span>
       </label>
       <nav class="md-nav" aria-label="Panels" data-md-level="2">
-        <label class="md-nav__title" for="__nav_5_4">
+        <label class="md-nav__title" for="__nav_5_3">
           <span class="md-nav__icon md-icon"></span>
           Panels
         </label>
@@ -653,18 +692,6 @@
             
   
   
-  
-    <li class="md-nav__item">
-      <a href="../redis-keys-panel/" class="md-nav__link">
-        Keys consuming a lot of memory
-      </a>
-    </li>
-  
-
-          
-            
-  
-  
     
   
   
@@ -676,12 +703,12 @@
       
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
-          RedisGears Script Editor
+          Keys consuming a lot of memory
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
-        RedisGears Script Editor
+        Keys consuming a lot of memory
       </a>
       
         
@@ -722,6 +749,18 @@
   
 </nav>
       
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../redis-gears-panel/" class="md-nav__link">
+        RedisGears Script Editor
+      </a>
     </li>
   
 
@@ -769,7 +808,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../development/images/" class="md-nav__link">
+      <a href="../../../development/images/" class="md-nav__link">
         Docker Images
       </a>
     </li>
@@ -781,7 +820,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../development/redis-datasource/" class="md-nav__link">
+      <a href="../../../development/redis-datasource/" class="md-nav__link">
         Redis Data Source
       </a>
     </li>
@@ -793,7 +832,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../development/redis-app/" class="md-nav__link">
+      <a href="../../../development/redis-app/" class="md-nav__link">
         Redis Application plug-in
       </a>
     </li>
@@ -805,7 +844,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../development/redis-explorer/" class="md-nav__link">
+      <a href="../../../development/redis-explorer/" class="md-nav__link">
         Redis Explorer plug-in
       </a>
     </li>
@@ -849,7 +888,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../projects/pop-up-store/" class="md-nav__link">
+      <a href="../../../projects/pop-up-store/" class="md-nav__link">
         Pop-up Store
       </a>
     </li>
@@ -861,7 +900,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../projects/grafana-stats/" class="md-nav__link">
+      <a href="../../../projects/grafana-stats/" class="md-nav__link">
         Plug-ins Statistics
       </a>
     </li>
@@ -882,7 +921,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../faq/" class="md-nav__link">
+      <a href="../../../faq/" class="md-nav__link">
         FAQ
       </a>
     </li>
@@ -946,17 +985,19 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/RedisGrafana/redisgrafana/edit/main/docs/redis-app/redis-gears-panel.md" title="Edit this page" class="md-content__button md-icon">
+                  <a href="https://github.com/RedisGrafana/redisgrafana/edit/main/docs/redis-app/panels/redis-keys-panel.md" title="Edit this page" class="md-content__button md-icon">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
                   </a>
                 
                 
-                <h1 id="redisgears-script-editor">RedisGears Script Editor<a class="headerlink" href="#redisgears-script-editor" title="Permanent link">&para;</a></h1>
-<p>This panel support Python syntax and allows to execute functions in blocking and unblocking modes using RG.PYEXECUTE command.</p>
-<blockquote>
-<p><a href="https://oss.redislabs.com/redisgears/">RedisGears</a> is a dynamic framework that enables developers to write and execute functions that implement data flows in Redis, while abstracting away the data’s distribution and deployment.</p>
-</blockquote>
-<p><img alt="RedisGears-Panel" src="../../images/redis-app/panels/gears-panel.png" /></p>
+                <h1 id="keys-consuming-a-lot-of-memory">Keys consuming a lot of memory<a class="headerlink" href="#keys-consuming-a-lot-of-memory" title="Permanent link">&para;</a></h1>
+<p>Do you want to know which keys consume a lot of memory in your Redis database? This panel is based on <a href="../../../redis-datasource/custom/TMSCAN/">TMSCAN</a> to scan keys and sort results based on memory usage in the table format.</p>
+<div class="admonition warning">
+<p class="admonition-title">Latency</p>
+<p>Please use this command in OFF-PEAK as it cause latency increase.</p>
+<p>Interval and count for SCAN command is configurable to keep latency under control.</p>
+</div>
+<p><img alt="Keys" src="../../../images/redis-app/panels/keys-panel.png" /></p>
 <h2 id="query-editor">Query Editor<a class="headerlink" href="#query-editor" title="Permanent link">&para;</a></h2>
 <ul>
 <li>Data Source should be selected as variable or exact name.</li>
@@ -972,22 +1013,26 @@
 </thead>
 <tbody>
 <tr>
-<td>Function</td>
-<td>Python function</td>
+<td>Interval</td>
+<td>Interval to run SCAN command, ms</td>
 </tr>
 <tr>
-<td>Requirements</td>
-<td>Ensures that list of dependencies it is given as an argument is installed on each shard before execution</td>
+<td>Top Keys</td>
+<td>Calculate top keys in the results</td>
 </tr>
 <tr>
-<td>Unblocking</td>
-<td>Doesn't block the client during execution</td>
+<td>Count</td>
+<td>The amount of work that should be done at every call in order to retrieve elements from the collection for SCAN command</td>
+</tr>
+<tr>
+<td>Match pattern</td>
+<td>Patter for SCAN command</td>
 </tr>
 </tbody>
 </table>
 <h2 id="dashboard">Dashboard<a class="headerlink" href="#dashboard" title="Permanent link">&para;</a></h2>
 <ul>
-<li><a href="../dashboards/">RedisGears</a> includes this panel.</li>
+<li><a href="../../dashboards/cli/">Redis CLI</a> includes this panel.</li>
 </ul>
                 
               
@@ -1011,7 +1056,7 @@
   
     <nav class="md-footer__inner md-grid" aria-label="Footer">
       
-        <a href="../redis-keys-panel/" class="md-footer__link md-footer__link--prev" rel="prev">
+        <a href="../redis-latency-panel/" class="md-footer__link md-footer__link--prev" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
           </div>
@@ -1020,19 +1065,19 @@
               <span class="md-footer__direction">
                 Previous
               </span>
-              Keys consuming a lot of memory
+              Command Latency
             </div>
           </div>
         </a>
       
       
-        <a href="../../development/images/" class="md-footer__link md-footer__link--next" rel="next">
+        <a href="../redis-gears-panel/" class="md-footer__link md-footer__link--next" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              Docker Images
+              RedisGears Script Editor
             </div>
           </div>
           <div class="md-footer__button md-icon">
@@ -1061,12 +1106,12 @@
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.instant", "navigation.sections", "navigation.top"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}, "search": "../../assets/javascripts/workers/search.fe42c31b.min.js", "version": null}</script>
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.instant", "navigation.sections", "navigation.top"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}, "search": "../../../assets/javascripts/workers/search.fe42c31b.min.js", "version": null}</script>
     
     
-      <script src="../../assets/javascripts/bundle.d892486b.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.d892486b.min.js"></script>
       
-        <script src="../../javascripts/extra.js"></script>
+        <script src="../../../javascripts/extra.js"></script>
       
     
   </body>

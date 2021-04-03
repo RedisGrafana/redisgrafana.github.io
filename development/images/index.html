@@ -570,32 +570,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../../redis-app/dashboards/" class="md-nav__link">
-        Dashboards
-      </a>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../redis-app/datasources/" class="md-nav__link">
-        Data Sources
-      </a>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../redis-app/panels/" class="md-nav__link">
-        Custom Panels
+      <a href="../../redis-app/overview/" class="md-nav__link">
+        Overview
       </a>
     </li>
   
@@ -609,14 +585,77 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_4" type="checkbox" id="__nav_5_4" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_2" type="checkbox" id="__nav_5_2" >
       
-      <label class="md-nav__link" for="__nav_5_4">
+      <label class="md-nav__link" for="__nav_5_2">
+        Dashboards
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Dashboards" data-md-level="2">
+        <label class="md-nav__title" for="__nav_5_2">
+          <span class="md-nav__icon md-icon"></span>
+          Dashboards
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../redis-app/dashboards/cli/" class="md-nav__link">
+        Redis CLI
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../redis-app/dashboards/overview/" class="md-nav__link">
+        Redis Overview
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../redis-app/dashboards/redis-gears/" class="md-nav__link">
+        RedisGears
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_3" type="checkbox" id="__nav_5_3" >
+      
+      <label class="md-nav__link" for="__nav_5_3">
         Panels
         <span class="md-nav__icon md-icon"></span>
       </label>
       <nav class="md-nav" aria-label="Panels" data-md-level="2">
-        <label class="md-nav__title" for="__nav_5_4">
+        <label class="md-nav__title" for="__nav_5_3">
           <span class="md-nav__icon md-icon"></span>
           Panels
         </label>
@@ -627,7 +666,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../redis-app/redis-cli-panel/" class="md-nav__link">
+      <a href="../../redis-app/panels/redis-cli-panel/" class="md-nav__link">
         Command line interface (CLI)
       </a>
     </li>
@@ -639,7 +678,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../redis-app/redis-latency-panel/" class="md-nav__link">
+      <a href="../../redis-app/panels/redis-latency-panel/" class="md-nav__link">
         Command Latency
       </a>
     </li>
@@ -651,7 +690,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../redis-app/redis-keys-panel/" class="md-nav__link">
+      <a href="../../redis-app/panels/redis-keys-panel/" class="md-nav__link">
         Keys consuming a lot of memory
       </a>
     </li>
@@ -663,7 +702,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../redis-app/redis-gears-panel/" class="md-nav__link">
+      <a href="../../redis-app/panels/redis-gears-panel/" class="md-nav__link">
         RedisGears Script Editor
       </a>
     </li>
@@ -936,29 +975,29 @@
                 
                 
                 <h1 id="docker-images">Docker Images<a class="headerlink" href="#docker-images" title="Permanent link">&para;</a></h1>
-<p>Interested to try the latest features and verify bug fixes? Start nightly built Docker image. Supported platforms are:</p>
+<p>Interested in the latest features and updates? Start nightly built Docker image. Supported platforms are:</p>
 <ul>
-<li>linux/amd64</li>
-<li>linux/arm64</li>
-<li>linux/arm</li>
+<li>Linux/amd64</li>
+<li>Linux/arm64</li>
+<li>Linux/arm</li>
 </ul>
 <div class="admonition important">
 <p class="admonition-title">Unstable</p>
-<p>Images built from main branch and recommended for Testing new features and bugfixes only.</p>
+<p>Images built from the main branch and recommended for Testing new features and bugfixes only.</p>
 </div>
 <p><img alt="Nightly built Docker images" src="../../images/development/docker.png" /></p>
 <div class="admonition info">
 <p class="admonition-title">Login to Grafana</p>
-<p>Default username and password to login to Grafana is <code>admin</code>/<code>admin</code>.</p>
+<p>The Default username and password to login to Grafana are <strong>admin</strong>/<strong>admin</strong>.</p>
 </div>
 <h2 id="redis-application-plug-in">Redis Application plug-in<a class="headerlink" href="#redis-application-plug-in" title="Permanent link">&para;</a></h2>
 <p><img alt="Redis Application plug-in" src="https://github.com/RedisGrafana/grafana-redis-app/workflows/Docker/badge.svg" /></p>
-<p>The Redis Application, is a plug-in for Grafana that provides application pages and <a href="../../redis-app/panels/">Custom panels</a> for Redis Data Source.</p>
+<p>The Redis Application is a plug-in for Grafana that provides application pages and custom panels for Redis Data Source.</p>
 <div class="highlight"><pre><span></span><code>docker run -p <span class="m">3000</span>:3000 --name<span class="o">=</span>redis-app ghcr.io/redisgrafana/redis-app:latest
 </code></pre></div>
 <h2 id="redis-explorer-plug-in">Redis Explorer plug-in<a class="headerlink" href="#redis-explorer-plug-in" title="Permanent link">&para;</a></h2>
 <p><img alt="Redis Explorer plug-in" src="https://github.com/RedisGrafana/grafana-redis-explorer/workflows/Docker/badge.svg" /></p>
-<p>The Redis Explorer, is a plug-in for Grafana that allows users to connect to Redis Enterprise software clusters using REST API and build dashboards to observe their status.</p>
+<p>The Redis Explorer is a plug-in for Grafana that allows users to connect to Redis Enterprise software clusters using REST API and build dashboards to observe their status.</p>
 <div class="highlight"><pre><span></span><code>docker run -p <span class="m">3000</span>:3000 --name<span class="o">=</span>explorer ghcr.io/redisgrafana/redis-explorer:latest
 </code></pre></div>
                 
@@ -983,7 +1022,7 @@
   
     <nav class="md-footer__inner md-grid" aria-label="Footer">
       
-        <a href="../../redis-app/redis-gears-panel/" class="md-footer__link md-footer__link--prev" rel="prev">
+        <a href="../../redis-app/panels/redis-gears-panel/" class="md-footer__link md-footer__link--prev" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
           </div>

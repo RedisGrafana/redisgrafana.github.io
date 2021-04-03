@@ -632,32 +632,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../redis-app/dashboards/" class="md-nav__link">
-        Dashboards
-      </a>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../redis-app/datasources/" class="md-nav__link">
-        Data Sources
-      </a>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../redis-app/panels/" class="md-nav__link">
-        Custom Panels
+      <a href="../redis-app/overview/" class="md-nav__link">
+        Overview
       </a>
     </li>
   
@@ -671,14 +647,77 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_4" type="checkbox" id="__nav_5_4" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_2" type="checkbox" id="__nav_5_2" >
       
-      <label class="md-nav__link" for="__nav_5_4">
+      <label class="md-nav__link" for="__nav_5_2">
+        Dashboards
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Dashboards" data-md-level="2">
+        <label class="md-nav__title" for="__nav_5_2">
+          <span class="md-nav__icon md-icon"></span>
+          Dashboards
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../redis-app/dashboards/cli/" class="md-nav__link">
+        Redis CLI
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../redis-app/dashboards/overview/" class="md-nav__link">
+        Redis Overview
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../redis-app/dashboards/redis-gears/" class="md-nav__link">
+        RedisGears
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_3" type="checkbox" id="__nav_5_3" >
+      
+      <label class="md-nav__link" for="__nav_5_3">
         Panels
         <span class="md-nav__icon md-icon"></span>
       </label>
       <nav class="md-nav" aria-label="Panels" data-md-level="2">
-        <label class="md-nav__title" for="__nav_5_4">
+        <label class="md-nav__title" for="__nav_5_3">
           <span class="md-nav__icon md-icon"></span>
           Panels
         </label>
@@ -689,7 +728,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../redis-app/redis-cli-panel/" class="md-nav__link">
+      <a href="../redis-app/panels/redis-cli-panel/" class="md-nav__link">
         Command line interface (CLI)
       </a>
     </li>
@@ -701,7 +740,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../redis-app/redis-latency-panel/" class="md-nav__link">
+      <a href="../redis-app/panels/redis-latency-panel/" class="md-nav__link">
         Command Latency
       </a>
     </li>
@@ -713,7 +752,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../redis-app/redis-keys-panel/" class="md-nav__link">
+      <a href="../redis-app/panels/redis-keys-panel/" class="md-nav__link">
         Keys consuming a lot of memory
       </a>
     </li>
@@ -725,7 +764,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../redis-app/redis-gears-panel/" class="md-nav__link">
+      <a href="../redis-app/panels/redis-gears-panel/" class="md-nav__link">
         RedisGears Script Editor
       </a>
     </li>
@@ -981,9 +1020,9 @@
 <ul>
 <li>The <a href="../quickstart/">Quickstart</a> is the recommended starting point.</li>
 <li>The <a href="../redis-datasource/commands/">Commands</a> reference all supported commands in Redis Data Source.</li>
-<li>The <a href="../redis-app/panels/">Custom Panels</a> page provides information about all custom panels included in Redis Application plug-in.</li>
+<li>The <a href="../redis-app/overview/">Overview</a> page provides information about Application pages, dashboard, and custom panels included in the Redis Application plug-in.</li>
 <li>The <strong>Development</strong> section has more information about the nightly built <a href="../development/images/">Docker Images</a> and developing plug-ins.</li>
-<li>The <strong>Projects</strong> section has some interesting use cases for using Redis plug-in for Grafana.</li>
+<li>The <strong>Projects</strong> section has some interesting use cases for using the Redis plug-in for Grafana.</li>
 </ul>
 <h2 id="grafana-repository">Grafana Repository<a class="headerlink" href="#grafana-repository" title="Permanent link">&para;</a></h2>
 <p>Plug-ins are registered in the <a href="https://grafana.com/grafana/plugins/">Grafana repository</a> and available to <a href="https://grafana.com/">Grafana</a>, <a href="https://grafana.com/products/enterprise/">Grafana Enterprise</a> and <a href="https://grafana.com/products/cloud/">Grafana Cloud</a>.</p>
@@ -999,7 +1038,7 @@
 <li><a href="https://grafana.com/go/observabilitycon/real-time-observability-with-redis-and-grafana/">Real-time observability with Redis and Grafana</a></li>
 </ul>
 <h2 id="contact-us">Contact Us<a class="headerlink" href="#contact-us" title="Permanent link">&para;</a></h2>
-<p>If you have questions or feedback, or want to report an issue, here's where you can get in touch:</p>
+<p>If you have questions, feedback, or want to report an issue, here's where you can get in touch:</p>
 <ul>
 <li><a href="https://github.com/RedisGrafana/grafana-redis-datasource/issues/new/choose">Redis Data Source</a></li>
 <li><a href="https://github.com/RedisGrafana/grafana-redis-app/issues/new/choose">Redis Application plug-in</a></li>
@@ -1007,10 +1046,10 @@
 </ul>
 <div class="admonition tip">
 <p class="admonition-title">Contribute</p>
-<p>To contibute your project or propose Documentation updates, open an <a href="https://github.com/RedisGrafana/redisgrafana/issues/new/choose">issue</a> or click the "Edit this page" button at the top to submit a Pull Request.</p>
+<p>To contribute your project or propose Documentation updates, open an <a href="https://github.com/RedisGrafana/redisgrafana/issues/new/choose">issue</a> or click the "Edit this page" button at the top to submit a Pull Request.</p>
 </div>
 <h2 id="license">License<a class="headerlink" href="#license" title="Permanent link">&para;</a></h2>
-<p>Redis plug-ins for Grafana are licensed under the <a href="https://github.com/RedisGrafana/RedisGrafana/blob/main/LICENSE">Apache License Version 2.0</a>.</p>
+<p>Redis plug-ins for Grafana licensed under the <a href="https://github.com/RedisGrafana/RedisGrafana/blob/main/LICENSE">Apache License Version 2.0</a>.</p>
                 
               
               

@@ -657,32 +657,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../../redis-app/dashboards/" class="md-nav__link">
-        Dashboards
-      </a>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../redis-app/datasources/" class="md-nav__link">
-        Data Sources
-      </a>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../redis-app/panels/" class="md-nav__link">
-        Custom Panels
+      <a href="../../redis-app/overview/" class="md-nav__link">
+        Overview
       </a>
     </li>
   
@@ -696,14 +672,77 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_4" type="checkbox" id="__nav_5_4" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_2" type="checkbox" id="__nav_5_2" >
       
-      <label class="md-nav__link" for="__nav_5_4">
+      <label class="md-nav__link" for="__nav_5_2">
+        Dashboards
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Dashboards" data-md-level="2">
+        <label class="md-nav__title" for="__nav_5_2">
+          <span class="md-nav__icon md-icon"></span>
+          Dashboards
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../redis-app/dashboards/cli/" class="md-nav__link">
+        Redis CLI
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../redis-app/dashboards/overview/" class="md-nav__link">
+        Redis Overview
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../redis-app/dashboards/redis-gears/" class="md-nav__link">
+        RedisGears
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_3" type="checkbox" id="__nav_5_3" >
+      
+      <label class="md-nav__link" for="__nav_5_3">
         Panels
         <span class="md-nav__icon md-icon"></span>
       </label>
       <nav class="md-nav" aria-label="Panels" data-md-level="2">
-        <label class="md-nav__title" for="__nav_5_4">
+        <label class="md-nav__title" for="__nav_5_3">
           <span class="md-nav__icon md-icon"></span>
           Panels
         </label>
@@ -714,7 +753,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../redis-app/redis-cli-panel/" class="md-nav__link">
+      <a href="../../redis-app/panels/redis-cli-panel/" class="md-nav__link">
         Command line interface (CLI)
       </a>
     </li>
@@ -726,7 +765,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../redis-app/redis-latency-panel/" class="md-nav__link">
+      <a href="../../redis-app/panels/redis-latency-panel/" class="md-nav__link">
         Command Latency
       </a>
     </li>
@@ -738,7 +777,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../redis-app/redis-keys-panel/" class="md-nav__link">
+      <a href="../../redis-app/panels/redis-keys-panel/" class="md-nav__link">
         Keys consuming a lot of memory
       </a>
     </li>
@@ -750,7 +789,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../redis-app/redis-gears-panel/" class="md-nav__link">
+      <a href="../../redis-app/panels/redis-gears-panel/" class="md-nav__link">
         RedisGears Script Editor
       </a>
     </li>
@@ -1016,7 +1055,7 @@
                 
                 
                 <h1 id="streaming-data-source">Streaming Data Source<a class="headerlink" href="#streaming-data-source" title="Permanent link">&para;</a></h1>
-<p>Redis Data Source supports Streaming. Please take a look at specific command in the list for details.</p>
+<p>Redis Data Source supports Streaming. Please take a look at the <a href="../commands/">specific command</a> for details.</p>
 <div class="admonition note">
 <p class="admonition-title">A dot in the top right corner</p>
 <p>Since Grafana 7.4 a dot in the top right corner means that Streaming is enabled.</p>
@@ -1033,7 +1072,7 @@
 <p>When selected, <code>time</code> field will be added or replaced to allow visualize values using Graph or Time Series (Grafana 7.4+).</p>
 <div class="admonition important">
 <p class="admonition-title">Multi-line results</p>
-<p>If command returns more than one line, the last line of data will be returned.</p>
+<p>If the command returns more than one line, the last line of data will be returned.</p>
 </div>
 <div class="admonition example">
 <p class="admonition-title"><a href="../redis/XLEN/">XLEN</a></p>

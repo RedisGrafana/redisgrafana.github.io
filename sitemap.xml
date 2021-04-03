@@ -68,31 +68,35 @@
      <lastmod>2021-04-03</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>http://redisgrafana.github.io/redis-app/dashboards/</loc>
+     <loc>http://redisgrafana.github.io/redis-app/overview/</loc>
      <lastmod>2021-04-03</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>http://redisgrafana.github.io/redis-app/datasources/</loc>
+     <loc>http://redisgrafana.github.io/redis-app/dashboards/cli/</loc>
      <lastmod>2021-04-03</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>http://redisgrafana.github.io/redis-app/panels/</loc>
+     <loc>http://redisgrafana.github.io/redis-app/dashboards/overview/</loc>
      <lastmod>2021-04-03</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>http://redisgrafana.github.io/redis-app/redis-cli-panel/</loc>
+     <loc>http://redisgrafana.github.io/redis-app/dashboards/redis-gears/</loc>
      <lastmod>2021-04-03</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>http://redisgrafana.github.io/redis-app/redis-latency-panel/</loc>
+     <loc>http://redisgrafana.github.io/redis-app/panels/redis-cli-panel/</loc>
      <lastmod>2021-04-03</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>http://redisgrafana.github.io/redis-app/redis-keys-panel/</loc>
+     <loc>http://redisgrafana.github.io/redis-app/panels/redis-latency-panel/</loc>
      <lastmod>2021-04-03</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>http://redisgrafana.github.io/redis-app/redis-gears-panel/</loc>
+     <loc>http://redisgrafana.github.io/redis-app/panels/redis-keys-panel/</loc>
+     <lastmod>2021-04-03</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>http://redisgrafana.github.io/redis-app/panels/redis-gears-panel/</loc>
      <lastmod>2021-04-03</lastmod>
      <changefreq>daily</changefreq>
     </url><url>

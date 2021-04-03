@@ -676,32 +676,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../redis-app/dashboards/" class="md-nav__link">
-        Dashboards
-      </a>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../redis-app/datasources/" class="md-nav__link">
-        Data Sources
-      </a>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../redis-app/panels/" class="md-nav__link">
-        Custom Panels
+      <a href="../redis-app/overview/" class="md-nav__link">
+        Overview
       </a>
     </li>
   
@@ -715,14 +691,77 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_4" type="checkbox" id="__nav_5_4" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_2" type="checkbox" id="__nav_5_2" >
       
-      <label class="md-nav__link" for="__nav_5_4">
+      <label class="md-nav__link" for="__nav_5_2">
+        Dashboards
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Dashboards" data-md-level="2">
+        <label class="md-nav__title" for="__nav_5_2">
+          <span class="md-nav__icon md-icon"></span>
+          Dashboards
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../redis-app/dashboards/cli/" class="md-nav__link">
+        Redis CLI
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../redis-app/dashboards/overview/" class="md-nav__link">
+        Redis Overview
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../redis-app/dashboards/redis-gears/" class="md-nav__link">
+        RedisGears
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_3" type="checkbox" id="__nav_5_3" >
+      
+      <label class="md-nav__link" for="__nav_5_3">
         Panels
         <span class="md-nav__icon md-icon"></span>
       </label>
       <nav class="md-nav" aria-label="Panels" data-md-level="2">
-        <label class="md-nav__title" for="__nav_5_4">
+        <label class="md-nav__title" for="__nav_5_3">
           <span class="md-nav__icon md-icon"></span>
           Panels
         </label>
@@ -733,7 +772,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../redis-app/redis-cli-panel/" class="md-nav__link">
+      <a href="../redis-app/panels/redis-cli-panel/" class="md-nav__link">
         Command line interface (CLI)
       </a>
     </li>
@@ -745,7 +784,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../redis-app/redis-latency-panel/" class="md-nav__link">
+      <a href="../redis-app/panels/redis-latency-panel/" class="md-nav__link">
         Command Latency
       </a>
     </li>
@@ -757,7 +796,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../redis-app/redis-keys-panel/" class="md-nav__link">
+      <a href="../redis-app/panels/redis-keys-panel/" class="md-nav__link">
         Keys consuming a lot of memory
       </a>
     </li>
@@ -769,7 +808,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../redis-app/redis-gears-panel/" class="md-nav__link">
+      <a href="../redis-app/panels/redis-gears-panel/" class="md-nav__link">
         RedisGears Script Editor
       </a>
     </li>
@@ -1057,7 +1096,7 @@
                 
                 <h1 id="quickstart">Quickstart<a class="headerlink" href="#quickstart" title="Permanent link">&para;</a></h1>
 <h2 id="install-using-grafana-cli">Install using <code>grafana-cli</code><a class="headerlink" href="#install-using-grafana-cli" title="Permanent link">&para;</a></h2>
-<p>Use the <code>grafana-cli</code> tool to install from the commandline:</p>
+<p>Use the <code>grafana-cli</code> tool to install from the command-line:</p>
 <div class="tabbed-set" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><label for="__tabbed_1_1">Redis Application plug-in and Redis Data Source</label><div class="tabbed-content">
 <div class="highlight"><pre><span></span><code>grafana-cli plugins install redis-app
 </code></pre></div>
@@ -1070,7 +1109,7 @@
 <h2 id="run-using-docker">Run using <code>Docker</code><a class="headerlink" href="#run-using-docker" title="Permanent link">&para;</a></h2>
 <div class="admonition info">
 <p class="admonition-title">Login to Grafana</p>
-<p>Default username and password to login to Grafana is <code>admin</code>/<code>admin</code>.</p>
+<p>The Default username and password to login to Grafana are <strong>admin</strong>/<strong>admin</strong>.</p>
 </div>
 <div class="tabbed-set" data-tabs="2:2"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><label for="__tabbed_2_1">Redis Application plug-in and Redis Data Source</label><div class="tabbed-content">
 <div class="highlight"><pre><span></span><code>docker run -d -p <span class="m">3000</span>:3000 --name<span class="o">=</span>grafana -e <span class="s2">&quot;GF_INSTALL_PLUGINS=redis-app&quot;</span> grafana/grafana
@@ -1083,14 +1122,14 @@
 </div>
 <div class="admonition note">
 <p class="admonition-title">Docker Images</p>
-<p>Interested to try the latest features and verify bug fixes? Start nightly built <a href="../development/images/">Docker image</a>.</p>
+<p>Interested in the latest features and updates? Start nightly built <a href="../development/images/">Docker image</a>.</p>
 </div>
 <h2 id="install-without-internet-access">Install without Internet access<a class="headerlink" href="#install-without-internet-access" title="Permanent link">&para;</a></h2>
 <h3 id="redis-data-source">Redis Data Source<a class="headerlink" href="#redis-data-source" title="Permanent link">&para;</a></h3>
 <ul>
 <li>Download the latest version from <a href="https://github.com/RedisGrafana/grafana-redis-datasource/releases">Releases</a>.</li>
-<li>Unzip archive to <code>plugins/</code> folder for local Grafana installation or Docker plug-ins volume.</li>
-<li>Check permissions for <code>redis-datasource</code> binaries:</li>
+<li>Unzip an archive to the <code>plugins/</code> folder for local Grafana installation or Docker's volume.</li>
+<li>Check permissions for the <code>redis-datasource</code> binaries:</li>
 </ul>
 <div class="admonition important">
 <p class="admonition-title">Permissions</p>
@@ -1114,7 +1153,7 @@
 <h3 id="redis-application-plug-in">Redis Application plug-in<a class="headerlink" href="#redis-application-plug-in" title="Permanent link">&para;</a></h3>
 <ul>
 <li>Download the latest version from <a href="https://github.com/RedisGrafana/grafana-redis-app/releases">Releases</a>.</li>
-<li>Unzip archive to <code>plugins/</code> folder for local Grafana installation or Docker plug-ins volume.</li>
+<li>Unzip an archive to the <code>plugins/</code> folder for local Grafana installation or Docker's volume.</li>
 </ul>
 <h2 id="enable-redis-application-plug-in">Enable Redis Application plug-in<a class="headerlink" href="#enable-redis-application-plug-in" title="Permanent link">&para;</a></h2>
 <p>Redis Application plug-in is disabled by default. To enable:</p>
@@ -1123,14 +1162,14 @@
 </ul>
 <p><img alt="Grafana plug-ins" src="../images/redis-app/grafana-plugins.png" /></p>
 <ul>
-<li>Click <strong>Enable</strong> to add side menu, <a href="../redis-app/panels/">Custom panels</a> and import <a href="../redis-app/dashboards/">Dashboards</a>.</li>
+<li>Click <strong>Enable</strong> to add side menu, Custom panels and import Dashboards.</li>
 </ul>
 <p><img alt="Enable Redis Application plug-in" src="../images/redis-app/enable.png" /></p>
 <h2 id="configuration">Configuration<a class="headerlink" href="#configuration" title="Permanent link">&para;</a></h2>
 <h3 id="redis-data-source_1">Redis Data Source<a class="headerlink" href="#redis-data-source_1" title="Permanent link">&para;</a></h3>
 <p>The <a href="../redis-datasource/configuration/">Configuration</a> page explains how to connect data source to Redis database.</p>
 <h3 id="redis-application-plug-in_1">Redis Application plug-in<a class="headerlink" href="#redis-application-plug-in_1" title="Permanent link">&para;</a></h3>
-<p>The <a href="../redis-app/datasources/">Data Sources</a> page explains how to add and manage multiple Redis Data Sources.</p>
+<p>The <a href="../redis-app/overview/">Overview</a> page explains how to add and manage multiple Redis Data Sources.</p>
                 
               
               
