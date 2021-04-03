@@ -11,14 +11,14 @@
       
       
       
-        <link rel="canonical" href="http://redisgrafana.github.io/redis-datasource/redis-timeseries/TS-GET/">
+        <link rel="canonical" href="http://redisgrafana.github.io/redis-datasource/redis-gears/RG-PYEXECUTE/">
       
       <link rel="icon" href="../../../images/logo.png">
       <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-7.1.0">
     
     
       
-        <title>TS.GET - Redis plug-ins for Grafana</title>
+        <title>RG.PYEXECUTE - Redis plug-ins for Grafana</title>
       
     
     
@@ -69,7 +69,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#tsget" class="md-skip">
+        <a href="#rgpyexecute" class="md-skip">
           Skip to content
         </a>
       
@@ -98,7 +98,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              TS.GET
+              RG.PYEXECUTE
             
           </span>
         </div>
@@ -412,12 +412,14 @@
             
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_6" type="checkbox" id="__nav_4_6" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_6" type="checkbox" id="__nav_4_6" checked>
       
       <label class="md-nav__link" for="__nav_4_6">
         RedisGears
@@ -435,65 +437,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../../redis-gears/RG-DUMPREGISTRATIONS/" class="md-nav__link">
+      <a href="../RG-DUMPREGISTRATIONS/" class="md-nav__link">
         RG.DUMPREGISTRATIONS
       </a>
     </li>
   
 
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../redis-gears/RG-PYEXECUTE/" class="md-nav__link">
-        RG.PYEXECUTE
-      </a>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../redis-gears/RG-PYSTATS/" class="md-nav__link">
-        RG.PYSTATS
-      </a>
-    </li>
-  
-
-          
-        </ul>
-      </nav>
-    </li>
-  
-
-          
-            
-  
-  
-    
-  
-  
-    
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
-      
-      
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_7" type="checkbox" id="__nav_4_7" checked>
-      
-      <label class="md-nav__link" for="__nav_4_7">
-        RedisTimeSeries
-        <span class="md-nav__icon md-icon"></span>
-      </label>
-      <nav class="md-nav" aria-label="RedisTimeSeries" data-md-level="2">
-        <label class="md-nav__title" for="__nav_4_7">
-          <span class="md-nav__icon md-icon"></span>
-          RedisTimeSeries
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
           
             
   
@@ -509,12 +458,12 @@
       
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
-          TS.GET
+          RG.PYEXECUTE
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
-        TS.GET
+        RG.PYEXECUTE
       </a>
       
         
@@ -551,6 +500,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#dashboards" class="md-nav__link">
+    Dashboards
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -564,7 +520,58 @@
   
   
     <li class="md-nav__item">
-      <a href="../TS-RANGE/" class="md-nav__link">
+      <a href="../RG-PYSTATS/" class="md-nav__link">
+        RG.PYSTATS
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_7" type="checkbox" id="__nav_4_7" >
+      
+      <label class="md-nav__link" for="__nav_4_7">
+        RedisTimeSeries
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="RedisTimeSeries" data-md-level="2">
+        <label class="md-nav__title" for="__nav_4_7">
+          <span class="md-nav__icon md-icon"></span>
+          RedisTimeSeries
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../redis-timeseries/TS-GET/" class="md-nav__link">
+        TS.GET
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../redis-timeseries/TS-RANGE/" class="md-nav__link">
         TS.RANGE
       </a>
     </li>
@@ -922,6 +929,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#dashboards" class="md-nav__link">
+    Dashboards
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -934,18 +948,21 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/RedisGrafana/redisgrafana/edit/main/docs/redis-datasource/redis-timeseries/TS-GET.md" title="Edit this page" class="md-content__button md-icon">
+                  <a href="https://github.com/RedisGrafana/redisgrafana/edit/main/docs/redis-datasource/redis-gears/RG-PYEXECUTE.md" title="Edit this page" class="md-content__button md-icon">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
                   </a>
                 
                 
-                <h1 id="tsget">TS.GET<a class="headerlink" href="#tsget" title="Permanent link">&para;</a></h1>
-<p>Returns the last sample.</p>
+                <h1 id="rgpyexecute">RG.PYEXECUTE<a class="headerlink" href="#rgpyexecute" title="Permanent link">&para;</a></h1>
+<p>Executes a Python function.</p>
+<blockquote>
+<p>A RedisGears <a href="https://oss.redislabs.com/redisgears/functions.html#function">function</a> is a formal description of the processing steps in the data flow.</p>
+</blockquote>
 <div class="admonition info">
-<p class="admonition-title">RedisTimeSeries</p>
-<p><a href="https://oss.redislabs.com/redistimeseries/commands/#tsget">https://oss.redislabs.com/redistimeseries/commands/#tsget</a></p>
+<p class="admonition-title">RedisGears</p>
+<p><a href="https://oss.redislabs.com/redisgears/commands.html#rgpyexecute">https://oss.redislabs.com/redisgears/commands.html#rgpyexecute</a></p>
 </div>
-<p><img alt="TS.RANGE" src="../../../images/redis-datasource/commands/ts-get.png" /></p>
+<p><img alt="RG.PYEXECUTE" src="../../../images/redis-app/gears-panel.png" /></p>
 <h2 id="parameters">Parameters<a class="headerlink" href="#parameters" title="Permanent link">&para;</a></h2>
 <table>
 <thead>
@@ -956,15 +973,27 @@
 </thead>
 <tbody>
 <tr>
-<td>Key</td>
-<td>Key name</td>
+<td>Function</td>
+<td>Python function</td>
+</tr>
+<tr>
+<td>Unblocking</td>
+<td>Doesn't block the client during execution</td>
+</tr>
+<tr>
+<td>Requirements</td>
+<td>Ensures that list of dependencies it is given as an argument is installed on each shard before execution</td>
 </tr>
 </tbody>
 </table>
 <h2 id="streaming">Streaming<a class="headerlink" href="#streaming" title="Permanent link">&para;</a></h2>
-<p>Streaming is supported as <strong>Time Series</strong> and <strong>Data frame</strong>.</p>
+<p>Streaming is not supported.</p>
 <h2 id="visualization">Visualization<a class="headerlink" href="#visualization" title="Permanent link">&para;</a></h2>
-<p>Any standard visualization should work.</p>
+<p>This command is not available in Query Editor and can be used only using <a href="../../../redis-app/redis-gears-panel/">RedisGears Script Editor</a> panel.</p>
+<h2 id="dashboards">Dashboards<a class="headerlink" href="#dashboards" title="Permanent link">&para;</a></h2>
+<ul>
+<li><a href="../../../redis-app/dashboards/#redisgears">RedisGears</a> includes RedisGears Script Editor panel <strong>Python function</strong> using this command.</li>
+</ul>
                 
               
               
@@ -987,7 +1016,7 @@
   
     <nav class="md-footer__inner md-grid" aria-label="Footer">
       
-        <a href="../../redis-gears/RG-PYSTATS/" class="md-footer__link md-footer__link--prev" rel="prev">
+        <a href="../RG-DUMPREGISTRATIONS/" class="md-footer__link md-footer__link--prev" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
           </div>
@@ -996,19 +1025,19 @@
               <span class="md-footer__direction">
                 Previous
               </span>
-              RG.PYSTATS
+              RG.DUMPREGISTRATIONS
             </div>
           </div>
         </a>
       
       
-        <a href="../TS-RANGE/" class="md-footer__link md-footer__link--next" rel="next">
+        <a href="../RG-PYSTATS/" class="md-footer__link md-footer__link--next" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              TS.RANGE
+              RG.PYSTATS
             </div>
           </div>
           <div class="md-footer__button md-icon">
