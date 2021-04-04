@@ -11,14 +11,14 @@
       
       
       
-        <link rel="canonical" href="http://redisgrafana.github.io/redis-datasource/redis-timeseries/TS-GET/">
+        <link rel="canonical" href="http://redisgrafana.github.io/redis-datasource/redis-timeseries/TS-MRANGE/">
       
       <link rel="icon" href="../../../images/logo.png">
       <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-7.1.0">
     
     
       
-        <title>TS.GET - Redis plug-ins for Grafana</title>
+        <title>TS.MRANGE - Redis plug-ins for Grafana</title>
       
     
     
@@ -69,7 +69,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#tsget" class="md-skip">
+        <a href="#tsmrange" class="md-skip">
           Skip to content
         </a>
       
@@ -98,7 +98,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              TS.GET
+              TS.MRANGE
             
           </span>
         </div>
@@ -498,6 +498,30 @@
             
   
   
+  
+    <li class="md-nav__item">
+      <a href="../TS-GET/" class="md-nav__link">
+        TS.GET
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../TS-INFO/" class="md-nav__link">
+        TS.INFO
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
     
   
   
@@ -509,12 +533,12 @@
       
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
-          TS.GET
+          TS.MRANGE
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
-        TS.GET
+        TS.MRANGE
       </a>
       
         
@@ -534,6 +558,19 @@
   <a href="#parameters" class="md-nav__link">
     Parameters
   </a>
+  
+    <nav class="md-nav" aria-label="Parameters">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#aggregation" class="md-nav__link">
+    Aggregation
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -555,30 +592,6 @@
   
 </nav>
       
-    </li>
-  
-
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../TS-INFO/" class="md-nav__link">
-        TS.INFO
-      </a>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../TS-MRANGE/" class="md-nav__link">
-        TS.MRANGE
-      </a>
     </li>
   
 
@@ -981,6 +994,19 @@
     Parameters
   </a>
   
+    <nav class="md-nav" aria-label="Parameters">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#aggregation" class="md-nav__link">
+    Aggregation
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -1009,18 +1035,18 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/RedisGrafana/redisgrafana/edit/main/docs/redis-datasource/redis-timeseries/TS-GET.md" title="Edit this page" class="md-content__button md-icon">
+                  <a href="https://github.com/RedisGrafana/redisgrafana/edit/main/docs/redis-datasource/redis-timeseries/TS-MRANGE.md" title="Edit this page" class="md-content__button md-icon">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
                   </a>
                 
                 
-                <h1 id="tsget">TS.GET<a class="headerlink" href="#tsget" title="Permanent link">&para;</a></h1>
-<p>This command returns the last sample.</p>
+                <h1 id="tsmrange">TS.MRANGE<a class="headerlink" href="#tsmrange" title="Permanent link">&para;</a></h1>
+<p>This command query a timestamp range across multiple time series by a filter.</p>
 <div class="admonition info">
 <p class="admonition-title">RedisTimeSeries</p>
-<p><a href="https://oss.redislabs.com/redistimeseries/commands/#tsget">https://oss.redislabs.com/redistimeseries/commands/#tsget</a></p>
+<p><a href="https://oss.redislabs.com/redistimeseries/commands/#tsmrangetsmrevrange">https://oss.redislabs.com/redistimeseries/commands/#tsmrangetsmrevrange</a></p>
 </div>
-<p><img alt="TS.RANGE" src="../../../images/redis-datasource/commands/ts-get.png" /></p>
+<p><img alt="TS.MRANGE" src="../../../images/redis-datasource/commands/ts-mrange.png" /></p>
 <h2 id="parameters">Parameters<a class="headerlink" href="#parameters" title="Permanent link">&para;</a></h2>
 <table>
 <thead>
@@ -1034,10 +1060,82 @@
 <td>Key</td>
 <td>Key name</td>
 </tr>
+<tr>
+<td>Label Filter</td>
+<td><a href="https://oss.redislabs.com/redistimeseries/commands/#filtering">Filters</a>. A minimum of one <strong>l=v</strong> filter must be applied</td>
+</tr>
+<tr>
+<td>Legend Label</td>
+<td>Label for Frame's name. Will be displayed for two or more Time-series.</td>
+</tr>
+<tr>
+<td>Value Label</td>
+<td>Label for Serie's name. Will be displayed in the legend</td>
+</tr>
+<tr>
+<td>Aggregation</td>
+<td>Aggregation type</td>
+</tr>
+<tr>
+<td>Time Bucket (Aggregation enabled)</td>
+<td>Time bucket for Aggregation in milliseconds</td>
+</tr>
+<tr>
+<td>Fill Missing (Aggregation enabled)</td>
+<td>If checked, the data source will fill missing intervals</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="admonition-title">Labels</p>
+<p>If <strong>Legend Label</strong> is not provided, series will have all labels returned.</p>
+<p>Labels can be <a href="https://grafana.com/docs/grafana/latest/panels/transformations/">Transformed</a> if required.</p>
+</div>
+<h3 id="aggregation">Aggregation<a class="headerlink" href="#aggregation" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>None (default)</td>
+<td>No aggregation</td>
+</tr>
+<tr>
+<td>Avg</td>
+<td>Average</td>
+</tr>
+<tr>
+<td>Count</td>
+<td>Count number of samples</td>
+</tr>
+<tr>
+<td>Max</td>
+<td>Maximum</td>
+</tr>
+<tr>
+<td>Min</td>
+<td>Minimum</td>
+</tr>
+<tr>
+<td>Range</td>
+<td>Diff between maximum and minimum in the bucket</td>
+</tr>
+<tr>
+<td>Sum</td>
+<td>Summation</td>
+</tr>
 </tbody>
 </table>
 <h2 id="streaming">Streaming<a class="headerlink" href="#streaming" title="Permanent link">&para;</a></h2>
 <p>Streaming supported as <strong>Time Series</strong> and <strong>Data frame</strong>.</p>
+<div class="admonition important">
+<p class="admonition-title">Value Label</p>
+<p>Provide the <strong>Value Label</strong> to merge streaming results.</p>
+</div>
 <h2 id="visualization">Visualization<a class="headerlink" href="#visualization" title="Permanent link">&para;</a></h2>
 <p>Any standard visualization should work.</p>
                 
@@ -1062,7 +1160,7 @@
   
     <nav class="md-footer__inner md-grid" aria-label="Footer">
       
-        <a href="../../redis-gears/RG-PYSTATS/" class="md-footer__link md-footer__link--prev" rel="prev">
+        <a href="../TS-INFO/" class="md-footer__link md-footer__link--prev" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
           </div>
@@ -1071,19 +1169,19 @@
               <span class="md-footer__direction">
                 Previous
               </span>
-              RG.PYSTATS
+              TS.INFO
             </div>
           </div>
         </a>
       
       
-        <a href="../TS-INFO/" class="md-footer__link md-footer__link--next" rel="next">
+        <a href="../TS-QUERYINDEX/" class="md-footer__link md-footer__link--next" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              TS.INFO
+              TS.QUERYINDEX
             </div>
           </div>
           <div class="md-footer__button md-icon">
