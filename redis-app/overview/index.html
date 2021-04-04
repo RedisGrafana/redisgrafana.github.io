@@ -627,6 +627,13 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#enable-plug-in" class="md-nav__link">
+    Enable Plug-in
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#home" class="md-nav__link">
     Home
   </a>
@@ -656,6 +663,13 @@
         <li class="md-nav__item">
   <a href="#custom-panels" class="md-nav__link">
     Custom panels
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#privisioning" class="md-nav__link">
+    Privisioning
   </a>
   
 </li>
@@ -988,6 +1002,13 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#enable-plug-in" class="md-nav__link">
+    Enable Plug-in
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#home" class="md-nav__link">
     Home
   </a>
@@ -1021,6 +1042,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#privisioning" class="md-nav__link">
+    Privisioning
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1043,6 +1071,16 @@
 <a href="https://github.com/orgs/RedisGrafana/packages/container/package/redis-app"><img alt="Docker" src="https://github.com/RedisGrafana/grafana-redis-app/workflows/Docker/badge.svg" /></a></p>
 <p>The Redis Application is a plug-in for Grafana that provides application pages and custom panels for Redis Data Source.</p>
 <p>Plug-in's <strong>Home</strong> page helps to manage Redis Data Sources and provides quick access to dashboards.</p>
+<h2 id="enable-plug-in">Enable Plug-in<a class="headerlink" href="#enable-plug-in" title="Permanent link">&para;</a></h2>
+<p>The Redis Application plug-in is disabled after installation by default. To enable:</p>
+<ul>
+<li>Go to <code>Configuration</code> -&gt; <code>Plugins</code> and choose Redis Application plug-in.</li>
+</ul>
+<p><img alt="Grafana plug-ins" src="../../images/redis-app/grafana-plugins.png" /></p>
+<ul>
+<li>Click <strong>Enable</strong> to add side menu, Custom panels and import Dashboards.</li>
+</ul>
+<p><img alt="Enable Redis Application plug-in" src="../../images/redis-app/enable.png" /></p>
 <h2 id="home">Home<a class="headerlink" href="#home" title="Permanent link">&para;</a></h2>
 <p>The <strong>Home</strong> page connects to every configured data source and checks available Redis Modules using the <code>command</code> command.</p>
 <div class="admonition important">
@@ -1072,6 +1110,18 @@
 <li><a href="../panels/redis-keys-panel/">Keys consuming a lot of memory</a></li>
 <li><a href="../panels/redis-gears-panel/">RedisGears Script Editor</a></li>
 </ul>
+<h2 id="privisioning">Privisioning<a class="headerlink" href="#privisioning" title="Permanent link">&para;</a></h2>
+<p>Grafana supports managing plugins in Grafana by <a href="https://grafana.com/docs/grafana/latest/administration/provisioning/">adding one or more YAML config files</a> in the <strong>provisioning/plugins</strong> directory:</p>
+<ul>
+<li>Each config file can contain a list of apps that will be updated during start up.</li>
+<li>Grafana updates each app to match the configuration file.</li>
+</ul>
+<div class="highlight"><pre><span></span><code><span class="nt">apiVersion</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">1</span>
+
+<span class="nt">apps</span><span class="p">:</span>
+  <span class="p p-Indicator">-</span> <span class="nt">type</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">redis-app</span>
+    <span class="nt">disabled</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">false</span>
+</code></pre></div>
                 
               
               

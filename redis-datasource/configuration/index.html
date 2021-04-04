@@ -458,6 +458,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#privisioning" class="md-nav__link">
+    Privisioning
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#known-issues" class="md-nav__link">
     Known issues
   </a>
@@ -1253,6 +1260,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#privisioning" class="md-nav__link">
+    Privisioning
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#known-issues" class="md-nav__link">
     Known issues
   </a>
@@ -1347,6 +1361,54 @@
 <p>Client Certificate and Key should be provided when client authentication is enforced.</p>
 <h3 id="certification-authority">Certification Authority<a class="headerlink" href="#certification-authority" title="Permanent link">&para;</a></h3>
 <p>Provide certificate to validate server's certificate or enable <strong>Skip Verify</strong>.</p>
+<h2 id="privisioning">Privisioning<a class="headerlink" href="#privisioning" title="Permanent link">&para;</a></h2>
+<p>Grafana supports managing data sources by <a href="https://grafana.com/docs/grafana/latest/administration/provisioning/">adding one or more YAML config files</a> in the <strong>provisioning/datasources</strong> directory:</p>
+<ul>
+<li>Each config file can contain a list of datasources that will get added or updated during start up.</li>
+<li>If the data source already exists, then Grafana updates it to match the configuration file.</li>
+</ul>
+<div class="tabbed-set" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><label for="__tabbed_1_1">Standalone</label><div class="tabbed-content">
+<div class="highlight"><pre><span></span><code><span class="nt">apiVersion</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">1</span>
+
+<span class="nt">datasources</span><span class="p">:</span>
+  <span class="p p-Indicator">-</span> <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Redis</span>
+    <span class="nt">type</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">redis-datasource</span>
+    <span class="nt">access</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">proxy</span>
+    <span class="nt">orgId</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">1</span>
+    <span class="nt">isDefault</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">true</span>
+    <span class="nt">version</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">1</span>
+    <span class="nt">url</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">redis://host.docker.internal:6379</span>
+    <span class="nt">jsonData</span><span class="p">:</span>
+      <span class="nt">client</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">standalone</span>
+      <span class="nt">poolSize</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">5</span>
+      <span class="nt">timeout</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">10</span>
+      <span class="nt">pingInterval</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">0</span>
+      <span class="nt">pipelineWindow</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">0</span>
+    <span class="nt">editable</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">true</span>
+</code></pre></div>
+</div>
+<input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><label for="__tabbed_1_2">Sentinel</label><div class="tabbed-content">
+<div class="highlight"><pre><span></span><code><span class="nt">apiVersion</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">1</span>
+
+<span class="nt">datasources</span><span class="p">:</span>
+  <span class="p p-Indicator">-</span> <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Sentinel</span>
+    <span class="nt">type</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">redis-datasource</span>
+    <span class="nt">access</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">proxy</span>
+    <span class="nt">orgId</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">1</span>
+    <span class="nt">isDefault</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">true</span>
+    <span class="nt">version</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">1</span>
+    <span class="nt">url</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">redis://host.docker.internal:6379</span>
+    <span class="nt">jsonData</span><span class="p">:</span>
+      <span class="nt">client</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">sentinel</span>
+      <span class="nt">sentinelName</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Test</span>
+      <span class="nt">poolSize</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">5</span>
+      <span class="nt">timeout</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">10</span>
+      <span class="nt">pingInterval</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">0</span>
+      <span class="nt">pipelineWindow</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">0</span>
+    <span class="nt">editable</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">true</span>
+</code></pre></div>
+</div>
+</div>
 <h2 id="known-issues">Known issues<a class="headerlink" href="#known-issues" title="Permanent link">&para;</a></h2>
 <h3 id="plugin-health-check-failed">Plugin health check failed<a class="headerlink" href="#plugin-health-check-failed" title="Permanent link">&para;</a></h3>
 <p>Redis Data Source binaries should have executable permissions for Grafana to be able to execute it. Check out <a href="../../quickstart/#install-without-internet-access">Quickstart</a> page for more information.</p>
