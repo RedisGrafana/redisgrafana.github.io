@@ -68,7 +68,7 @@
      <lastmod>2021-04-06</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>http://redisgrafana.github.io/redis-datasource/redis/SLOWLOG-GET/</loc>
+     <loc>http://redisgrafana.github.io/redis-datasource/redis/SLOWLOG/</loc>
      <lastmod>2021-04-06</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
@@ -80,11 +80,15 @@
      <lastmod>2021-04-06</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
+     <loc>http://redisgrafana.github.io/redis-datasource/redis/TTL/</loc>
+     <lastmod>2021-04-06</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
      <loc>http://redisgrafana.github.io/redis-datasource/redis/TYPE/</loc>
      <lastmod>2021-04-06</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>http://redisgrafana.github.io/redis-datasource/redis/TTL/</loc>
+     <loc>http://redisgrafana.github.io/redis-datasource/redis/XINFO/</loc>
      <lastmod>2021-04-06</lastmod>
      <changefreq>daily</changefreq>
     </url><url>

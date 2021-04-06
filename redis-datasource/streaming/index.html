@@ -204,6 +204,8 @@ Grafana at
           
             
               
+                
+              
               <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
@@ -360,52 +362,19 @@ Grafana at
     Parameters
   </a>
   
-    <nav class="md-nav" aria-label="Parameters">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#interval" class="md-nav__link">
-    Interval
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#capacity" class="md-nav__link">
-    Capacity
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
 </li>
       
         <li class="md-nav__item">
-  <a href="#data-type" class="md-nav__link">
-    Data type
-  </a>
-  
-    <nav class="md-nav" aria-label="Data type">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
   <a href="#time-series" class="md-nav__link">
     Time series
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#data-frame" class="md-nav__link">
     Data frame
   </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -587,8 +556,8 @@ Grafana at
   
   
     <li class="md-nav__item">
-      <a href="../redis/SLOWLOG-GET/" class="md-nav__link">
-        SLOWLOG GET
+      <a href="../redis/SLOWLOG/" class="md-nav__link">
+        SLOWLOG
       </a>
     </li>
   
@@ -623,6 +592,18 @@ Grafana at
   
   
     <li class="md-nav__item">
+      <a href="../redis/TTL/" class="md-nav__link">
+        TTL
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../redis/TYPE/" class="md-nav__link">
         TYPE
       </a>
@@ -635,8 +616,8 @@ Grafana at
   
   
     <li class="md-nav__item">
-      <a href="../redis/TTL/" class="md-nav__link">
-        TTL
+      <a href="../redis/XINFO/" class="md-nav__link">
+        XINFO
       </a>
     </li>
   
@@ -1262,7 +1243,9 @@ Grafana at
             
             
               
-              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" hidden>
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
                     
@@ -1283,52 +1266,19 @@ Grafana at
     Parameters
   </a>
   
-    <nav class="md-nav" aria-label="Parameters">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#interval" class="md-nav__link">
-    Interval
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#capacity" class="md-nav__link">
-    Capacity
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
 </li>
       
         <li class="md-nav__item">
-  <a href="#data-type" class="md-nav__link">
-    Data type
-  </a>
-  
-    <nav class="md-nav" aria-label="Data type">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
   <a href="#time-series" class="md-nav__link">
     Time series
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#data-frame" class="md-nav__link">
     Data frame
   </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -1357,28 +1307,44 @@ Grafana at
 </div>
 <p><img alt="Streaming" src="../../images/redis-datasource/commands/info-ops-sec.png" /></p>
 <h2 id="parameters">Parameters<a class="headerlink" href="#parameters" title="Permanent link">&para;</a></h2>
-<h3 id="interval">Interval<a class="headerlink" href="#interval" title="Permanent link">&para;</a></h3>
-<p>Streaming interval in milliseconds. Default is 1000ms.</p>
-<h3 id="capacity">Capacity<a class="headerlink" href="#capacity" title="Permanent link">&para;</a></h3>
-<p>Values will be constantly added and will never exceed the given capacity. Default is 1000ms.</p>
-<h2 id="data-type">Data type<a class="headerlink" href="#data-type" title="Permanent link">&para;</a></h2>
-<p>Streaming data supported as Time series and Data frames.</p>
-<h3 id="time-series">Time series<a class="headerlink" href="#time-series" title="Permanent link">&para;</a></h3>
-<p>When selected, <code>time</code> field will be added or replaced to allow visualize values using Graph or Time Series (Grafana 7.4+).</p>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+<th>Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Interval</td>
+<td>Streaming interval in milliseconds</td>
+<td>1000 ms</td>
+</tr>
+<tr>
+<td>Capacity</td>
+<td>Values will be constantly added and will never exceed the given capacity</td>
+<td>1000 ms</td>
+</tr>
+<tr>
+<td>Data type</td>
+<td>Streaming data supported as Time series and Data frames</td>
+<td>Time series</td>
+</tr>
+</tbody>
+</table>
+<h2 id="time-series">Time series<a class="headerlink" href="#time-series" title="Permanent link">&para;</a></h2>
+<p>When selected, <code>time</code> field will be added or replaced to allow visualize values using Graph or Time Series (Grafana 7.4+) panels.</p>
 <div class="admonition important">
 <p class="admonition-title">Multi-line results</p>
 <p>If the command returns more than one line, the last line of data will be returned.</p>
 </div>
-<div class="admonition example">
-<p class="admonition-title"><a href="../redis/XLEN/">XLEN</a></p>
 <p><img alt="XLEN" src="../../images/redis-datasource/commands/xlen.png" /></p>
-</div>
-<h3 id="data-frame">Data frame<a class="headerlink" href="#data-frame" title="Permanent link">&para;</a></h3>
+<h2 id="data-frame">Data frame<a class="headerlink" href="#data-frame" title="Permanent link">&para;</a></h2>
 <p>When selected, data will be refreshed as is.</p>
-<div class="admonition example">
-<p class="admonition-title"><a href="../redis-gears/RG-DUMPREGISTRATIONS/">RG.DUMPREGISTRATIONS</a></p>
 <p><img alt="RG.DUMPREGISTRATIONS" src="../../images/redis-datasource/commands/rg-dumpregistrations.png" /></p>
-</div>
+                
+                  
                 
               
               

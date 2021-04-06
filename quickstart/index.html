@@ -204,6 +204,8 @@ Grafana at
           
             
               
+                
+              
               <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
@@ -599,8 +601,8 @@ Grafana at
   
   
     <li class="md-nav__item">
-      <a href="../redis-datasource/redis/SLOWLOG-GET/" class="md-nav__link">
-        SLOWLOG GET
+      <a href="../redis-datasource/redis/SLOWLOG/" class="md-nav__link">
+        SLOWLOG
       </a>
     </li>
   
@@ -635,6 +637,18 @@ Grafana at
   
   
     <li class="md-nav__item">
+      <a href="../redis-datasource/redis/TTL/" class="md-nav__link">
+        TTL
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../redis-datasource/redis/TYPE/" class="md-nav__link">
         TYPE
       </a>
@@ -647,8 +661,8 @@ Grafana at
   
   
     <li class="md-nav__item">
-      <a href="../redis-datasource/redis/TTL/" class="md-nav__link">
-        TTL
+      <a href="../redis-datasource/redis/XINFO/" class="md-nav__link">
+        XINFO
       </a>
     </li>
   
@@ -1274,7 +1288,9 @@ Grafana at
             
             
               
-              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" hidden>
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
                     
@@ -1412,9 +1428,7 @@ Grafana at
 <li>Unzip an archive to the <code>plugins/</code> folder for local Grafana installation or Docker's volume.</li>
 <li>Check permissions for the <code>redis-datasource</code> binaries:</li>
 </ul>
-<div class="admonition important">
-<p class="admonition-title">Permissions</p>
-<p>Redis Data Source binaries should have executable permissions for Grafana to be able to execute it.</p>
+<details class="important"><summary>Permissions</summary><p>Redis Data Source binaries should have executable permissions for Grafana to be able to execute it.</p>
 <div class="highlight"><pre><span></span><code>% ls -lrt redis-datasource*
 -rwxr-xr-x  <span class="m">1</span> mikhail  staff  <span class="m">13077504</span> Mar <span class="m">20</span> <span class="m">11</span>:20 redis-datasource_windows_amd64.exe
 -rwxr-xr-x  <span class="m">1</span> mikhail  staff  <span class="m">11796480</span> Mar <span class="m">20</span> <span class="m">11</span>:20 redis-datasource_linux_arm64
@@ -1422,7 +1436,7 @@ Grafana at
 -rwxr-xr-x  <span class="m">1</span> mikhail  staff  <span class="m">12644352</span> Mar <span class="m">20</span> <span class="m">11</span>:20 redis-datasource_linux_amd64
 -rwxr-xr-x  <span class="m">1</span> mikhail  staff  <span class="m">13806272</span> Mar <span class="m">20</span> <span class="m">11</span>:20 redis-datasource_darwin_amd64
 </code></pre></div>
-</div>
+</details>
 <ul>
 <li>Check that plug-in was registered:</li>
 </ul>
@@ -1441,6 +1455,8 @@ Grafana at
 <p>The <a href="../redis-datasource/configuration/">Configuration</a> page explains how to connect data source to Redis database.</p>
 <h3 id="redis-application-plug-in_1">Redis Application plug-in<a class="headerlink" href="#redis-application-plug-in_1" title="Permanent link">&para;</a></h3>
 <p>The <a href="../redis-app/overview/">Overview</a> page explains how to enable plug-in and manage multiple Redis Data Sources.</p>
+                
+                  
                 
               
               
