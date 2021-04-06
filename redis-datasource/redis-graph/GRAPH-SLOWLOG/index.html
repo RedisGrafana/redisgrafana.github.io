@@ -11,14 +11,14 @@
       
       
       
-        <link rel="canonical" href="http://redisgrafana.github.io/redis-datasource/redis/GET/">
+        <link rel="canonical" href="http://redisgrafana.github.io/redis-datasource/redis-graph/GRAPH-SLOWLOG/">
       
       <link rel="icon" href="../../../images/logo.png">
       <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-7.1.0">
     
     
       
-        <title>GET - Redis plug-ins for Grafana</title>
+        <title>GRAPH.SLOWLOG - Redis plug-ins for Grafana</title>
       
     
     
@@ -47,12 +47,12 @@
     
          
 <meta property="og:type" content="website" />
-<meta property="og:title" content="Redis plug-ins for Grafana - GET" />
+<meta property="og:title" content="Redis plug-ins for Grafana - GRAPH.SLOWLOG" />
 <meta property="og:description" content="The Redis plug-ins for Grafana allow users to connect to the Redis databases and build dashboards in Grafana to observe and interact with Redis and Application data." />
-<meta property="og:url" content="http://redisgrafana.github.io/redis-datasource/redis/GET/" />
+<meta property="og:url" content="http://redisgrafana.github.io/redis-datasource/redis-graph/GRAPH-SLOWLOG/" />
 <meta property="og:image" content="http://redisgrafana.github.ioimages/logo.png" />
 <meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content="Redis plug-ins for Grafana - GET" />
+<meta name="twitter:title" content="Redis plug-ins for Grafana - GRAPH.SLOWLOG" />
 <meta name="twitter:site" content="@mikhailvolkov" />
 <meta name="twitter:creator" content="@mikhailvolkov" />
 <meta name="twitter:description" content="The Redis plug-ins for Grafana allow users to connect to the Redis databases and build dashboards in Grafana to observe and interact with Redis and Application data." />
@@ -81,7 +81,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#get" class="md-skip">
+        <a href="#graphslowlog" class="md-skip">
           Skip to content
         </a>
       
@@ -120,7 +120,7 @@ Grafana at
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              GET
+              GRAPH.SLOWLOG
             
           </span>
         </div>
@@ -359,14 +359,12 @@ Grafana at
             
   
   
-    
-  
   
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_5" type="checkbox" id="__nav_4_5" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_5" type="checkbox" id="__nav_4_5" >
       
       <label class="md-nav__link" for="__nav_4_5">
         Redis
@@ -382,63 +380,11 @@ Grafana at
             
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          GET
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../redis/GET/" class="md-nav__link">
         GET
       </a>
-      
-        
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#parameters" class="md-nav__link">
-    Parameters
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#streaming" class="md-nav__link">
-    Streaming
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#visualization" class="md-nav__link">
-    Visualization
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -448,7 +394,7 @@ Grafana at
   
   
     <li class="md-nav__item">
-      <a href="../INFO/" class="md-nav__link">
+      <a href="../../redis/INFO/" class="md-nav__link">
         INFO
       </a>
     </li>
@@ -472,7 +418,7 @@ Grafana at
   
   
     <li class="md-nav__item">
-      <a href="../XLEN/" class="md-nav__link">
+      <a href="../../redis/XLEN/" class="md-nav__link">
         XLEN
       </a>
     </li>
@@ -551,12 +497,14 @@ Grafana at
             
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_7" type="checkbox" id="__nav_4_7" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_7" type="checkbox" id="__nav_4_7" checked>
       
       <label class="md-nav__link" for="__nav_4_7">
         RedisGraph
@@ -574,7 +522,7 @@ Grafana at
   
   
     <li class="md-nav__item">
-      <a href="../../redis-graph/GRAPH-QUERY/" class="md-nav__link">
+      <a href="../GRAPH-QUERY/" class="md-nav__link">
         GRAPH.QUERY
       </a>
     </li>
@@ -584,11 +532,63 @@ Grafana at
             
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../../redis-graph/GRAPH-SLOWLOG/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          GRAPH.SLOWLOG
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         GRAPH.SLOWLOG
       </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#parameters" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#streaming" class="md-nav__link">
+    Streaming
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#visualization" class="md-nav__link">
+    Visualization
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1136,37 +1136,26 @@ Grafana at
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/RedisGrafana/redisgrafana/edit/main/docs/redis-datasource/redis/GET.md" title="Edit this page" class="md-content__button md-icon">
+                  <a href="https://github.com/RedisGrafana/redisgrafana/edit/main/docs/redis-datasource/redis-graph/GRAPH-SLOWLOG.md" title="Edit this page" class="md-content__button md-icon">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
                   </a>
                 
                 
-                <h1 id="get">GET<a class="headerlink" href="#get" title="Permanent link">&para;</a></h1>
-<p>This command returns the value of key.</p>
+                <h1 id="graphslowlog">GRAPH.SLOWLOG<a class="headerlink" href="#graphslowlog" title="Permanent link">&para;</a></h1>
+<p>This command returns a list containing up to 10 of the slowest queries issued against the given graph ID.</p>
 <div class="admonition info">
-<p class="admonition-title">Redis Core</p>
-<p><a href="https://redis.io/commands/GET">https://redis.io/commands/GET</a></p>
+<p class="admonition-title">RedisGraph</p>
+<p><a href="https://oss.redislabs.com/redisgraph/commands/#graphslowlog">https://oss.redislabs.com/redisgraph/commands/#graphslowlog</a></p>
 </div>
-<p><img alt="GET" src="../../../images/redis-datasource/commands/get.png" /></p>
+<p><img alt="GRAPH.SLOWLOG" src="../../../images/redis-datasource/commands/graph-slowlog.png" /></p>
 <h2 id="parameters">Parameters<a class="headerlink" href="#parameters" title="Permanent link">&para;</a></h2>
-<table>
-<thead>
-<tr>
-<th>Parameter</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Key</td>
-<td>Key name</td>
-</tr>
-</tbody>
-</table>
+<p>No parameters is required.</p>
 <h2 id="streaming">Streaming<a class="headerlink" href="#streaming" title="Permanent link">&para;</a></h2>
-<p>Streaming supported as <strong>Time Series</strong> and <strong>Data frame</strong>.</p>
+<p>Streaming supported as <strong>Data frame</strong>.</p>
 <h2 id="visualization">Visualization<a class="headerlink" href="#visualization" title="Permanent link">&para;</a></h2>
-<p>Any standard visualization should work.</p>
+<ul>
+<li>Table</li>
+</ul>
                 
               
               
@@ -1189,7 +1178,7 @@ Grafana at
   
     <nav class="md-footer__inner md-grid" aria-label="Footer">
       
-        <a href="../../commands/" class="md-footer__link md-footer__link--prev" rel="prev">
+        <a href="../GRAPH-QUERY/" class="md-footer__link md-footer__link--prev" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
           </div>
@@ -1198,19 +1187,19 @@ Grafana at
               <span class="md-footer__direction">
                 Previous
               </span>
-              Commands
+              GRAPH.QUERY
             </div>
           </div>
         </a>
       
       
-        <a href="../INFO/" class="md-footer__link md-footer__link--next" rel="next">
+        <a href="../../redis-search/FT-INFO/" class="md-footer__link md-footer__link--next" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              INFO
+              FT.INFO
             </div>
           </div>
           <div class="md-footer__button md-icon">

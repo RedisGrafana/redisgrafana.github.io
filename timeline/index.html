@@ -498,11 +498,101 @@ Grafana at
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_7" type="checkbox" id="__nav_4_7" >
       
       <label class="md-nav__link" for="__nav_4_7">
+        RedisGraph
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="RedisGraph" data-md-level="2">
+        <label class="md-nav__title" for="__nav_4_7">
+          <span class="md-nav__icon md-icon"></span>
+          RedisGraph
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../redis-datasource/redis-graph/GRAPH-QUERY/" class="md-nav__link">
+        GRAPH.QUERY
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../redis-datasource/redis-graph/GRAPH-SLOWLOG/" class="md-nav__link">
+        GRAPH.SLOWLOG
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_8" type="checkbox" id="__nav_4_8" >
+      
+      <label class="md-nav__link" for="__nav_4_8">
+        RediSearch
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="RediSearch" data-md-level="2">
+        <label class="md-nav__title" for="__nav_4_8">
+          <span class="md-nav__icon md-icon"></span>
+          RediSearch
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../redis-datasource/redis-search/FT-INFO/" class="md-nav__link">
+        FT.INFO
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_9" type="checkbox" id="__nav_4_9" >
+      
+      <label class="md-nav__link" for="__nav_4_9">
         RedisTimeSeries
         <span class="md-nav__icon md-icon"></span>
       </label>
       <nav class="md-nav" aria-label="RedisTimeSeries" data-md-level="2">
-        <label class="md-nav__title" for="__nav_4_7">
+        <label class="md-nav__title" for="__nav_4_9">
           <span class="md-nav__icon md-icon"></span>
           RedisTimeSeries
         </label>
@@ -1032,6 +1122,7 @@ Grafana at
     right: -5px;
     width: 10px;
     height: 10px;
+    transform: rotate(-45deg);
     -webkit-transform: rotate(-45deg);
   }
 
@@ -1284,6 +1375,30 @@ Grafana at
   <article>
     <div class="inner">
       <span class="date">
+        <span class="month">Sep</span>
+        <span class="year">2020</span>
+      </span>
+      <h2>Redis Labs Blogs</h2>
+      <p>
+        Series of blog posts "<a
+          target="_blank"
+          href="https://redislabs.com/blog/introducing-the-redis-data-source-plug-in-for-grafana/"
+          >Introducing the Redis Data Source Plug-in for Grafana</a
+        >", "<a
+          target="_blank"
+          href="https://redislabs.com/blog/how-to-use-the-new-redis-data-source-for-grafana-plug-in/"
+          >How to Use the New Redis Data Source for Grafana Plug-in</a
+        >" and "<a
+          target="_blank"
+          href="https://redislabs.com/blog/3-real-life-apps-built-with-redis-data-source-for-grafana/"
+          >3 Real-Life Apps Built with Redis Data Source for Grafana</a
+        >".
+      </p>
+    </div>
+  </article>
+  <article>
+    <div class="inner">
+      <span class="date">
         <span class="month">Aug</span>
         <span class="year">2020</span>
       </span>
@@ -1331,9 +1446,17 @@ Grafana at
       </span>
       <h2>First commit</h2>
       <p>
-        Itamar Haber did first commit with a prototype for
+        <a target="_blank" href="https://twitter.com/itamarhaber?lang=en"
+          >Itamar Haber</a
+        >
+        did the first commit building a prototype for
         <a target="_blank" href="https://redistimeseries.io">RedisTimeSeries</a>
-        TS.RANGE command.
+        using
+        <a href="https://github.com/mediocregopher/radix">Radix</a> client.
+        <a target="_blank" href="https://twitter.com/mikhailvolkov"
+          >Mikhail Volkov</a
+        >
+        did another prototype which was merged to Redis Data Source.
       </p>
     </div>
   </article>
