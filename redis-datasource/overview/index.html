@@ -11,14 +11,14 @@
       
       
       
-        <link rel="canonical" href="http://redisgrafana.github.io/redis-datasource/streaming/">
+        <link rel="canonical" href="http://redisgrafana.github.io/redis-datasource/overview/">
       
       <link rel="icon" href="../../images/logo.png">
       <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-7.1.0">
     
     
       
-        <title>Streaming - Redis plug-ins for Grafana</title>
+        <title>Overview - Redis plug-ins for Grafana</title>
       
     
     
@@ -47,12 +47,12 @@
     
          
 <meta property="og:type" content="website" />
-<meta property="og:title" content="Redis plug-ins for Grafana - Streaming" />
+<meta property="og:title" content="Redis plug-ins for Grafana - Overview" />
 <meta property="og:description" content="The Redis plug-ins for Grafana allow users to connect to the Redis databases and build dashboards in Grafana to observe and interact with Redis and Application data." />
-<meta property="og:url" content="http://redisgrafana.github.io/redis-datasource/streaming/" />
+<meta property="og:url" content="http://redisgrafana.github.io/redis-datasource/overview/" />
 <meta property="og:image" content="http://redisgrafana.github.ioimages/logo.png" />
 <meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content="Redis plug-ins for Grafana - Streaming" />
+<meta name="twitter:title" content="Redis plug-ins for Grafana - Overview" />
 <meta name="twitter:site" content="@mikhailvolkov" />
 <meta name="twitter:creator" content="@mikhailvolkov" />
 <meta name="twitter:description" content="The Redis plug-ins for Grafana allow users to connect to the Redis databases and build dashboards in Grafana to observe and interact with Redis and Application data." />
@@ -81,7 +81,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#streaming-data-source" class="md-skip">
+        <a href="#redis-data-source" class="md-skip">
           Skip to content
         </a>
       
@@ -120,7 +120,7 @@ Grafana at
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Streaming
+              Overview
             
           </span>
         </div>
@@ -204,8 +204,6 @@ Grafana at
           
             
               
-                
-              
               <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
@@ -288,6 +286,21 @@ Grafana at
 
   
   
+  
+    <li class="md-nav__item">
+      <a href="../../timeline/" class="md-nav__link">
+        Timeline
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
     
   
   
@@ -297,30 +310,18 @@ Grafana at
     <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" checked>
       
-      <label class="md-nav__link" for="__nav_4">
+      <label class="md-nav__link" for="__nav_5">
         Redis Data Source
         <span class="md-nav__icon md-icon"></span>
       </label>
       <nav class="md-nav" aria-label="Redis Data Source" data-md-level="1">
-        <label class="md-nav__title" for="__nav_4">
+        <label class="md-nav__title" for="__nav_5">
           <span class="md-nav__icon md-icon"></span>
           Redis Data Source
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../configuration/" class="md-nav__link">
-        Configuration
-      </a>
-    </li>
-  
-
           
             
   
@@ -336,12 +337,12 @@ Grafana at
       
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
-          Streaming
+          Overview
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
-        Streaming
+        Overview
       </a>
       
         
@@ -358,23 +359,111 @@ Grafana at
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#configuration" class="md-nav__link">
+    Configuration
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#query-editor" class="md-nav__link">
+    Query Editor
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#streaming" class="md-nav__link">
+    Streaming
+  </a>
+  
+    <nav class="md-nav" aria-label="Streaming">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
   <a href="#parameters" class="md-nav__link">
     Parameters
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#time-series" class="md-nav__link">
     Time series
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#data-frame" class="md-nav__link">
     Data frame
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#variables" class="md-nav__link">
+    Variables
+  </a>
+  
+    <nav class="md-nav" aria-label="Variables">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#supported-parameters" class="md-nav__link">
+    Supported Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#how-to-use-sunion-for-multi-select-variable" class="md-nav__link">
+    How to use SUNION for multi-select variable?
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#privisioning" class="md-nav__link">
+    Privisioning
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#known-issues" class="md-nav__link">
+    Known issues
+  </a>
+  
+    <nav class="md-nav" aria-label="Known issues">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#plugin-health-check-failed" class="md-nav__link">
+    Plugin health check failed
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#redis_datasource_darwin_amd64-cannot-be-opened-because-the-developer-cannot-be-verified" class="md-nav__link">
+    Redis_datasource_darwin_amd64 cannot be opened because the developer cannot be verified
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -391,8 +480,8 @@ Grafana at
   
   
     <li class="md-nav__item">
-      <a href="../variables/" class="md-nav__link">
-        Variables
+      <a href="../configuration/" class="md-nav__link">
+        Configuration
       </a>
     </li>
   
@@ -418,14 +507,14 @@ Grafana at
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_5" type="checkbox" id="__nav_4_5" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_4" type="checkbox" id="__nav_5_4" >
       
-      <label class="md-nav__link" for="__nav_4_5">
+      <label class="md-nav__link" for="__nav_5_4">
         Redis
         <span class="md-nav__icon md-icon"></span>
       </label>
       <nav class="md-nav" aria-label="Redis" data-md-level="2">
-        <label class="md-nav__title" for="__nav_4_5">
+        <label class="md-nav__title" for="__nav_5_4">
           <span class="md-nav__icon md-icon"></span>
           Redis
         </label>
@@ -438,6 +527,30 @@ Grafana at
     <li class="md-nav__item">
       <a href="../redis/CLIENT-LIST/" class="md-nav__link">
         CLIENT LIST
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../redis/CLUSTER-INFO/" class="md-nav__link">
+        CLUSTER INFO
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../redis/CLUSTER-NODES/" class="md-nav__link">
+        CLUSTER NODES
       </a>
     </li>
   
@@ -635,6 +748,30 @@ Grafana at
   
 
           
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../redis/XRANGE/" class="md-nav__link">
+        XRANGE
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../redis/XREVRANGE/" class="md-nav__link">
+        XREVRANGE
+      </a>
+    </li>
+  
+
+          
         </ul>
       </nav>
     </li>
@@ -649,14 +786,14 @@ Grafana at
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_6" type="checkbox" id="__nav_4_6" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_5" type="checkbox" id="__nav_5_5" >
       
-      <label class="md-nav__link" for="__nav_4_6">
+      <label class="md-nav__link" for="__nav_5_5">
         RedisGears
         <span class="md-nav__icon md-icon"></span>
       </label>
       <nav class="md-nav" aria-label="RedisGears" data-md-level="2">
-        <label class="md-nav__title" for="__nav_4_6">
+        <label class="md-nav__title" for="__nav_5_5">
           <span class="md-nav__icon md-icon"></span>
           RedisGears
         </label>
@@ -712,14 +849,14 @@ Grafana at
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_7" type="checkbox" id="__nav_4_7" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_6" type="checkbox" id="__nav_5_6" >
       
-      <label class="md-nav__link" for="__nav_4_7">
+      <label class="md-nav__link" for="__nav_5_6">
         RedisGraph
         <span class="md-nav__icon md-icon"></span>
       </label>
       <nav class="md-nav" aria-label="RedisGraph" data-md-level="2">
-        <label class="md-nav__title" for="__nav_4_7">
+        <label class="md-nav__title" for="__nav_5_6">
           <span class="md-nav__icon md-icon"></span>
           RedisGraph
         </label>
@@ -763,14 +900,14 @@ Grafana at
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_8" type="checkbox" id="__nav_4_8" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_7" type="checkbox" id="__nav_5_7" >
       
-      <label class="md-nav__link" for="__nav_4_8">
+      <label class="md-nav__link" for="__nav_5_7">
         RediSearch
         <span class="md-nav__icon md-icon"></span>
       </label>
       <nav class="md-nav" aria-label="RediSearch" data-md-level="2">
-        <label class="md-nav__title" for="__nav_4_8">
+        <label class="md-nav__title" for="__nav_5_7">
           <span class="md-nav__icon md-icon"></span>
           RediSearch
         </label>
@@ -802,14 +939,14 @@ Grafana at
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_9" type="checkbox" id="__nav_4_9" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_8" type="checkbox" id="__nav_5_8" >
       
-      <label class="md-nav__link" for="__nav_4_9">
+      <label class="md-nav__link" for="__nav_5_8">
         RedisTimeSeries
         <span class="md-nav__icon md-icon"></span>
       </label>
       <nav class="md-nav" aria-label="RedisTimeSeries" data-md-level="2">
-        <label class="md-nav__title" for="__nav_4_9">
+        <label class="md-nav__title" for="__nav_5_8">
           <span class="md-nav__icon md-icon"></span>
           RedisTimeSeries
         </label>
@@ -900,14 +1037,14 @@ Grafana at
     <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6" type="checkbox" id="__nav_6" >
       
-      <label class="md-nav__link" for="__nav_5">
+      <label class="md-nav__link" for="__nav_6">
         Redis Application plug-in
         <span class="md-nav__icon md-icon"></span>
       </label>
       <nav class="md-nav" aria-label="Redis Application plug-in" data-md-level="1">
-        <label class="md-nav__title" for="__nav_5">
+        <label class="md-nav__title" for="__nav_6">
           <span class="md-nav__icon md-icon"></span>
           Redis Application plug-in
         </label>
@@ -933,14 +1070,14 @@ Grafana at
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_2" type="checkbox" id="__nav_5_2" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6_2" type="checkbox" id="__nav_6_2" >
       
-      <label class="md-nav__link" for="__nav_5_2">
+      <label class="md-nav__link" for="__nav_6_2">
         Dashboards
         <span class="md-nav__icon md-icon"></span>
       </label>
       <nav class="md-nav" aria-label="Dashboards" data-md-level="2">
-        <label class="md-nav__title" for="__nav_5_2">
+        <label class="md-nav__title" for="__nav_6_2">
           <span class="md-nav__icon md-icon"></span>
           Dashboards
         </label>
@@ -996,14 +1133,14 @@ Grafana at
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_3" type="checkbox" id="__nav_5_3" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6_3" type="checkbox" id="__nav_6_3" >
       
-      <label class="md-nav__link" for="__nav_5_3">
+      <label class="md-nav__link" for="__nav_6_3">
         Panels
         <span class="md-nav__icon md-icon"></span>
       </label>
       <nav class="md-nav" aria-label="Panels" data-md-level="2">
-        <label class="md-nav__title" for="__nav_5_3">
+        <label class="md-nav__title" for="__nav_6_3">
           <span class="md-nav__icon md-icon"></span>
           Panels
         </label>
@@ -1082,14 +1219,14 @@ Grafana at
     <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6" type="checkbox" id="__nav_6" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_7" type="checkbox" id="__nav_7" >
       
-      <label class="md-nav__link" for="__nav_6">
+      <label class="md-nav__link" for="__nav_7">
         Development
         <span class="md-nav__icon md-icon"></span>
       </label>
       <nav class="md-nav" aria-label="Development" data-md-level="1">
-        <label class="md-nav__title" for="__nav_6">
+        <label class="md-nav__title" for="__nav_7">
           <span class="md-nav__icon md-icon"></span>
           Development
         </label>
@@ -1162,14 +1299,14 @@ Grafana at
     <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_7" type="checkbox" id="__nav_7" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_8" type="checkbox" id="__nav_8" >
       
-      <label class="md-nav__link" for="__nav_7">
+      <label class="md-nav__link" for="__nav_8">
         Projects
         <span class="md-nav__icon md-icon"></span>
       </label>
       <nav class="md-nav" aria-label="Projects" data-md-level="1">
-        <label class="md-nav__title" for="__nav_7">
+        <label class="md-nav__title" for="__nav_8">
           <span class="md-nav__icon md-icon"></span>
           Projects
         </label>
@@ -1205,36 +1342,6 @@ Grafana at
   
 
     
-      
-      
-      
-
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../timeline/" class="md-nav__link">
-        Timeline
-      </a>
-    </li>
-  
-
-    
-      
-      
-      
-
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../faq/" class="md-nav__link">
-        FAQ
-      </a>
-    </li>
-  
-
-    
   </ul>
 </nav>
                   </div>
@@ -1243,9 +1350,7 @@ Grafana at
             
             
               
-                
-              
-              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" hidden>
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
                     
@@ -1262,23 +1367,111 @@ Grafana at
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#configuration" class="md-nav__link">
+    Configuration
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#query-editor" class="md-nav__link">
+    Query Editor
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#streaming" class="md-nav__link">
+    Streaming
+  </a>
+  
+    <nav class="md-nav" aria-label="Streaming">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
   <a href="#parameters" class="md-nav__link">
     Parameters
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#time-series" class="md-nav__link">
     Time series
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#data-frame" class="md-nav__link">
     Data frame
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#variables" class="md-nav__link">
+    Variables
+  </a>
+  
+    <nav class="md-nav" aria-label="Variables">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#supported-parameters" class="md-nav__link">
+    Supported Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#how-to-use-sunion-for-multi-select-variable" class="md-nav__link">
+    How to use SUNION for multi-select variable?
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#privisioning" class="md-nav__link">
+    Privisioning
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#known-issues" class="md-nav__link">
+    Known issues
+  </a>
+  
+    <nav class="md-nav" aria-label="Known issues">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#plugin-health-check-failed" class="md-nav__link">
+    Plugin health check failed
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#redis_datasource_darwin_amd64-cannot-be-opened-because-the-developer-cannot-be-verified" class="md-nav__link">
+    Redis_datasource_darwin_amd64 cannot be opened because the developer cannot be verified
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1294,19 +1487,37 @@ Grafana at
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/RedisGrafana/redisgrafana/edit/main/docs/redis-datasource/streaming.md" title="Edit this page" class="md-content__button md-icon">
+                  <a href="https://github.com/RedisGrafana/redisgrafana/edit/main/docs/redis-datasource/overview.md" title="Edit this page" class="md-content__button md-icon">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
                   </a>
                 
                 
-                <h1 id="streaming-data-source">Streaming Data Source<a class="headerlink" href="#streaming-data-source" title="Permanent link">&para;</a></h1>
+                <h1 id="redis-data-source">Redis Data Source<a class="headerlink" href="#redis-data-source" title="Permanent link">&para;</a></h1>
+<p><img alt="Release" src="https://img.shields.io/github/v/release/redisgrafana/grafana-redis-datasource.svg" /> <a href="https://grafana.com/grafana/plugins/redis-datasource"><img alt="Plugin Downloads" src="https://img.shields.io/badge/dynamic/json?color=green&amp;label=downloads&amp;query=%24.downloads&amp;url=https%3A%2F%2Fgrafana.com%2Fapi%2Fplugins%2Fredis-datasource" /></a></p>
+<p>Data Source allows to connect to any Redis database On-Premises or in the Cloud.</p>
+<div class="admonition tip">
+<p class="admonition-title">Redis Application plug-in</p>
+<p><a href="../../redis-app/overview/">Redis Application plug-in</a> helps to manage multiple Redis Data Sources and provides Custom panels.</p>
+</div>
+<h2 id="configuration">Configuration<a class="headerlink" href="#configuration" title="Permanent link">&para;</a></h2>
+<p>The <a href="../configuration/">Configuration</a> page explains how to connect data source to Redis database.</p>
+<p><img alt="Data Source" src="../../images/redis-datasource/config/config-editor.png" /></p>
+<h2 id="query-editor">Query Editor<a class="headerlink" href="#query-editor" title="Permanent link">&para;</a></h2>
+<ol>
+<li>Choose <strong>Type</strong> to select core Redis, Custom or Redis Module</li>
+<li>Select one of supported <a href="../commands/">Commands</a></li>
+<li>Provide all required parameters, depends on selected <strong>Command</strong></li>
+<li>Enable <a href="#streaming">Streaming</a> to visualize data on Graph, Time-Series (Grafana 7.4+) panels</li>
+</ol>
+<p><img alt="Query Editor" src="../../images/redis-datasource/query.png" /></p>
+<h2 id="streaming">Streaming<a class="headerlink" href="#streaming" title="Permanent link">&para;</a></h2>
 <p>Redis Data Source supports Streaming. Please take a look at the <a href="../commands/">specific command</a> for details.</p>
 <div class="admonition note">
 <p class="admonition-title">A dot in the top right corner</p>
 <p>Since Grafana 7.4 a dot in the top right corner means that Streaming is enabled.</p>
 </div>
 <p><img alt="Streaming" src="../../images/redis-datasource/commands/info-ops-sec.png" /></p>
-<h2 id="parameters">Parameters<a class="headerlink" href="#parameters" title="Permanent link">&para;</a></h2>
+<h3 id="parameters">Parameters<a class="headerlink" href="#parameters" title="Permanent link">&para;</a></h3>
 <table>
 <thead>
 <tr>
@@ -1333,18 +1544,133 @@ Grafana at
 </tr>
 </tbody>
 </table>
-<h2 id="time-series">Time series<a class="headerlink" href="#time-series" title="Permanent link">&para;</a></h2>
+<h3 id="time-series">Time series<a class="headerlink" href="#time-series" title="Permanent link">&para;</a></h3>
 <p>When selected, <code>time</code> field will be added or replaced to allow visualize values using Graph or Time Series (Grafana 7.4+) panels.</p>
 <div class="admonition important">
 <p class="admonition-title">Multi-line results</p>
 <p>If the command returns more than one line, the last line of data will be returned.</p>
 </div>
 <p><img alt="XLEN" src="../../images/redis-datasource/commands/xlen.png" /></p>
-<h2 id="data-frame">Data frame<a class="headerlink" href="#data-frame" title="Permanent link">&para;</a></h2>
+<h3 id="data-frame">Data frame<a class="headerlink" href="#data-frame" title="Permanent link">&para;</a></h3>
 <p>When selected, data will be refreshed as is.</p>
 <p><img alt="RG.DUMPREGISTRATIONS" src="../../images/redis-datasource/commands/rg-dumpregistrations.png" /></p>
-                
-                  
+<h2 id="variables">Variables<a class="headerlink" href="#variables" title="Permanent link">&para;</a></h2>
+<p>Template variables can query <a href="../commands/">Commands</a> and use other variables as parameters.</p>
+<p><img alt="Variables" src="../../images/redis-datasource/variables.png" /></p>
+<h3 id="supported-parameters">Supported Parameters<a class="headerlink" href="#supported-parameters" title="Permanent link">&para;</a></h3>
+<p>Variables will be replaced in the following parameters:</p>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+<th>Command</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Key</td>
+<td>Key name</td>
+<td><a href="../redis/GET/">GET</a>, XRANGE, etc.</td>
+</tr>
+<tr>
+<td>Query</td>
+<td>CLI query</td>
+<td>Any</td>
+</tr>
+<tr>
+<td>Field</td>
+<td>Hash Field</td>
+<td>HGET, HMGET</td>
+</tr>
+<tr>
+<td>Filter</td>
+<td>Filter</td>
+<td><a href="../redis-timeseries/TS-MRANGE/">TS.MRANGE</a>, <a href="../redis-timeseries/TS-QUERYINDEX/">TS.QUERYINDEX</a></td>
+</tr>
+<tr>
+<td>Legend</td>
+<td>Frame's name</td>
+<td><a href="../redis-timeseries/TS-RANGE/">TS.RANGE</a></td>
+</tr>
+<tr>
+<td>Value</td>
+<td>Serie's name</td>
+<td><a href="../redis-timeseries/TS-RANGE/">TS.RANGE</a></td>
+</tr>
+</tbody>
+</table>
+<h3 id="how-to-use-sunion-for-multi-select-variable">How to use SUNION for multi-select variable?<a class="headerlink" href="#how-to-use-sunion-for-multi-select-variable" title="Permanent link">&para;</a></h3>
+<div class="tabbed-set" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><label for="__tabbed_1_1">LUA</label><div class="tabbed-content">
+<p>The LUA script should work fine on a single shard deployment:</p>
+<div class="highlight"><pre><span></span><code><span class="nb">eval</span> <span class="s2">&quot;return redis.call(&#39;sunion&#39;,</span><span class="si">${</span><span class="nv">region</span><span class="p">:</span><span class="nv">singlequote</span><span class="si">}</span><span class="s2">)&quot;</span> <span class="m">0</span>
+</code></pre></div>
+</div>
+<input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><label for="__tabbed_1_2">Redis Gears</label><div class="tabbed-content">
+<p>Another option is to utilize <a href="https://redisgears.io">RedisGears</a> module:</p>
+<div class="highlight"><pre><span></span><code><span class="n">gb</span> <span class="o">=</span> <span class="n">GB</span><span class="p">(</span><span class="s1">&#39;CommandReader&#39;</span><span class="p">)</span>
+<span class="n">gb</span><span class="o">.</span><span class="n">flatmap</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span>  <span class="n">execute</span><span class="p">(</span><span class="s1">&#39;SUNION&#39;</span><span class="p">,</span> <span class="o">*</span><span class="n">x</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">&quot;,&quot;</span><span class="p">)))</span>
+<span class="n">gb</span><span class="o">.</span><span class="n">register</span><span class="p">(</span><span class="n">trigger</span><span class="o">=</span><span class="s1">&#39;SUNION&#39;</span><span class="p">)</span>
+</code></pre></div>
+<p>To execute the trigger in Grafana:</p>
+<div class="highlight"><pre><span></span><code>RG.TRIGGER SUNION <span class="si">${</span><span class="nv">region</span><span class="p">:</span><span class="nv">csv</span><span class="si">}</span>
+</code></pre></div>
+</div>
+</div>
+<p><img alt="SUNION Example" src="../../images/redis-datasource/variables-example.png" /></p>
+<h2 id="privisioning">Privisioning<a class="headerlink" href="#privisioning" title="Permanent link">&para;</a></h2>
+<p>Grafana supports managing data sources by <a href="https://grafana.com/docs/grafana/latest/administration/provisioning/">adding one or more YAML config files</a> in the <strong>provisioning/datasources</strong> directory:</p>
+<ul>
+<li>Each config file can contain a list of datasources that will get added or updated during start up.</li>
+<li>If the data source already exists, then Grafana updates it to match the configuration file.</li>
+</ul>
+<div class="tabbed-set" data-tabs="2:2"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><label for="__tabbed_2_1">Standalone</label><div class="tabbed-content">
+<div class="highlight"><pre><span></span><code><span class="nt">apiVersion</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">1</span>
+
+<span class="nt">datasources</span><span class="p">:</span>
+  <span class="p p-Indicator">-</span> <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Redis</span>
+    <span class="nt">type</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">redis-datasource</span>
+    <span class="nt">access</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">proxy</span>
+    <span class="nt">orgId</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">1</span>
+    <span class="nt">isDefault</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">true</span>
+    <span class="nt">version</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">1</span>
+    <span class="nt">url</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">redis://host.docker.internal:6379</span>
+    <span class="nt">jsonData</span><span class="p">:</span>
+      <span class="nt">client</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">standalone</span>
+      <span class="nt">poolSize</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">5</span>
+      <span class="nt">timeout</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">10</span>
+      <span class="nt">pingInterval</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">0</span>
+      <span class="nt">pipelineWindow</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">0</span>
+    <span class="nt">editable</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">true</span>
+</code></pre></div>
+</div>
+<input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><label for="__tabbed_2_2">Sentinel</label><div class="tabbed-content">
+<div class="highlight"><pre><span></span><code><span class="nt">apiVersion</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">1</span>
+
+<span class="nt">datasources</span><span class="p">:</span>
+  <span class="p p-Indicator">-</span> <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Sentinel</span>
+    <span class="nt">type</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">redis-datasource</span>
+    <span class="nt">access</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">proxy</span>
+    <span class="nt">orgId</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">1</span>
+    <span class="nt">isDefault</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">true</span>
+    <span class="nt">version</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">1</span>
+    <span class="nt">url</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">redis://host.docker.internal:6379</span>
+    <span class="nt">jsonData</span><span class="p">:</span>
+      <span class="nt">client</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">sentinel</span>
+      <span class="nt">sentinelName</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Test</span>
+      <span class="nt">poolSize</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">5</span>
+      <span class="nt">timeout</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">10</span>
+      <span class="nt">pingInterval</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">0</span>
+      <span class="nt">pipelineWindow</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">0</span>
+    <span class="nt">editable</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">true</span>
+</code></pre></div>
+</div>
+</div>
+<h2 id="known-issues">Known issues<a class="headerlink" href="#known-issues" title="Permanent link">&para;</a></h2>
+<h3 id="plugin-health-check-failed">Plugin health check failed<a class="headerlink" href="#plugin-health-check-failed" title="Permanent link">&para;</a></h3>
+<p>Redis Data Source binaries should have executable permissions for Grafana to be able to execute it. Check out <a href="../../quickstart/#install-without-internet-access">Quickstart</a> page for more information.</p>
+<h3 id="redis_datasource_darwin_amd64-cannot-be-opened-because-the-developer-cannot-be-verified"><code>Redis_datasource_darwin_amd64</code> cannot be opened because the developer cannot be verified<a class="headerlink" href="#redis_datasource_darwin_amd64-cannot-be-opened-because-the-developer-cannot-be-verified" title="Permanent link">&para;</a></h3>
+<p>Go to <code>System Preferences</code> &gt; <code>Security &amp; Privacy</code> and set to allow <code>redis-datasource_darwin_amd64</code>.</p>
                 
               
               
@@ -1367,7 +1693,7 @@ Grafana at
   
     <nav class="md-footer__inner md-grid" aria-label="Footer">
       
-        <a href="../configuration/" class="md-footer__link md-footer__link--prev" rel="prev">
+        <a href="../../timeline/" class="md-footer__link md-footer__link--prev" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
           </div>
@@ -1376,19 +1702,19 @@ Grafana at
               <span class="md-footer__direction">
                 Previous
               </span>
-              Configuration
+              Timeline
             </div>
           </div>
         </a>
       
       
-        <a href="../variables/" class="md-footer__link md-footer__link--next" rel="next">
+        <a href="../configuration/" class="md-footer__link md-footer__link--next" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              Variables
+              Configuration
             </div>
           </div>
           <div class="md-footer__button md-icon">
