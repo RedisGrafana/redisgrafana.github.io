@@ -1,223 +1,227 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"><url>
      <loc>http://redisgrafana.github.io/</loc>
-     <lastmod>2021-04-10</lastmod>
+     <lastmod>2021-04-16</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>http://redisgrafana.github.io/intro/</loc>
-     <lastmod>2021-04-10</lastmod>
+     <lastmod>2021-04-16</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>http://redisgrafana.github.io/quickstart/</loc>
-     <lastmod>2021-04-10</lastmod>
+     <lastmod>2021-04-16</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>http://redisgrafana.github.io/timeline/</loc>
-     <lastmod>2021-04-10</lastmod>
+     <lastmod>2021-04-16</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>http://redisgrafana.github.io/redis-datasource/overview/</loc>
-     <lastmod>2021-04-10</lastmod>
+     <lastmod>2021-04-16</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>http://redisgrafana.github.io/redis-datasource/configuration/</loc>
-     <lastmod>2021-04-10</lastmod>
+     <lastmod>2021-04-16</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>http://redisgrafana.github.io/redis-datasource/streaming/</loc>
-     <lastmod>2021-04-10</lastmod>
+     <lastmod>2021-04-16</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>http://redisgrafana.github.io/redis-datasource/variables/</loc>
-     <lastmod>2021-04-10</lastmod>
+     <lastmod>2021-04-16</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>http://redisgrafana.github.io/redis-datasource/commands/</loc>
-     <lastmod>2021-04-10</lastmod>
+     <lastmod>2021-04-16</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>http://redisgrafana.github.io/redis-datasource/redis/CLIENT-LIST/</loc>
-     <lastmod>2021-04-10</lastmod>
+     <lastmod>2021-04-16</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>http://redisgrafana.github.io/redis-datasource/redis/CLUSTER-INFO/</loc>
-     <lastmod>2021-04-10</lastmod>
+     <lastmod>2021-04-16</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>http://redisgrafana.github.io/redis-datasource/redis/CLUSTER-NODES/</loc>
-     <lastmod>2021-04-10</lastmod>
+     <lastmod>2021-04-16</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>http://redisgrafana.github.io/redis-datasource/redis/GET/</loc>
-     <lastmod>2021-04-10</lastmod>
+     <lastmod>2021-04-16</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>http://redisgrafana.github.io/redis-datasource/redis/HGET/</loc>
-     <lastmod>2021-04-10</lastmod>
+     <lastmod>2021-04-16</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>http://redisgrafana.github.io/redis-datasource/redis/HGETALL/</loc>
-     <lastmod>2021-04-10</lastmod>
+     <lastmod>2021-04-16</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>http://redisgrafana.github.io/redis-datasource/redis/HKEYS/</loc>
-     <lastmod>2021-04-10</lastmod>
+     <lastmod>2021-04-16</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>http://redisgrafana.github.io/redis-datasource/redis/HLEN/</loc>
-     <lastmod>2021-04-10</lastmod>
+     <lastmod>2021-04-16</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>http://redisgrafana.github.io/redis-datasource/redis/HMGET/</loc>
-     <lastmod>2021-04-10</lastmod>
+     <lastmod>2021-04-16</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>http://redisgrafana.github.io/redis-datasource/redis/INFO/</loc>
-     <lastmod>2021-04-10</lastmod>
+     <lastmod>2021-04-16</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>http://redisgrafana.github.io/redis-datasource/redis/LLEN/</loc>
-     <lastmod>2021-04-10</lastmod>
+     <lastmod>2021-04-16</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>http://redisgrafana.github.io/redis-datasource/redis/SCARD/</loc>
-     <lastmod>2021-04-10</lastmod>
+     <lastmod>2021-04-16</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>http://redisgrafana.github.io/redis-datasource/redis/SLOWLOG/</loc>
-     <lastmod>2021-04-10</lastmod>
+     <lastmod>2021-04-16</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>http://redisgrafana.github.io/redis-datasource/redis/SMEMBERS/</loc>
-     <lastmod>2021-04-10</lastmod>
-     <changefreq>daily</changefreq>
-    </url><url>
-     <loc>http://redisgrafana.github.io/redis-datasource/custom/TMSCAN/</loc>
-     <lastmod>2021-04-10</lastmod>
+     <lastmod>2021-04-16</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>http://redisgrafana.github.io/redis-datasource/redis/TTL/</loc>
-     <lastmod>2021-04-10</lastmod>
+     <lastmod>2021-04-16</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>http://redisgrafana.github.io/redis-datasource/redis/TYPE/</loc>
-     <lastmod>2021-04-10</lastmod>
+     <lastmod>2021-04-16</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>http://redisgrafana.github.io/redis-datasource/redis/XINFO/</loc>
-     <lastmod>2021-04-10</lastmod>
+     <lastmod>2021-04-16</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>http://redisgrafana.github.io/redis-datasource/redis/XLEN/</loc>
-     <lastmod>2021-04-10</lastmod>
+     <lastmod>2021-04-16</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>http://redisgrafana.github.io/redis-datasource/redis/XRANGE/</loc>
-     <lastmod>2021-04-10</lastmod>
+     <lastmod>2021-04-16</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>http://redisgrafana.github.io/redis-datasource/redis/XREVRANGE/</loc>
-     <lastmod>2021-04-10</lastmod>
+     <lastmod>2021-04-16</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>http://redisgrafana.github.io/redis-datasource/redis-gears/RG-DUMPREGISTRATIONS/</loc>
-     <lastmod>2021-04-10</lastmod>
+     <lastmod>2021-04-16</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>http://redisgrafana.github.io/redis-datasource/redis-gears/RG-PYEXECUTE/</loc>
-     <lastmod>2021-04-10</lastmod>
+     <lastmod>2021-04-16</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>http://redisgrafana.github.io/redis-datasource/redis-gears/RG-PYSTATS/</loc>
-     <lastmod>2021-04-10</lastmod>
+     <lastmod>2021-04-16</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>http://redisgrafana.github.io/redis-datasource/redis-graph/GRAPH-QUERY/</loc>
-     <lastmod>2021-04-10</lastmod>
+     <lastmod>2021-04-16</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>http://redisgrafana.github.io/redis-datasource/redis-graph/GRAPH-SLOWLOG/</loc>
-     <lastmod>2021-04-10</lastmod>
+     <lastmod>2021-04-16</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>http://redisgrafana.github.io/redis-datasource/redis-search/FT-INFO/</loc>
-     <lastmod>2021-04-10</lastmod>
+     <lastmod>2021-04-16</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>http://redisgrafana.github.io/redis-datasource/redis-timeseries/TS-GET/</loc>
-     <lastmod>2021-04-10</lastmod>
+     <lastmod>2021-04-16</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>http://redisgrafana.github.io/redis-datasource/redis-timeseries/TS-INFO/</loc>
-     <lastmod>2021-04-10</lastmod>
+     <lastmod>2021-04-16</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>http://redisgrafana.github.io/redis-datasource/redis-timeseries/TS-MRANGE/</loc>
-     <lastmod>2021-04-10</lastmod>
+     <lastmod>2021-04-16</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>http://redisgrafana.github.io/redis-datasource/redis-timeseries/TS-QUERYINDEX/</loc>
-     <lastmod>2021-04-10</lastmod>
+     <lastmod>2021-04-16</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>http://redisgrafana.github.io/redis-datasource/redis-timeseries/TS-RANGE/</loc>
-     <lastmod>2021-04-10</lastmod>
+     <lastmod>2021-04-16</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>http://redisgrafana.github.io/redis-datasource/custom/TMSCAN/</loc>
+     <lastmod>2021-04-16</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>http://redisgrafana.github.io/redis-app/overview/</loc>
-     <lastmod>2021-04-10</lastmod>
+     <lastmod>2021-04-16</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>http://redisgrafana.github.io/redis-app/dashboards/cli/</loc>
-     <lastmod>2021-04-10</lastmod>
+     <lastmod>2021-04-16</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>http://redisgrafana.github.io/redis-app/dashboards/overview/</loc>
-     <lastmod>2021-04-10</lastmod>
+     <lastmod>2021-04-16</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>http://redisgrafana.github.io/redis-app/dashboards/redis-gears/</loc>
-     <lastmod>2021-04-10</lastmod>
+     <lastmod>2021-04-16</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>http://redisgrafana.github.io/redis-app/panels/redis-cli-panel/</loc>
-     <lastmod>2021-04-10</lastmod>
+     <lastmod>2021-04-16</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>http://redisgrafana.github.io/redis-app/panels/redis-latency-panel/</loc>
-     <lastmod>2021-04-10</lastmod>
+     <lastmod>2021-04-16</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>http://redisgrafana.github.io/redis-app/panels/redis-keys-panel/</loc>
-     <lastmod>2021-04-10</lastmod>
+     <lastmod>2021-04-16</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>http://redisgrafana.github.io/redis-app/panels/redis-gears-panel/</loc>
-     <lastmod>2021-04-10</lastmod>
+     <lastmod>2021-04-16</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>http://redisgrafana.github.io/development/images/</loc>
-     <lastmod>2021-04-10</lastmod>
+     <lastmod>2021-04-16</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>http://redisgrafana.github.io/development/redis-datasource/</loc>
-     <lastmod>2021-04-10</lastmod>
+     <lastmod>2021-04-16</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>http://redisgrafana.github.io/development/redis-app/</loc>
-     <lastmod>2021-04-10</lastmod>
+     <lastmod>2021-04-16</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>http://redisgrafana.github.io/development/redis-explorer/</loc>
-     <lastmod>2021-04-10</lastmod>
-     <changefreq>daily</changefreq>
-    </url><url>
-     <loc>http://redisgrafana.github.io/projects/pop-up-store/</loc>
-     <lastmod>2021-04-10</lastmod>
+     <lastmod>2021-04-16</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>http://redisgrafana.github.io/projects/grafana-stats/</loc>
-     <lastmod>2021-04-10</lastmod>
+     <lastmod>2021-04-16</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>http://redisgrafana.github.io/projects/pop-up-store/</loc>
+     <lastmod>2021-04-16</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>http://redisgrafana.github.io/projects/finance-prophet/</loc>
+     <lastmod>2021-04-16</lastmod>
      <changefreq>daily</changefreq>
     </url>
 </urlset>
