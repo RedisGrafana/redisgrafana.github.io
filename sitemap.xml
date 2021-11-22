@@ -306,6 +306,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>http://redisgrafana.github.io/redis-datasource/redis-json/JSON-GET/</loc>
+         <lastmod>2021-11-22</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>http://redisgrafana.github.io/redis-datasource/redis-search/FT-INFO/</loc>
          <lastmod>2021-11-22</lastmod>
          <changefreq>daily</changefreq>
