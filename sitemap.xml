@@ -316,7 +316,27 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>http://redisgrafana.github.io/redis-datasource/redis-json/JSON-ARRLEN/</loc>
+         <lastmod>2021-11-23</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>http://redisgrafana.github.io/redis-datasource/redis-json/JSON-GET/</loc>
+         <lastmod>2021-11-23</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>http://redisgrafana.github.io/redis-datasource/redis-json/JSON-OBJKEYS/</loc>
+         <lastmod>2021-11-23</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>http://redisgrafana.github.io/redis-datasource/redis-json/JSON-OBJLEN/</loc>
+         <lastmod>2021-11-23</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>http://redisgrafana.github.io/redis-datasource/redis-json/JSON-TYPE/</loc>
          <lastmod>2021-11-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
